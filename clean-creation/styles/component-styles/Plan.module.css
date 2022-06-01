@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    margin: 50px;
 }
 
 .card {
@@ -30,6 +31,7 @@
     box-shadow: 2px 2px 15px 5px #eeecec;
     border-radius: 5px;
     margin: 10px;
+    width: 100%;
 }
 
 .cardHeading>h2 {
@@ -55,4 +57,21 @@
     color: white;
     font-size: 18px;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+    }
+    .heading>h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .heading>h2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .heading {
+        padding: 20px;
+    }
 }
