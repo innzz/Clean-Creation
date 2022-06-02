@@ -75,7 +75,8 @@
         margin: 0px;
     }
     .cards{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
         margin: 0;
     }
 
