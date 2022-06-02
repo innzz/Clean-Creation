@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    /* justify-content: center; */
+}
+
+.image {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 500px;
+    width: 700px;
+    object-fit: contain;
+    position: relative;
+    z-index: -1;
+}
+
+.image>img {
+    object-fit: cover;
+    width: 1400px;
+    height: 450px;
+    border-radius: 2px;
+}
+
+.card {
+    padding: 25px;
+    height: 26rem;
+    padding-top: 40px;
+    box-shadow: 2px 2px 15px 1px hsl(0, 0%, 88%);
+    border-radius: 6px;
+    z-index: 999999;
+    position: absolute;
+    background-color: white;
+    left: 33rem;
+    width: 50rem;
+    height: 20rem;
+    margin-bottom: 50px;
+}
+
+.card>h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 98%;
+}
+
+.card>p {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.card>button {
+    background-color: #8ed444;
+    padding: 12px 46px;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .image {
+        display: none;
+    }
+    .card {
+        left: 0rem;
+        z-index: 0;
+        margin: 50px;
+        height: 25rem;
+        width: 34rem;
+    }
+    .container {
+        height: 40rem;
+        /* left: 10rem; */
+    }
+    .card>h2 {
+        font-size: 36px;
+    }
+    .card>p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .image {
+        display: none;
+    }
+    .card {
+        z-index: 0;
+        left: 0;
+        margin: 50px;
+        /* width: 65rem; */
+    }
+    .container {
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image {
+        display: none;
+    }
+    .card {
+        left: 0rem;
+        z-index: 0;
+        margin: 50px;
+        height: 20rem;
+        width: 19rem;
+    }
+    .card>h2 {
+        font-size: 26px;
+    }
+    .card>p {
+        font-size: 10px;
+    }
+    .card>button {
+        font-size: 10px;
+        padding: 10px 36px;
+    }
+    .container {
+        margin-top: -280px;
+        margin-bottom: -100px;
+    }
+}
