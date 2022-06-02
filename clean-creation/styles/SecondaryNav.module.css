@@ -21,6 +21,7 @@
 
 .button {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     background-color: #243843;
@@ -29,6 +30,11 @@
     height: 9vh;
     padding: 35px 0;
     border-radius: 10px;
+    transition: 0.5s ease-in;
+}
+
+.button:hover{
+    background-color: #38515f;
 }
 .buttonText {
     display: flex;
