@@ -11,7 +11,7 @@ const PeopleSaying = () => {
             <div className={styles.imagtext}>
               <img
                 className={`d-block w-100 ${styles.image}`}
-                src="/carousel.jpg"
+                src="/people.jpeg"
                 alt="First slide"
               />
             </div>
@@ -28,7 +28,7 @@ const PeopleSaying = () => {
             <div className={styles.imagtext}>
               <img
                 className={`d-block w-100 ${styles.image}`}
-                src="/carousel.jpg"
+                src="/people.jpeg"
                 alt="First slide"
               />
             </div>
@@ -51,7 +51,7 @@ const PeopleSaying = () => {
             <div className={styles.imagtext}>
               <img
                 className={`d-block w-100 ${styles.image}`}
-                src="/carousel.jpg"
+                src="/people.jpeg"
                 alt="First slide"
               />
             </div>
