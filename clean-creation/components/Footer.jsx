@@ -72,7 +72,7 @@ export default class FooterHome extends React.Component {
                 customerservice@cleancreations.net
               </h6>
 
-              <ButtonGroup style={{ marginTop: "50px" }}>
+              <div className="flex" style={{ marginTop: "50px" }}>
                 <Button
                   onClick={() => {
                     this.setState({ open: true });
@@ -95,7 +95,7 @@ export default class FooterHome extends React.Component {
                 >
                   Invite a friend
                 </Button>
-              </ButtonGroup>
+              </div>
               <br />
               <ButtonGroup style={{ marginTop: "30px" }}>
                 <IconButton
@@ -409,11 +409,7 @@ export default class FooterHome extends React.Component {
                   backgroundColor: "black",
                 }}
               >
-                <CloseIcon
-                  onClick={() => {
-                    this.setState({ open: false });
-                  }}
-                />
+                <CloseIcon />
               </IconButton>
             </DialogTitle>
             <DialogContent>
