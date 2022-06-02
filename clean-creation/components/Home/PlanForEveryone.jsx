@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/component-styles/Plan.module.css";
+import styles from "../../styles/component-styles/Home-styles/Plan.module.css";
 
 const PlanForEveryone = () => {
   return (
