@@ -1,0 +1,106 @@
+.container {
+    text-align: center;
+    margin:  0 90px;
+    height: 100vh;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin: 0 40px;
+    align-items: center;
+}
+
+.description{ 
+    height: 120px;
+}
+
+.card {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 10px;
+    margin: 0 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
+
+.icon > img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+.heading > h1 {
+    font-weight: 500;
+    color: #000000;
+    font-size: 60px;
+}
+
+.heading {
+    margin: 1rem 0;
+}
+
+
+
+.description > h2 {
+    font-size: 17px;
+    color: #000;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.description > p {
+    font-family: 'poppins', sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 860px) {
+    .container{
+        margin: 0px;
+    }
+    .cards{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card {
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .heading > h1 {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .description {
+        height: auto;
+    }
+
+    .description > h2 {
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .description > p {
+        font-weight: 100;
+        line-height: 1.5;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+}
