@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #8ed444;
+    color: #fff;
+}
+
+.innerContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerContainer > .heading{
+    padding-top: 10px;
+}
+.innerContainer > .heading > h1{
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #243843;
+    margin: 20px 0;
+    width: 40vh;
+    height: 9vh;
+    padding: 35px 0;
+    border-radius: 10px;
+}
+.buttonText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+
+.buttonText > .icon{
+    padding-bottom: 30px;
+}
+
+.buttonText > h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
