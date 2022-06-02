@@ -5,12 +5,14 @@
     margin-bottom: 80px;
     margin-top: -45px;
     /* height: 100vh; */
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .image {
     height: 800px;
     width: 1300px;
-    margin-top: 30px;
+    margin-top: 23px;
 }
 
 .image>img {
@@ -45,4 +47,53 @@
     font-size: 14px;
     border-radius: 3px;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .image {
+        display: none;
+    }
+    .card {
+        margin: 50px;
+        height: 35rem;
+    }
+    .container {
+        height: 40rem;
+    }
+    .card>h2 {
+        font-size: 36px;
+    }
+    .card>p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .image {
+        display: none;
+    }
+    .card {
+        margin: 50px;
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card>h2 {
+        font-size: 26px;
+    }
+    .card>p {
+        font-size: 10px;
+    }
+    .card>button {
+        font-size: 10px;
+        padding: 10px 36px;
+    }
+    .card {
+        height: 25rem;
+    }
+    .container {
+        margin-top: -100px;
+        margin-bottom: -50px;
+    }
 }
