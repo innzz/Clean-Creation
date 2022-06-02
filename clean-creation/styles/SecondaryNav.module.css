@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #8ed444;
+    color: #fff;
+}
+
+.innerContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerContainer > .heading {
+    padding-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #243843;
+    margin: 10px 0;
+    width: 40vh;
+    height: 9vh;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+.buttonText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    font-stretch :wider;
+}
+
+.buttonText > .icon{
+    padding-bottom: 30px;
+}
+
+.buttonText > h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: expanded;
+}
