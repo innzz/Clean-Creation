@@ -25,7 +25,7 @@ export default class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar collapseOnSelect expand="lg">
+                <Navbar  className="bg-white" collapseOnSelect expand="lg">
                     <Container>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
