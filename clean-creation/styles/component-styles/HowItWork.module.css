@@ -67,6 +67,7 @@
     line-height: 1.5;
     font-size: 20px;
     margin-top: 0px;
+    text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 860px) {
