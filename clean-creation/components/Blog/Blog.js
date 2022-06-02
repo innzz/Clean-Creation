@@ -42,7 +42,7 @@ export default class Blog extends React.Component {
                                 <h5 style={{ fontFamily: "serif" }} class="mb-2 text-2xl font-bold  text-gray-900 dark:text-white">{s.heading}</h5>
 
                                 <p class="mb-3 pl-5 pr-5 pt-3  text-lg font-normal text-gray-700 dark:text-gray-400">{s.body}</p>
-                                <a href="/screens/Blog/read" class="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-lime-400 mb-10 rounded-lg hover:scale-110">
+                                <a href="/screens/Blog/id" class="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-lime-400 mb-10 rounded-lg hover:scale-110">
                                     READ MORE
                                 </a>
                             </div>
