@@ -5,7 +5,7 @@ import { Carousel } from "react-bootstrap";
 const PeopleSaying = () => {
   return (
     <div>
-      <div>
+      <div className={styles.container}>
         <Carousel fade>
           <Carousel.Item>
             <div className={styles.imagtext}>
