@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/component-styles/People.module.css";
+import styles from "../../styles/component-styles/Home-styles/People.module.css";
 import { Carousel } from "react-bootstrap";
 
 const PeopleSaying = () => {
