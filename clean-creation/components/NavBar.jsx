@@ -6,10 +6,10 @@ export default class NavBar extends React.Component {
         super(props);
         this.state = {
             isHovering: false,
-            hover1:false,
-            hover2:false,
-            hover3:false,
-            hover4:false
+            hover1: false,
+            hover2: false,
+            hover3: false,
+            hover4: false
         }
     }
     handleMouseEnter = () => {
@@ -25,15 +25,15 @@ export default class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar  className="bg-white" collapseOnSelect expand="lg">
+                <Navbar className="bg-white" collapseOnSelect expand="lg">
                     <Container>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav>
-                                <Nav.Link  onMouseEnter={()=>{this.setState({hover1:true})}}
-                                onMouseLeave={()=>{this.setState({hover1:false})}} style={{ color: this.state.hover1 === true ? 'green' : 'black' }} href="#title">Current Menu</Nav.Link>
-                                <Nav.Link  onMouseEnter={()=>{this.setState({hover2:true})}}
-                                onMouseLeave={()=>{this.setState({hover2:false})}} style={{ color: this.state.hover2 === true ? 'green' : 'black' }} eventKey={2} href="#title">
+                                <Nav.Link onMouseEnter={() => { this.setState({ hover1: true }) }}
+                                    onMouseLeave={() => { this.setState({ hover1: false }) }} style={{ color: this.state.hover1 === true ? 'green' : 'black' }} href="#title">Current Menu</Nav.Link>
+                                <Nav.Link onMouseEnter={() => { this.setState({ hover2: true }) }}
+                                    onMouseLeave={() => { this.setState({ hover2: false }) }} style={{ color: this.state.hover2 === true ? 'green' : 'black' }} eventKey={2} href="#title">
                                     Grab & Go
                                 </Nav.Link>
                             </Nav>
@@ -59,15 +59,15 @@ export default class NavBar extends React.Component {
                                     <Dropdown.Item href="#/action-3">Gift Card</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
-                            <Nav.Link style={{ color: this.state.hover3 === true ? 'green' : 'black', }} onMouseEnter={()=>{this.setState({hover3:true})}} onMouseLeave={()=>{this.setState({hover3:false})}} href="#title">Select Meals</Nav.Link>
-                            <Nav.Link style={{ color: this.state.hover4 === true ? 'green' : 'black', }}  onMouseEnter={()=>{this.setState({hover4:true})}} onMouseLeave={()=>{this.setState({hover4:false})}}  eventKey={2} href="#title">
+                            <Nav.Link style={{ color: this.state.hover3 === true ? 'green' : 'black', }} onMouseEnter={() => { this.setState({ hover3: true }) }} onMouseLeave={() => { this.setState({ hover3: false }) }} href="#title">Select Meals</Nav.Link>
+                            <Nav.Link style={{ color: this.state.hover4 === true ? 'green' : 'black', }} onMouseEnter={() => { this.setState({ hover4: true }) }} onMouseLeave={() => { this.setState({ hover4: false }) }} eventKey={2} href="#title">
                                 Blog
                             </Nav.Link>
                             <Nav.Link>
                                 <img src="https://cleancreations.com/assets/icons/cart.svg" alt="" style={{ height: "20px", width: "20px" }} />
 
                             </Nav.Link>
-                          
+
                             <IconButton aria-label="" size="medium" onMouseEnter={this.handleMouseEnter}
                                 onMouseLeave={this.handleMouseLeave} style={{ borderRadius: "50%", borderColor: "white", backgroundColor: this.state.isHovering === true ? 'green' : 'white', color: this.state.isHovering === true ? 'white' : 'black', }}>
                                 <Typography>RB</Typography>
@@ -75,6 +75,9 @@ export default class NavBar extends React.Component {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+
+
+              
             </div>
         )
     }
