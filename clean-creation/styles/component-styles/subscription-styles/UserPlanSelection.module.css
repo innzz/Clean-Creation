@@ -63,6 +63,14 @@
     border: 1px solid gray;
     border-radius: 7px;
     white-space: nowrap;
+    transition: 0.2s ease-in;
+}
+
+.leftSection > .cards > .card > .buttonsGroup > .button:hover{
+    color: #8ed444;
+    border: 1px solid #8ed444;
+    transform: translateY(-10px);
+    box-shadow: 1px 3px 4px grey;
 }
 
 .leftSection > .cards > .card > .buttonsGroup {
@@ -70,12 +78,19 @@
     flex-wrap: wrap;
 }
 
-.leftSection > .leftButtonGroup{
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.midContainer > .buttonWrapper > .leftButtonGroup{
+    width: 80%;
     display: flex;
     align-items: center;
 }
 
-.leftSection > .leftButtonGroup > .button {
+.midContainer  > .buttonWrapper > .leftButtonGroup > .button {
     color: #fff;
     display: flex;
     align-items: center;
@@ -177,7 +192,7 @@
     border-radius: 10px;
     background-color: rgba(215, 217, 217, 0.5);
     border: 0px;
-    z-index: -1;
+    z-index: 10;
     border-radius: 10px;
 }
 
@@ -188,7 +203,23 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    /* right: 0; */
     width: 60px;
 
+}
+
+@media screen and (max-width: 1080px) {
+    .insideContainer{
+        flex-direction: column;
+    }
+
+    .rightSection{
+        width: 100%;
+    }
+    .midContainer > .buttonWrapper > .leftButtonGroup{
+        flex-direction: column;
+    }
+    .midContainer  > .buttonWrapper > .leftButtonGroup > .button {
+        width: 100%;
+    }
 }

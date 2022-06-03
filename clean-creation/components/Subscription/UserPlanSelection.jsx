@@ -119,14 +119,6 @@ function UserPlanSelection() {
               </div>
             </div>
           </div>
-          <div className={styles.leftButtonGroup}>
-                <div className={styles.button}>
-                    <GiMeal size={'25px'} style={{marginRight: '8px'}}/>Select Your Meals
-                </div>
-                <div className={styles.button}>
-                    <FaShoppingCart size={'25px'} style={{marginRight: '8px'}}/>Go to Cart
-                </div>
-          </div>
       </div>
       <div className={styles.rightSection}>
         <div className={styles.rightInnerContainer}>
@@ -143,6 +135,16 @@ function UserPlanSelection() {
             </div>
         </div>
       </div>
+      </div>
+      </div>
+      <div className={styles.buttonWrapper}>
+      <div className={styles.leftButtonGroup}>
+                <div className={styles.button}>
+                    <GiMeal size={'25px'} style={{marginRight: '8px'}}/>Select Your Meals
+                </div>
+                <div className={styles.button}>
+                    <FaShoppingCart size={'25px'} style={{marginRight: '8px'}}/>Go to Cart
+                </div>
       </div>
       </div>
     </div>
