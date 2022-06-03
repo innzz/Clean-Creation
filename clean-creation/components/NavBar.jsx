@@ -59,7 +59,7 @@ export default class NavBar extends React.Component {
                                     <Dropdown.Item href="#/action-3">Gift Card</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
-                            <Nav.Link style={{ color: this.state.hover3 === true ? 'green' : 'black', }} onMouseEnter={() => { this.setState({ hover3: true }) }} onMouseLeave={() => { this.setState({ hover3: false }) }} href="#title">Select Meals</Nav.Link>
+                            <Nav.Link style={{ color: this.state.hover3 === true ? 'green' : 'black', }} onMouseEnter={() => { this.setState({ hover3: true }) }} onMouseLeave={() => { this.setState({ hover3: false }) }} href="/meals">Select Meals</Nav.Link>
                             <Nav.Link style={{ color: this.state.hover4 === true ? 'green' : 'black', }} onMouseEnter={() => { this.setState({ hover4: true }) }} onMouseLeave={() => { this.setState({ hover4: false }) }} eventKey={2} href="#title">
                                 Blog
                             </Nav.Link>
