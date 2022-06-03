@@ -1,4 +1,5 @@
 import { Button, CardContent, Grid, Typography } from "@mui/material";
+import Link from 'next/link'
 import React from "react";
 import { Card } from "react-bootstrap";
 export default class Getstarted extends React.Component {
@@ -28,7 +29,10 @@ export default class Getstarted extends React.Component {
                                 <Card.Text className="md:text-xl font-normal md:font-bold md:mt-0 -mt-4" >
                                 We make eating healthy convenient and delicious so you can have more time to do the things you love.
                                 </Card.Text>
-                                <button className="h-10 w-44 md:h-14 md:w-64 bg-green-600"><p className="text-sm md:text-lg text-white text-center mt-2">GET STARTED</p></button>
+                                <Link href={'/subscription'}>
+                                <button className="h-10 w-44 md:h-14 md:w-64 bg-green-600">
+                                    <p className="text-sm md:text-lg text-white text-center mt-2">GET STARTED</p></button>
+                                </Link>
                             </CardContent>
                         </Card>
                         </div>
