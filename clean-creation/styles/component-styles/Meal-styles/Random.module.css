@@ -1,4 +1,11 @@
+.bigContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .container {
+    width: 100%;
     display: flex;
     /* border: 1px solid black; */
     box-shadow: 2px 2px 15px 5px #eeecec;

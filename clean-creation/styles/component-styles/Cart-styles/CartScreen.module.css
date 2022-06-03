@@ -1,0 +1,276 @@
+.bigContainer {
+    display: flex;
+    justify-content: center;
+    color: #484848;
+}
+
+.container {
+    margin: 50px;
+    margin-top: 200px;
+    width: 80%;
+}
+
+.cartConfirm>h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cartDetails {
+    margin: 30px
+}
+
+.cartDate {
+    display: flex;
+    align-items: center;
+}
+
+.clockIcon {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.cartDate>h4 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.cartSubscription {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    /* align-items: center; */
+}
+
+.bin {
+    display: flex;
+}
+
+.deletion {
+    display: flex;
+}
+
+.deletion>h5 {
+    font-size: 17px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+    color: #5d6469;
+}
+
+.edit>a {
+    margin-left: 15px;
+    color: black;
+    /* margin-bottom: 50px; */
+}
+
+.binIcon {
+    height: 17px;
+    width: 17px;
+    /* margin-top: 3px; */
+    margin-right: 10px;
+}
+
+.deletion:hover {
+    color: red;
+}
+
+.deletion>h5:hover {
+    text-decoration: line-through;
+}
+
+.cartOrderDetails {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.cartPreferences {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc>p {
+    color: #5d6469;
+}
+
+.billing {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .desc { */
+
+
+/* border: 1px solid black; */
+
+
+/* margin-left: 50px; */
+
+
+/* } */
+
+.descOne>p {
+    color: #5d6469;
+}
+
+.descTwo>p {
+    color: #5d6469;
+}
+
+.descThree>p {
+    color: #5d6469;
+}
+
+.descOne {
+    margin-left: -80px;
+}
+
+.descTwo {
+    margin-left: -50px;
+}
+
+.descThree {
+    margin-right: -10px;
+}
+
+.descOne>h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.descTwo>h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.descThree>h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.desc>h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.delivery>h4 {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.dateSection {
+    display: flex;
+}
+
+.dateSection>a {
+    color: black;
+}
+
+.arrowRight {
+    height: 20px;
+    width: 20px;
+    /* font-weight: bold; */
+}
+
+.proceedTo {
+    margin-top: 160px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartButton {
+    padding: 18px 88px;
+    background-color: #8ed444;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.additional {
+    margin-bottom: 300px;
+    height: 450px;
+    width: 100%;
+    /* margin: 50px; */
+    /* border: 1px solid black; */
+    /* display: flex; */
+}
+
+.heading>h1 {
+    font-weight: bold;
+    font-size: 20px;
+    /* justify-content: flex-start;  */
+}
+
+.addPro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgContainer {
+    /* border: 1px solid black; */
+    height: 380px;
+    width: 250px;
+    border-radius: 8px;
+    margin-top: 20px;
+    /* box-shadow: 2px 2px 15px 5px #eeecec; */
+}
+
+.imgContainer:hover {
+    box-shadow: 2px 2px 15px 5px #eeecec;
+}
+
+.imgContainer>p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.syrupImg {
+    object-fit: cover;
+    height: 180px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .cartPreferences {
+        flex-direction: column;
+    }
+    .billing {
+        flex-direction: column;
+    }
+    .descOne {
+        margin-left: 0px;
+    }
+    .descTwo {
+        margin-left: 0px;
+    }
+    .descThree {
+        margin-right: 0px;
+    }
+    .proceedTo {
+        margin-top: 90px;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .addPro {
+        /* display: flex; */
+        justify-content: center;
+        /* justify-content: flex-start; */
+    }
+    .heading>h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cartSubscription {
+        flex-direction: column;
+    }
+    .cartButton {
+        padding: 10px 50px;
+        font-size: 13px;
+    }
+}

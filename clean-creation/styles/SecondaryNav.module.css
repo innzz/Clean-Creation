@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: #8ed444;
     color: #fff;
+    height: 100px;
 }
 
 .innerContainer {
@@ -21,20 +22,26 @@
 
 .button {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     background-color: #243843;
-    margin: 20px 0;
+    margin: 12px 0;
     width: 40vh;
     height: 9vh;
-    padding: 35px 0;
+    padding: 38px 0;
     border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+
+.button:hover{
+    background-color: #455f6e;
 }
 .buttonText {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 65%;
+    width: 70%;
 }
 
 .buttonText > .icon{

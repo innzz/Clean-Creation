@@ -1,0 +1,225 @@
+
+
+.midContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.midContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.insideContainer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.leftSection {
+    margin-bottom: 30px;
+}
+
+
+.leftSection > .cards > .card {
+    margin: 70px 0;
+}
+
+.leftSection > .cards > .card > .heading{
+    position: relative;
+    z-index: -1;
+    margin-bottom: 30px;
+}
+
+.leftSection > .cards > .card > .heading::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 13%;
+    background-color: #8ed444;
+    z-index: 10;
+}
+
+.leftSection > .cards > .card > .heading > h3 {
+    color: rgb(65, 65, 65);
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.leftSection > .cards > .card > .buttonsGroup > .button  {
+    color: gray;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 13px;
+    margin: 5px 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'avenirRegular', sans-serif;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 7px;
+    white-space: nowrap;
+    transition: 0.2s ease-in;
+}
+
+.leftSection > .cards > .card > .buttonsGroup > .button:hover{
+    color: #8ed444;
+    border: 1px solid #8ed444;
+    transform: translateY(-10px);
+    box-shadow: 1px 3px 4px grey;
+}
+
+.leftSection > .cards > .card > .buttonsGroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.midContainer > .buttonWrapper > .leftButtonGroup{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.midContainer  > .buttonWrapper > .leftButtonGroup > .button {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 17px;
+    margin: 5px 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'avenirRegular', sans-serif;
+    font-weight: 500;
+    border-radius: 7px;
+    white-space: nowrap;
+    background-color: #8ed444;
+}
+
+.rightSection{
+    width: 58%;
+}
+
+.rightSection > .rightInnerContainer {
+    border-radius: 15px;
+    margin-top: 50px;
+    top: 0;
+    position: sticky;
+}
+
+.rightSection > .rightInnerContainer > .overView {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 17px;
+}
+
+.rightSection > .rightInnerContainer > .overView > .overViewContent {
+    display: flex;
+    position: relative;
+    padding: 10px 15px;
+    font-size: 22px;
+    margin: 5px 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'avenirRegular', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: -1;
+}
+
+.rightSection > .rightInnerContainer > .overView > .overViewContent::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 80%;
+    bottom: 0;
+    background-color: #8ed444;
+    z-index: 10;
+}
+.rightSection > .rightInnerContainer >.overView > .overViewButton {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 13px;
+    margin: 5px 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'avenirRegular', sans-serif;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color: #8ed444;
+    white-space: nowrap;
+}
+
+.rightSection > .rightInnerContainer > .bottom {
+    background-color: #8ed444;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+.inputContainer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    width: 100%;
+}
+
+.input {
+    position: relative;
+    height: 80px;
+    width: 80%;
+}
+
+.inputInside {
+    border-radius: 10px;
+    background-color: rgba(215, 217, 217, 0.5);
+    border: 0px;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.inputIcon {
+    position: absolute;
+    padding-top: 29px;
+    padding-left: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* right: 0; */
+    width: 60px;
+
+}
+
+@media screen and (max-width: 1080px) {
+    .insideContainer{
+        flex-direction: column;
+    }
+
+    .rightSection{
+        width: 100%;
+    }
+    .midContainer > .buttonWrapper > .leftButtonGroup{
+        flex-direction: column;
+    }
+    .midContainer  > .buttonWrapper > .leftButtonGroup > .button {
+        width: 100%;
+    }
+}
