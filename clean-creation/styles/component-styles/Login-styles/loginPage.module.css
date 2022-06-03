@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+}
+
+.leftImgContainer{
+    width: 50%;
+}
+
+.leftImgContainer > img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.rightContentContainer {
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.rightInnerContainer {
+    width: 70%;
+    max-width: 800px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightContentContainer > .rightInnerContainer > .headingContainer > h2 {
+    font-size: 25px;
+    padding: 10px 0;
+    color: rgb(73, 73, 73);
+}
+
+.rightContentContainer > .rightInnerContainer > .headingContainer > h3 {
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 500;
+    color: rgb(158, 156, 156);
+}
+
+.rightContentContainer > .rightInnerContainer > .inputContainer {
+    border: 2px solid rgba(201, 197, 197, 0.466);
+    color: rgb(158, 156, 156);
+    border-radius: 10px;
+    margin: 15px 0;
+    height: 30vh;
+}
+
+.rightContentContainer > .rightInnerContainer > .inputContainer > .details {
+    display: flex;
+    padding: 30px 20px;
+    flex-direction: column;
+}
+
+.rightContentContainer > .rightInnerContainer > .inputContainer > .details > input{
+    padding: 5px 0;
+    outline: none;
+    border-bottom: 1px solid rgb(158, 156, 156);
+}
+
+
+.rightContentContainer > .rightInnerContainer > .bottomText {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+.rightContentContainer > .rightInnerContainer > .bottomText > a{
+    color: rgb(73, 73, 73);
+}
+
+.rightContentContainer > .rightInnerContainer > .button {
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 30px;
+    margin-top: 60px;
+    background-color: #8ed444;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .leftImgContainer{
+        display: none;
+    }
+
+    .rightContentContainer{
+        width: 100%;
+    }
+}
