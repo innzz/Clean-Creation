@@ -1,0 +1,179 @@
+.container {
+    display: flex;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 15px 5px #eeecec;
+    border-radius: 20px;
+    margin: 25px;
+    justify-content: center;
+}
+
+.innerContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.option {
+    display: flex;
+    /* align-items: center; */
+}
+
+.firstButton {
+    display: flex;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+}
+
+.firstButton>h2 {
+    font-size: 15px;
+    font-size: 16px;
+}
+
+.button {
+    border: 2px solid black;
+}
+
+.icon {
+    height: 17px;
+    width: 17px;
+    margin-right: 5px;
+}
+
+.selectMeal {
+    display: flex;
+}
+
+.secondButton {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+    color: #666666;
+    padding: 10px 0;
+    box-shadow: 1px 1px 15px 1px #eeecec;
+}
+
+.secondButton>h3 {
+    font-size: 17px;
+}
+
+.inner {
+    display: flex;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 180px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: #f7a700;
+    color: white;
+    margin-top: 35px;
+    padding: 10px 0;
+    padding-top: 15px;
+    /* padding: px; */
+    /* align-items: center; */
+}
+
+.inner>h3 {
+    font-size: 15px;
+}
+
+.right {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.dietHolder {
+    margin-top: 10px;
+}
+
+.dietName {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.dietName>h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dietName>p>span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dietName>p {
+    font-size: 12px;
+}
+
+.dietBar {
+    height: 5px;
+    margin-top: -10px;
+}
+
+.innerDietHolder {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.innerDiet {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    /* text-align: center; */
+}
+
+.innerDiet>h4 {
+    font-size: 11px;
+}
+
+.innerDiet>p {
+    font-size: 11px;
+}
+
+@media screen and (max-width: 1080px) {
+    .innerContainer {
+        flex-direction: column;
+    }
+    .left {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .right {
+        padding-right: 40px;
+        margin-top: 30px;
+    }
+    .firstButton>h2 {
+        font-size: 12px;
+    }
+    .icon {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .option {
+        flex-direction: column;
+    }
+    .firstButton {
+        margin-top: 20px;
+    }
+    .selectMeal {
+        flex-direction: column;
+    }
+    .addExtra {
+        padding: 10px 20px;
+    }
+}
