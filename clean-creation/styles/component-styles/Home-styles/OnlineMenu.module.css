@@ -71,6 +71,7 @@
     flex-wrap: wrap;
     justify-content: center;
     height: 55vh;
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
