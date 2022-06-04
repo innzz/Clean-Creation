@@ -1,0 +1,296 @@
+.bigContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #666666;
+    width: 80%;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* margin-bottom: 10px; */
+    /* margin-bottom: 50px; */
+}
+
+.breakfastMenu>h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.childNav {
+    padding: 20px 0;
+    display: flex;
+}
+
+.childNav>h3 {
+    font-size: 18px;
+    /* margin-bottom: 40px; */
+}
+
+.childNav>h3>a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.childNav>h4 {
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+.childNav>h4>a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.entreeMenu>h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cardWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuItem {
+    margin: 0 10px;
+    display: flex;
+    width: 380px;
+    height: 170px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 15px 5px #eeecec;
+    margin-top: 30px;
+}
+
+.dishImage>img {
+    object-fit: cover;
+    width: 100%;
+    height: 168px;
+    border-radius: 6px;
+}
+
+.dishDesc {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.labelDish>h5 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    justify-content: end;
+    margin-top: 75px;
+    /* margin-left: 30px; */
+}
+
+.tag {
+    display: flex;
+    /* border: 1px solid black; */
+    /* padding: 2px 15px; */
+    height: 25px;
+    text-align: center;
+    width: 100px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    background-color: #ff8400;
+    color: white;
+}
+
+.tagIcon {
+    margin-right: 8px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.innerQuantity {
+    display: flex;
+    border: 1px solid #8ed444;
+    align-items: center;
+    width: 70px;
+    height: 29px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 0px;
+    /* text-align: center; */
+}
+
+.btnAdd {
+    border: 1px solid #8ed444;
+    display: flex;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #8ed444;
+    color: white;
+    padding: 2px;
+}
+
+.plus {
+    height: 25px;
+    width: 25px;
+}
+
+.num {
+    margin-top: 14px;
+    margin-left: 8px;
+}
+
+.subs {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.menuAndChart {
+    display: flex;
+}
+
+.option {
+    display: flex;
+    /* align-items: center; */
+}
+
+.firstButton {
+    display: flex;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+}
+
+.firstButton>h2 {
+    font-size: 15px;
+    font-size: 16px;
+}
+
+.button {
+    border: 2px solid black;
+}
+
+.icon {
+    height: 17px;
+    width: 17px;
+    margin-right: 5px;
+}
+
+.selectMeal {
+    display: flex;
+}
+
+.secondButton {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+    color: #666666;
+    padding: 10px 0;
+    box-shadow: 1px 1px 15px 1px #eeecec;
+}
+
+.secondButton>h3 {
+    font-size: 17px;
+}
+
+.inner {
+    display: flex;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 180px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: #f7a700;
+    color: white;
+    margin-top: 35px;
+    padding: 10px 0;
+    padding-top: 15px;
+    /* padding: px; */
+    /* align-items: center; */
+}
+
+.inner>h3 {
+    font-size: 15px;
+}
+
+.right {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.dietHolder {
+    margin-top: 10px;
+}
+
+.dietName {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.dietName>h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dietName>p>span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dietName>p {
+    font-size: 12px;
+}
+
+.dietBar {
+    height: 5px;
+    margin-top: -10px;
+}
+
+.innerDietHolder {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.innerDiet {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    /* text-align: center; */
+}
+
+.innerDiet>h4 {
+    font-size: 11px;
+}
+
+.innerDiet>p {
+    font-size: 11px;
+}
+
+.dietContChart {
+    width: 50%;
+}
+
+.right {
+    top: 0;
+    position: sticky;
+    padding-top: 90px;
+}
