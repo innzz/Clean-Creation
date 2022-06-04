@@ -91,7 +91,9 @@ export default class NavBar extends React.Component {
                   <Dropdown.Item href="#/action-1">
                     Subscription Meal Selection
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">À la Carte</Dropdown.Item>
+                  <Link href="/alacarte">
+                    <Dropdown.Item href="#/action-2">À la Carte</Dropdown.Item>
+                  </Link>
                   <Dropdown.Item href="#/action-3">
                     Proteins by the Pound
                   </Dropdown.Item>
