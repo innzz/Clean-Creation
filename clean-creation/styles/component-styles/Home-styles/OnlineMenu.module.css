@@ -1,3 +1,5 @@
+
+
 .container{
     display: flex;
     justify-content: center;
@@ -69,8 +71,22 @@
     flex-wrap: wrap;
     justify-content: center;
     height: 55vh;
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
+
+.cards::-webkit-scrollbar {
+    width: 0.6em;
+  }
+   
+  .cards::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.123);
+  }
+   
+  .cards::-webkit-scrollbar-thumb {
+    background-color: rgb(177, 177, 177);
+    outline: 1px solid slategrey;
+  }
 
 .card {
     min-width: 350px;
