@@ -40,7 +40,7 @@ export default class BillingAddress extends React.Component {
                         </div>
                     </div>
                     <div className="absolute lg:right-10 right-3 -mt-12">
-                        <button className="bg-lime-500 p-3 rounded-xl">Save Shipping</button>
+                        <button className="bg-lime-500 p-3 text-white rounded-xl">Save Shipping</button>
                     </div>
 
                 </div>

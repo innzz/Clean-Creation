@@ -31,7 +31,7 @@ export default class MealPreference extends React.Component {
                                     <p className="text-lg text-gray-700 font-semibold">Select your allergens</p>
                                 </div>
                                 <div>
-                                    <button onClick={() => { this.setState({ one: true }) }} className="bg-lime-400 lg:px-24 px-32 py-2 rounded-lg">Edit</button>
+                                    <button onClick={() => { this.setState({ one: true }) }} className="bg-lime-400 text-white lg:px-24 px-32 py-2 rounded-lg">Edit</button>
                                 </div>
                             </div>
                             <div className="shadow p-3 rounded-2xl mb-3 grid lg:grid-cols-3">
@@ -39,7 +39,7 @@ export default class MealPreference extends React.Component {
                                     <p className="text-lg text-gray-700 font-semibold">Select your dislikes</p>
                                 </div>
                                 <div>
-                                    <button onClick={() => { this.setState({ two: true }) }} className="bg-lime-400 lg:px-24 px-32 py-2 rounded-lg">Edit</button>
+                                    <button onClick={() => { this.setState({ two: true }) }} className="bg-lime-400 text-white lg:px-24 px-32 py-2 rounded-lg">Edit</button>
                                 </div>
                             </div>
                             <div className="shadow p-3 rounded-2xl mb-3 grid lg:grid-cols-3">
@@ -48,7 +48,7 @@ export default class MealPreference extends React.Component {
                                     <p className="text-lg text-gray-500">OR</p>
                                 </div>
                                 <div>
-                                    <button onClick={() => { this.setState({ three: true }) }} className="bg-lime-400 lg:px-24 px-32 py-2 rounded-lg">Edit</button>
+                                    <button onClick={() => { this.setState({ three: true }) }} className="bg-lime-400 text-white lg:px-24 px-32 py-2 rounded-lg">Edit</button>
                                 </div>
                             </div>
                         </div>
