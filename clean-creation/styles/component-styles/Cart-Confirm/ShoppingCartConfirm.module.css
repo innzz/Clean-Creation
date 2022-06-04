@@ -1,0 +1,276 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.innerContainer {
+    width: 80%;
+    padding: 50px 0px;
+}
+
+.innerContainer > .shoppingCartSection > .heading1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innerContainer > .shoppingCartSection > .heading1 > h1{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.innerContainer > .shoppingCartSection > .heading1 > .deleteCartButton{
+    display: flex;
+    align-items: center;
+    padding: 3px 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3C4953;
+    color: white;
+}
+
+.innerContainer > .shoppingCartSection > .heading1 > .deleteCartButton > h2 {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 2px 5px;
+}
+
+.innerContainer > .shoppingCartSection > .innerContent1 {
+    padding: 40px 2px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.innerContainer > .shoppingCartSection > .innerContent1 > .deliveryContent {
+    width: 40%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.innerContainer > .shoppingCartSection > .innerContent1 > .deliveryContent > h3{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.innerContainer > .shoppingCartSection > .innerContent1 > .deliveryContent > h3 > a{
+    font-size: 18px;
+    font-weight: 300;
+    color: #3C4953;
+}
+
+.innerContainer > .shoppingCartSection > .innerContent1 > .dateContent > h3 {
+    font-size: 20px;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.innerContainer > .weeklySubscription {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.innerContainer > .weeklySubscription > .heading2{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 46%;
+}
+
+.innerContainer > .weeklySubscription > .heading2:hover{
+    text-decoration: line-through;
+    color: red;
+    cursor: pointer;
+}
+
+.innerContainer > .weeklySubscription > h3 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.innerContainer > .tipSection > .heading3 {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.innerContainer > .tipSection > .heading3 > h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.innerContainer > .tipSection > .heading3 > .noTipButton {
+    padding: 8px 25px;
+    background-color: #3C4953;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.innerContainer > .tipSection{
+    padding: 40px 0;
+}
+
+.innerContainer > .tipSection > .innerCardsSection {
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer > .tipSection > .innerCardsSection > .innerCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.innerContainer > .tipSection > .innerCardsSection > .innerCards > .innerCard {
+    padding: 8px 15px;
+    color: #5d6469;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    width: 20%;
+    margin: 5px 12px;
+    text-align: center;
+}
+
+.innerContainer > .tipSection > .innerCardsSection > .innerCards > .innerCard > h3 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.innerContainer > .tipSection > .innerCardsSection > .innerCards > .innerCard > .tipPriceText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.innerContainer > .subTotalSection {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.innerContainer > .subTotalSection > h3 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.innerContainer > .subTotalSection > .subTotalPriceText {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.innerContainer > .serviceSection {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.innerContainer > .serviceSection > h3 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.innerContainer > .serviceSection > .serviceSectionPriceText {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.innerContainer > .deliverySection {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.innerContainer > .deliverySection > h3 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.innerContainer > .deliverySection > .deliverySectionDateText {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+.innerContainer > .totalSection {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.innerContainer > .totalSection > h3 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.innerContainer > .totalSection > .totalSectionPriceText {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.innerContainer > .DeliveryBagSection {
+    padding: 10px 30px;
+}
+
+.innerContainer > .DeliveryBagSection > h4{
+    font-size: 19px;
+    font-weight: 400;
+    padding: 3px 0;
+}
+
+.innerContainer > .DeliveryBagSection > h3{
+    font-size: 19px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.innerContainer > .DeliveryBagSection > p{
+    font-size: 19px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.innerContainer > .DeliveryBagSection > p > span{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.innerContainer > .button {
+    text-align: center;
+    background-color: #8ed444;
+    color: #fff;
+    font-size: 23px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.innerContainer > .footer {
+    text-align: center;
+    padding: 30px;
+}
+.innerContainer > .footer > a{
+    color: #8ed444;
+}

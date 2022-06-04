@@ -4,6 +4,7 @@ import {
   Row,
 } from "react-bootstrap";
 import CartConfirmation from "../components/Meals/CartConfirmation";
+import ShoppingCartConfirmation from "../components/Meals/ShoppingCartConfirmation";
 
 const CartScreen = () => {
   return <div className="container">
@@ -11,7 +12,9 @@ const CartScreen = () => {
       <Col>
         <CartConfirmation />
       </Col>
-      <Col></Col>
+      <Col>
+        <ShoppingCartConfirmation />
+      </Col>
     </Row>
   </div>;
 };

@@ -112,9 +112,10 @@
 
 .rightSection > .rightInnerContainer {
     border-radius: 15px;
-    margin-top: 50px;
+    padding-top: 50px;
     top: 0;
     position: sticky;
+    box-shadow: 0 3px 10px 0 gray;
 }
 
 .rightSection > .rightInnerContainer > .overView {
