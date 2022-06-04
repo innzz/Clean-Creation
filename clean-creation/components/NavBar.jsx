@@ -113,7 +113,7 @@ export default class NavBar extends React.Component {
                 onMouseLeave={() => {
                   this.setState({ hover3: false });
                 }}
-                href="#title"
+                href="/meals"
               >
                 Select Meals
               </Nav.Link>
