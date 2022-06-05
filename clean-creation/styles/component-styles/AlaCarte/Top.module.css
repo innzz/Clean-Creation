@@ -1,0 +1,43 @@
+.heading {
+    width: 100%;
+    background-color: #8ed444;
+    color: white;
+    padding: 8px;
+}
+
+.innerHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 180px;
+}
+
+.innerHeading>h1 {
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-left: 180px; */
+}
+
+.modalButton {
+    display: flex;
+    /* align-items: center; */
+    padding: 6px 25px;
+    padding-top: 13px;
+    background-color: #01021d;
+    border: none;
+    border-radius: 5px;
+}
+
+.modalButton:hover {
+    background-color: #01021d;
+    border: none;
+}
+
+.modalButton:active {
+    background-color: #01021d;
+}
+
+.modalIcon {
+    margin-right: 10px;
+    margin-top: 1px;
+}
