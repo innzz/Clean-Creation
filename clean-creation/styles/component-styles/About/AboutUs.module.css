@@ -1,0 +1,163 @@
+
+.innerContainer1{
+    color: #fff;
+    text-align: center;
+    background-image: url('https://cleancreations.com/data/customfiles/green-banner.jpg');
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 60vh;
+}
+
+
+.innerContainer1 > h1{
+    padding: 33px 0;
+}
+
+.innerContainer1 > p{
+    padding: 10px 150px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-stretch: normal;
+}
+
+.innerContainer2{
+    color: #575757;
+}
+
+.innerContainer2 > .cateringWellnessContainer {
+    padding-bottom: 150px;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer {
+    display: flex;
+    padding: 0 35px;
+    width: 90%
+}
+
+.innerContainer2 > .cateringWellnessContainer > h2 {
+    padding: 25px 0;
+    text-align: center;
+}
+
+
+.innerContainer2 > .foodSafetyContainer > h2{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer > .leftPassage > h3 {
+    padding: 20px 0;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer > .leftPassage{
+    padding-right: 30px;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer > .rightPassage{
+    padding-right: 30px;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer > .rightPassage > h3 {
+    padding: 20px 0;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer > .rightPassage > ul{
+    padding: 0;
+    margin: 0 0;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer > .rightPassage > ul > li{
+    list-style-type: disc;
+    line-height: 2;
+}
+
+.innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Food Safety Container */
+
+.innerContainer2 > .foodSafetyContainer{
+    padding-bottom: 50px;
+} 
+
+.innerContainer2 > .foodSafetyContainer > h2 {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer {
+    display: flex;
+    width: 80%
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer > .leftPassage > ul {
+    padding: 0;
+    margin: 0;
+}
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer > .rightPassage > ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer > .leftPassage > ul > li {
+    line-height: 2;
+    list-style-type: disc;
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer > .rightPassage > ul > li {
+    line-height: 2;
+    list-style-type: disc;
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer  > .leftPassage{
+    padding-right: 30px;
+    width: 50%;
+}
+
+.innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer  > .rightPassage{
+    padding-right: 30px;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 800px){
+    .innerContainer1 > p{
+        padding: 10px 10px;
+    }
+    .innerContainer2 > .cateringWellnessContainer > .passageContainerWrapper > .passageContainer{
+        flex-direction: column;
+    }
+    .innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer{
+        flex-direction: column;
+    }
+    .innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer  > .leftPassage{
+        width: 100%;
+    }
+    .innerContainer2 > .foodSafetyContainer > .passageContainerWrapper > .passageContainer  > .rightPassage{
+        width: 100%;
+    }
+}
