@@ -4,7 +4,7 @@ import UserPlanSelection from "../components/Subscription/UserPlanSelection";
 
 const SubscriptionScreen = () => {
   return (<div>
-            <SecondaryNav />
+            <SecondaryNav heading={'Weekly Subscription'} buttonText={'How to Order Weekly Subscription?'} />
             <UserPlanSelection />
         </div>);
 };

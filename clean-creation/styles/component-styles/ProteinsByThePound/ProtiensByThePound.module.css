@@ -1,0 +1,366 @@
+
+
+.outerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer {
+    width: 80%;
+}
+
+.outerDateContainer {
+    display: flex;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.outerDateContainer > .rightSectionText > h3{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.outerDateContainer > .rightSectionText > h3{
+    font-size: 35px;
+}
+
+.outerDateContainer > .dateContainer {
+    margin-right: 100px;
+    width: 60%;
+}
+
+.outerDateContainer > .dateContainer > .dateContainerHeading {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCardsSectionHeading{
+    display: flex;
+    width: 100%;
+    font-style: italic;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCardsSectionHeading > h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCards  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCards > .dateCard {
+    width: 13%;
+    border-radius: 10px;
+    padding: 5px 2px;
+    text-align: center;
+    line-height: 1;
+    border: 1px solid #fff;
+    color: #888787;
+}
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCards > .dateCard:hover{
+    color: #00d95b;
+    cursor: pointer;
+    border: 1px solid #00d95b;
+}
+
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCards > .dateCard > h4{
+    font-size: 20px;
+    margin: 0;
+}
+
+.outerDateContainer > .dateContainer > .dateCardsSection > .dateCards > .dateCard > h2{
+    /* text-shadow: 0px 1px, 1px 0px, 1px 1px; */
+    font-size: 40px;
+    font-weight: 900;
+    /* color: #CCCCCC; */
+    margin: 0;
+}
+
+.outerDateContainer > .rightSectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.packsContainer .packs{
+    margin-bottom: 60px;
+}
+
+.packsContainer > .packs {
+    border: 1px solid #8ed444;
+    border-radius: 25px;
+}
+
+.packsContainer > .packs > .pack > .packHeading {
+    height: 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px 20px;
+    display: flex;
+    background-color: #8ed444;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .packHeadingLeftSection{
+    height: 50px;
+    width: 25%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .packHeadingLeftSection > h2{
+    font-size: 35px;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .packHeadingLeftSection > .plusMinusButton {
+    display: flex;
+    width: 38%;
+    background-color: #fff;
+    color: #444;
+    height: 45px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .packHeadingLeftSection > .plusMinusButton > input{
+    font-size: 20px;
+    width: 43%;
+    text-align: center;
+    margin: 0;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .packHeadingLeftSection > .plusMinusButton > input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .packHeadingLeftSection > .plusMinusButton > button {
+    width: 30px;
+    font-size: 28px;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .rightSection {
+    display: flex;
+    align-items: center;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .rightSection > .deleteButton{
+    display: flex;
+    height: 45px;
+    width: 160px;
+    border-radius: 10px;
+    padding: 12px 24px;
+    background-color: red;
+}
+
+.packsContainer > .packs > .pack > .packHeading > .rightSection > .deleteButton > h5 {
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.packsContainer > .packs > .pack > .innerPackContainer {
+    width: 100%;
+    display: flex;
+    padding: 20px 25px;
+    justify-content: space-between;
+}
+
+.packsContainer > .packs > .pack > .innerPackContainer > .leftSection{
+    width: 100%;
+}
+
+.packsContainer > .packs > .pack > .innerPackContainer > .leftSection > h2{
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.packsContainer > .packs > .pack > .innerPackContainer > .leftSection > .cards {
+    display: flex;
+    width: 78%;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+}
+
+.packsContainer > .packs > .pack > .innerPackContainer > .leftSection > .cards > .card {
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0px 1px 4px 1px rgb(199, 198, 198);
+}
+
+.packsContainer > .packs > .pack > .innerPackContainer > .leftSection > .cards > .card:hover{
+    color: #8ed444;
+    border: 1px solid #8ed444;
+    transform: translateY(-8px);
+    box-shadow: 0px 4px 8px 1px rgb(124, 124, 124);
+}
+
+.innerPackContainer > .rightSection {
+    width: 40%;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer{
+    width: 100%;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsBoldText {
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    /* z-index: -2; */
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsBoldText::after{
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 5px;
+    bottom: 0;
+    width: 100%;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsBoldText > h3 {
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsBoldText > h3 > span {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsSlimText {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsSlimText > h3 {
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsSlimText::after{
+    position: absolute;
+    content: "";
+    background-color: green;
+    height: 5px;
+    bottom: 0;
+    width: 100%;
+}
+
+.innerPackContainer > .rightSection > .carbsContainer >.carbsSlimText > h3 > span {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.packsContainer > .buttons > .upperButtons{
+    width: 100%;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    border-bottom: 2px solid #8ed444;
+}
+
+.packsContainer > .buttons > .upperButtons > .leftButton{
+    padding: 15px 30px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #8ed444;
+}
+
+.packsContainer > .buttons > .upperButtons > .leftButton > h5{
+    padding-left: 5px;
+    padding-top: 2px;
+    font-weight: 300;
+}
+
+.packsContainer > .buttons > .upperButtons > .rightButton{
+    padding: 15px 30px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #8ed444;
+}
+
+.packsContainer > .buttons > .upperButtons > .rightButton > h5{
+    padding-left: 5px;
+    padding-top: 2px;
+    font-weight: 300;
+}
+
+.packsContainer > .buttons > .lowerButton > .leftButton{
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #8ed444;
+}
+
+.packsContainer > .buttons > .lowerButton > .leftButton > h5{
+    padding-left: 5px;
+    padding-top: 2px;
+    font-weight: 300;
+}
+
+.packsContainer > .buttons > .lowerButton{
+        width: 100%;
+        justify-content: space-between;
+        color: #fff;
+        padding: 20px 30px;
+        display: flex;
+
+}
+
+
+@media screen and (max-width: 800px){
+    .outerDateContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .outerDateContainer > .dateContainer > .dateCardsSection > .dateCards {
+        flex-wrap: wrap;
+    }
+
+    .innerPackContainer {
+        flex-direction: column;
+    }
+
+    .innerPackContainer > .leftSection {
+        width: 100%;
+    }
+
+    .innerPackContainer > .leftSection > .cards{
+        width: 100%;
+    }
+
+
+    .innerPackContainer > .rightSection {
+        width: 100%;
+    }
+
+
+}
