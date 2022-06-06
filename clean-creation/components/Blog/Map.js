@@ -4,7 +4,7 @@ export default class Map extends React.Component {
         return (
             <div>
                 <div>
-
+<p>Map Section</p>
                 </div>
             </div>
         )

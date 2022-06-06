@@ -42,11 +42,13 @@ export default class Blog extends React.Component {
               key={i}
               className="max-w-sm bg-white   border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
             >
-              <Link href="#">
-                <img className="" src={s.img} alt="" />
-                <button className="bg-orange-500 text-white text-center px-3 py-1 rounded-lg -mt-2">
-                  {s.date}
-                </button>
+              <Link href="/">
+                <a>
+                  <img className="" src={s.img} alt="" />
+                  <button className="bg-orange-500 text-white text-center px-3 py-1 rounded-lg -mt-2">
+                    {s.date}
+                  </button>
+                </a>
               </Link>
               <div className="p-2 text-center">
                 <h5
@@ -58,12 +60,12 @@ export default class Blog extends React.Component {
                 <p className="mb-3 pl-5 pr-5 pt-3  text-lg font-normal text-gray-700 dark:text-gray-400">
                   {s.body}
                 </p>
-                <Link
+                <button
                   href="/screens/Blog/id"
                   className="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-lime-400 mb-10 rounded-lg hover:scale-110"
                 >
-                  READ MORE
-                </Link>
+                    READ MORE
+                </button>
               </div>
             </div>
           );
