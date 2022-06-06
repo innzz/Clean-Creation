@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container > .leftSection {
+  width: 50%;
+  background-image: url('https://cleancreations.com/data/config/login_image.jpg?md=5aa06eb7aa5a83d1992520b885d63182');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+.container > .rightSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.container > .rightSection::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+.container > .rightSection::-webkit-scrollbar-track {
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.123);
+}
+
+.container > .rightSection::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgb(177, 177, 177);
+  outline: 1px solid rgb(255, 255, 255);
+}
+
+.container > .rightSection > .innerForm {
+  width: 50%;
+}
+
+.container > .rightSection > .innerForm > .formHeading {
+  padding: 30px 0;
+}
+
+.container > .rightSection > .innerForm > .formHeading > h3 {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.container > .rightSection > .innerForm > .formInputsContainer{
+  border: 1px solid #eeecec;
+  border-radius: 15px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > .rightSection > .innerForm > .formInputsContainer > .input{
+  margin: 20px 0;
+  width: 90%;
+  border-bottom: 2px solid #eeecec;
+}
+
+.container > .rightSection > .innerForm > .formInputsContainer > .input > h4{
+  color: #c7c7c7;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container > .rightSection > .innerForm > .formInputsContainer > .input > input{
+  padding: 8px 0;
+  outline: none;
+}
+
+
+.container > .rightSection > .innerForm > .terms{
+  padding: 30px 0;
+}
+
+.container > .rightSection > .innerForm > .terms > .term {
+  display: flex;
+}
+
+.container > .rightSection > .innerForm > .terms > .term > input {
+  width: 6%;
+  height: 40px;
+}
+
+.container > .rightSection > .innerForm > .terms > .term > h5{
+  width: 90%;
+  font-size: 18px;
+  color: #888787;
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+
+.container > .rightSection > .innerForm > button {
+  width: 100%;
+  margin-bottom: 80px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 0;
+  border-radius: 20px;
+  background-color: rgb(226, 226, 226);
+}
+
+.container > .rightSection > .innerForm > button:hover{
+  background-color: #8ed444;
+}
+
+
+@media screen and (max-width: 860px){
+  .container {
+    flex-direction: column;
+  }
+
+  .container > .leftSection {
+    display: none;
+  }
+
+  .container > .rightSection {
+    width: 100%;
+  }
+}
