@@ -1,0 +1,32 @@
+.container {
+    margin: 80px 50px;
+}
+
+.borderLine {
+    /* margin-top: -20px; */
+    border-bottom: 1px solid black;
+    border-color: rgb(206, 206, 206);
+    /* margin-bottom: 10px;
+    margin-top: -40px; */
+}
+
+.plusIcon {
+    margin-left: 1370px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.collapseContent>h4 {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.container>h3 {
+    font-weight: bold;
+}
+
+.collapseContent:hover {
+    color: #8ed444;
+}
