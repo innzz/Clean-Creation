@@ -101,8 +101,9 @@ export default class NavBar extends React.Component {
                     Custom Meal Builder
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-3">Extras</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Gift Card</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Gift Card</Dropdown.Item>
+                  <Link href="/giftcard">
+                    <Dropdown.Item href="#/action-3">Gift Card</Dropdown.Item>
+                  </Link>
                 </Dropdown.Menu>
               </Dropdown>
               <Nav.Link
