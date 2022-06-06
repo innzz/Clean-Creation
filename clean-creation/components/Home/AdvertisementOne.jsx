@@ -22,7 +22,7 @@ const AdvertisementOne = () => {
         <button>LEARN MORE</button>
       </div>
       <div className={styles.image}>
-        <Image src="./AddOne.jpg" alt="" />
+        <img src="./AddOne.jpg" alt="" />
       </div>
     </div>
   );

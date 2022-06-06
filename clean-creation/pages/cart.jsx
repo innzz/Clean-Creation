@@ -103,7 +103,7 @@ const CartScreen = () => {
             </div>
             <div className={styles.addPro}>
               <div className={styles.imgContainer}>
-                <Image
+                <img
                   className={styles.syrupImg}
                   src="./syrup.jpg"
                   alt="syrup"
