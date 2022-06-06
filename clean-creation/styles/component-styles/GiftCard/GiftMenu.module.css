@@ -1,0 +1,114 @@
+.bigContainer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.container {
+    /* margin: 100px; */
+    display: flex;
+    justify-content: center;
+}
+
+.giftPrice {
+    display: flex;
+    /* justify-content: center; */
+    /* margin-top: 30px; */
+}
+
+.giftDetail {
+    display: flex;
+    margin-top: 20px;
+}
+
+.priceDetail {
+    /* transition: top ease 0.5s; */
+    height: 40px;
+    position: relative;
+    width: 70px;
+    border-radius: 6px;
+    color: black;
+    margin-right: 20px;
+    /* background-color: #8ed444; */
+    box-shadow: 1px 1px 3px 3px rgb(236, 236, 236);
+    /* transition: 0.5ms; */
+}
+
+.priceDetail>h5 {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    /* display: flex; */
+    /* align-items: center; */
+    transition: transform ease 300ms;
+    top: 0;
+}
+
+.priceDetail:hover {
+    background-color: white;
+    color: #8ed444;
+    border: 1px solid #8ed444;
+    transform: translate(0, -10px)
+    /* transition: 0.2s; */
+}
+
+.searchInput {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.searchInput>h6 {
+    font-size: 11px;
+    color: #a1a1a1;
+}
+
+.searchInput>input {
+    border-bottom: 1px solid black;
+    outline: none;
+    border-color: #cdcdce;
+    /* border-width: 1px; */
+    width: 600px;
+    height: 20px;
+    /* padding: 40px; */
+    /* margin-top: -30px; */
+    /* padding: 5px 5px; */
+}
+
+.searchInput>input:active {
+    border-color: rgb(96, 107, 253);
+}
+
+.right {
+    margin-top: 66px;
+}
+
+.addTocart {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.cartButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #8ed444;
+    color: white;
+    margin-right: 22px;
+}
+
+.cartButton>h5 {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.cartIcon {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
