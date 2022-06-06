@@ -1,0 +1,267 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+
+  input:checked + .slider {
+    background-color: #243843;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #243843;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+.outerContainer {
+    background-color: #F5F6F6;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.innerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    width: 90%;
+}
+
+.innerContainer > .leftSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    justify-content: center;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0px 8px 12px 0px rgb(206, 205, 205);
+}
+
+.innerContainer > .leftSection > .heading {
+    padding: 30px 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+.innerContainer > .leftSection > .heading > h3 {
+    padding-left: 20px;
+    color: #484848;
+    font-size: 20px;
+}
+
+.innerContainer > .leftSection > .name {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.innerContainer > .leftSection > .name > .firstName {
+    width: 45%;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+.innerContainer > .leftSection > .name > .firstName > h4 {
+    font-size: 15px;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.innerContainer > .leftSection > .name > .firstName > input {
+    outline: none;
+}
+
+.innerContainer > .leftSection > .name > .lastName {
+    width: 45%;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+.innerContainer > .leftSection > .name > .lastName > h4 {
+    font-size: 15px;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.innerContainer > .leftSection > .name > .lastName > input {
+    outline: none;
+}
+
+.innerContainer > .leftSection > .birthPhone {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.innerContainer > .leftSection > .birthPhone > .birthday {
+    width: 45%;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+.innerContainer > .leftSection > .birthPhone > .birthday > h4 {
+    font-size: 15px;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.innerContainer > .leftSection > .birthPhone > .birthday > input {
+    outline: none;
+}
+
+.innerContainer > .leftSection > .birthPhone > .phone {
+    width: 45%;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+.innerContainer > .leftSection > .birthPhone > .phone > h4 {
+    font-size: 15px;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.innerContainer > .leftSection > .birthPhone > .phone > input {
+    outline: none;
+}
+
+.innerContainer > .leftSection > .lowerSection {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+.innerContainer > .leftSection > .lowerSection > .radioButtons {
+    justify-content: space-between;
+    width: 70%;
+    display: flex;
+}
+
+.innerContainer > .leftSection > .lowerSection > .radioButtons > .receiveSms {
+    display: flex;
+}
+
+.innerContainer > .leftSection > .lowerSection > .radioButtons > .receiveSms > h4{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 15px;
+}
+
+.innerContainer > .leftSection > .lowerSection > .radioButtons > .receiveEmails {
+    display: flex;
+}
+
+.innerContainer > .leftSection > .lowerSection > .radioButtons > .receiveEmails > h4{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 15px;
+}
+
+.innerContainer > .leftSection > .lowerSection > .button {
+    font-size: 20px;
+    color: #fff;
+    background-color: #8ed444;
+    border-radius: 10px ;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.innerContainer > .rightSection {
+    width: 28%;
+}
+
+.innerContainer > .rightSection > .digitalWallet {
+    padding: 30px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 8px 12px 0px rgb(206, 205, 205);
+}
+
+.innerContainer > .rightSection > .digitalWallet > h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #484848;
+    font-size: 20px;
+}
+
+.innerContainer > .rightSection > .digitalWallet > h1{
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: #484848;
+}
+
+.innerContainer > .rightSection > .button {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 8px 0;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #243843;
+}
+
+@media screen and (max-width: 800px) {
+    .innerContainer {
+        flex-direction: column;
+    }
+    .innerContainer > .leftSection {
+        width: 100%;
+    }
+    .innerContainer > .rightSection {
+        width: 100%;
+    }
+}

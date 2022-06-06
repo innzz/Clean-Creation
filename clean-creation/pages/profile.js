@@ -4,6 +4,7 @@ import MealPreference from "../components/Profile/MealPreference";
 import ShippingAddress from "../components/Profile/ShippingAddress";
 import BillingAddress from "../components/Profile/BillingAddress";
 import Cards from "../components/Profile/Cards";
+import MyProfile from "../components/Profile/MyProfile";
 
 const Profile = () => {
     return (
@@ -12,6 +13,7 @@ const Profile = () => {
                 <SideBar />
             </div>
             <div>
+                <MyProfile />
                 <MealPreference />
                 <ShippingAddress />
                 <BillingAddress />
