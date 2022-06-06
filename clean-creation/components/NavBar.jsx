@@ -55,25 +55,27 @@ export default class NavBar extends React.Component {
                     Current Menu
                   </Nav.Link>
                 </Link>
-                <Nav.Link
-                  onMouseEnter={() => {
-                    this.setState({ hover2: true });
-                  }}
-                  onMouseLeave={() => {
-                    this.setState({ hover2: false });
-                  }}
-                  style={{
-                    color: this.state.hover2 === true ? "green" : "black",
-                  }}
-                  eventKey={2}
-                  href="#title"
-                >
-                  Grab & Go
-                </Nav.Link>
+                <Link href="/grabAndGo">
+                  <Nav.Link
+                    onMouseEnter={() => {
+                      this.setState({ hover2: true });
+                    }}
+                    onMouseLeave={() => {
+                      this.setState({ hover2: false });
+                    }}
+                    style={{
+                      color: this.state.hover2 === true ? "green" : "black",
+                    }}
+                    eventKey={2}
+                    href="#title"
+                  >
+                    Grab & Go
+                  </Nav.Link>
+                </Link>
               </Nav>
             </Navbar.Collapse>
             <Navbar.Collapse className="justify-content-center">
-              <Image
+              <img
                 src="https://cleancreations.com/data/config/client_logo.png?md=f341c123680491a1ca69dd7a67ca190e"
                 alt=""
                 style={{ height: "50px", width: "70px", marginTop: "5px" }}
@@ -121,23 +123,25 @@ export default class NavBar extends React.Component {
               >
                 Select Meals
               </Nav.Link>
-              <Nav.Link
-                style={{
-                  color: this.state.hover4 === true ? "green" : "black",
-                }}
-                onMouseEnter={() => {
-                  this.setState({ hover4: true });
-                }}
-                onMouseLeave={() => {
-                  this.setState({ hover4: false });
-                }}
-                eventKey={2}
-                href="#title"
-              >
-                Blog
-              </Nav.Link>
+              <Link href="screens/Blog">
+                <Nav.Link
+                  style={{
+                    color: this.state.hover4 === true ? "green" : "black",
+                  }}
+                  onMouseEnter={() => {
+                    this.setState({ hover4: true });
+                  }}
+                  onMouseLeave={() => {
+                    this.setState({ hover4: false });
+                  }}
+                  eventKey={2}
+                  href="#title"
+                >
+                  Blog
+                </Nav.Link>
+              </Link>
               <Nav.Link>
-                <Image
+                <img
                   src="https://cleancreations.com/assets/icons/cart.svg"
                   alt=""
                   style={{ height: "20px", width: "20px" }}

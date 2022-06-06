@@ -7,7 +7,7 @@ const AdvertisementTwo = () => {
     <>
       <div className={styles.container}>
         <div className={styles.image}>
-          <Image src="./one.jpg" alt="" />
+          <img src="./one.jpg" alt="" />
         </div>
         <div className={styles.card}>
           <h2>

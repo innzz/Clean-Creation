@@ -27,7 +27,7 @@ const FullMenu = () => {
               {/* ////// */}
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <Image src="./dish.jpg" alt="" />
+                  <img src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <div className={styles.labelDish}>
@@ -50,7 +50,7 @@ const FullMenu = () => {
               {/* ///////// */}
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <Image src="./dish.jpg" alt="" />
+                  <img src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <div className={styles.labelDish}>
@@ -73,7 +73,7 @@ const FullMenu = () => {
               {/* ///////// */}
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <Image src="./dish.jpg" alt="" />
+                  <img src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <div className={styles.labelDish}>
@@ -105,7 +105,7 @@ const FullMenu = () => {
                 {/* ////// */}
                 <div className={styles.menuItem}>
                   <div className={styles.dishImage}>
-                    <Image src="./dish.jpg" alt="" />
+                    <img src="./dish.jpg" alt="" />
                   </div>
                   <div className={styles.dishDesc}>
                     <div className={styles.labelDish}>
@@ -129,7 +129,7 @@ const FullMenu = () => {
                 {/* ///////// */}
                 <div className={styles.menuItem}>
                   <div className={styles.dishImage}>
-                    <Image src="./dish.jpg" alt="" />
+                    <img src="./dish.jpg" alt="" />
                   </div>
                   <div className={styles.dishDesc}>
                     <div className={styles.labelDish}>
@@ -152,7 +152,7 @@ const FullMenu = () => {
                 {/* ///////// */}
                 <div className={styles.menuItem}>
                   <div className={styles.dishImage}>
-                    <Image src="./dish.jpg" alt="" />
+                    <img src="./dish.jpg" alt="" />
                   </div>
                   <div className={styles.dishDesc}>
                     <div className={styles.labelDish}>
