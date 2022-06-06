@@ -38,11 +38,11 @@ export default class CartConfirmation extends React.Component {
           </p>
 
           <div className="flex gap-2 px-10 lg:px-0 place-content-center lg:place-content-start">
-            <img src="/watch.svg" alt="" />
+            <img className="h-5 w-5" src="/watch.svg" alt="" />
             <p className="font-semibold text-gray-700">
               Wednesday, Jun 08, 2022
             </p>
-            <img src="/rightArrow.svg" alt="" />
+            <img src="/rightArrow.svg" className="w-3 mt-1 h-5" alt="" />
             <div className="flex items-center -mt-4 ">
               <input
                 onClick={() => {
@@ -52,11 +52,11 @@ export default class CartConfirmation extends React.Component {
                 type="radio"
                 value=""
                 name="default-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 -mt-10 lg:-mt-0 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
                 htmlFor="default-radio-2"
-                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="ml-2 -mt-10 lg:-mt-0 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Delivery
               </label>
@@ -71,11 +71,11 @@ export default class CartConfirmation extends React.Component {
                 type="radio"
                 value=""
                 name="default-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 -mt-10 lg:-mt-0 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
                 htmlFor="default-radio-2"
-                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="ml-2 -mt-10 lg:-mt-0 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Pickup
               </label>
@@ -84,8 +84,8 @@ export default class CartConfirmation extends React.Component {
           <div className="mb-10 p-3 bg-gray-200 border-l-[7px] border-red-600 lg:leading-3">
             <p className="font-bold">An error occured!</p>
             <p>Please select a valid State to continue checkout process</p>
-            <Link href="/" className="text-gray-500">
-              Edit
+            <Link href="/" >
+              <a className="text-gray-500">Edit</a>
             </Link>
           </div>
           <p className="text-2xl text-gray-800 font-bold pt-5">

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 import Image from "next/image";
 export default class SideBar extends React.Component {
   constructor(props) {
@@ -43,42 +44,41 @@ export default class SideBar extends React.Component {
             <div className="-ml-5">
               <ul className="space-y-2 mt-10">
                 <li className="mb-3">
-                  <a
-                    href="#"
-                    onMouseEnter={() => {
-                      this.setState({ hover1: true });
-                    }}
-                    onMouseLeave={() => {
-                      this.setState({ hover1: false });
-                    }}
-                    style={{
-                      color: this.state.hover1 === true ? "green" : "black",
-                    }}
-                    className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    <img src="/logoff.svg" alt="" />
-                    <span className="ml-3">Log off</span>
-                  </a>
+                  <Link href="/"  >
+                    <a
+                      style={{
+                        color: this.state.hover1 === true ? "green" : "black",
+                      }}
+                      onMouseEnter={() => {
+                        this.setState({ hover1: true });
+                      }}
+                      className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                      onMouseLeave={() => {
+                        this.setState({ hover1: false });
+                      }}>
+                      <img src="/logoff.svg" className="h-5 w-5" alt="" />
+                      <span className="ml-3">Log off</span>
+                    </a>
+                  </Link>
                 </li>
                 <hr />
                 <li>
-                  <a
-                    onMouseEnter={() => {
-                      this.setState({ hover2: true });
-                    }}
-                    onMouseLeave={() => {
-                      this.setState({ hover2: false });
-                    }}
-                    style={{
-                      color: this.state.hover2 === true ? "green" : "black",
-                    }}
-                    href="#"
-                    className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    <span className="flex-1 ml-3 whitespace-nowrap">
-                      My Profile
-                    </span>
-                  </a>
+                  <Link href="/">
+                    <a
+                      style={{
+                        color: this.state.hover2 === true ? "green" : "black",
+                      }} onMouseEnter={() => {
+                        this.setState({ hover2: true });
+                      }}
+                      className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                      onMouseLeave={() => {
+                        this.setState({ hover2: false });
+                      }}>
+                      <span className="flex-1 ml-3 whitespace-nowrap">
+                        My Profile
+                      </span>
+                    </a>
+                  </Link>
                 </li>
                 <li>
                   <button
@@ -96,58 +96,58 @@ export default class SideBar extends React.Component {
                   </button>
                   <ul id="dropdown-example" className=" py-2 space-y-2">
                     <li>
-                      <a
-                        onMouseEnter={() => {
-                          this.setState({ hover4: true });
-                        }}
-                        onMouseLeave={() => {
-                          this.setState({ hover4: false });
-                        }}
-                        style={{
-                          color: this.state.hover4 === true ? "green" : "black",
-                        }}
-                        href="#"
-                        className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                      >
-                        <img src="/rightArrowSidebar.svg" alt="" />
-                        Subscription
-                      </a>
+                      <Link href="/">
+                        <a
+                          style={{
+                            color: this.state.hover4 === true ? "green" : "black",
+                          }}
+                          onMouseEnter={() => {
+                            this.setState({ hover4: true });
+                          }}
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          onMouseLeave={() => {
+                            this.setState({ hover4: false });
+                          }}>
+                          <img src="/rightArrowSidebar.svg" alt="" />
+                          Subscription
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        onMouseEnter={() => {
-                          this.setState({ hover5: true });
-                        }}
-                        onMouseLeave={() => {
-                          this.setState({ hover5: false });
-                        }}
-                        style={{
-                          color: this.state.hover5 === true ? "green" : "black",
-                        }}
-                        href="#"
-                        className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                      >
-                        <img src="/rightArrowSidebar.svg" alt="" />
-                        Select meals
-                      </a>
+                      <Link href="/">
+                        <a
+                          style={{
+                            color: this.state.hover5 === true ? "green" : "black",
+                          }}
+                          onMouseEnter={() => {
+                            this.setState({ hover5: true });
+                          }}
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          onMouseLeave={() => {
+                            this.setState({ hover5: false });
+                          }}>
+                          <img src="/rightArrowSidebar.svg" alt="" />
+                          Select meals
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        onMouseEnter={() => {
-                          this.setState({ hover6: true });
-                        }}
-                        onMouseLeave={() => {
-                          this.setState({ hover6: false });
-                        }}
-                        style={{
-                          color: this.state.hover6 === true ? "green" : "black",
-                        }}
-                        href="#"
-                        className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                      >
-                        <img src="/rightArrowSidebar.svg" alt="" />
-                        Macro Tracking
-                      </a>
+                      <Link href="/">
+                        <a
+                          style={{
+                            color: this.state.hover6 === true ? "green" : "black",
+                          }}
+                          onMouseEnter={() => {
+                            this.setState({ hover6: true });
+                          }}
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          onMouseLeave={() => {
+                            this.setState({ hover6: false });
+                          }}>
+                          <img src="/rightArrowSidebar.svg" alt="" />
+                          Macro Tracking
+                        </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -177,59 +177,59 @@ export default class SideBar extends React.Component {
                   </button>
                   <ul id="dropdown-example" className=" py-2 space-y-2">
                     <li>
-                      <a
-                        onMouseEnter={() => {
-                          this.setState({ hover8: true });
-                        }}
-                        onMouseLeave={() => {
-                          this.setState({ hover8: false });
-                        }}
-                        style={{
-                          color: this.state.hover8 === true ? "green" : "black",
-                        }}
-                        href="#"
-                        className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                      >
-                        <img src="/rightArrowSidebar.svg" alt="" />
-                        Bags
-                      </a>
+                      <Link href="/">
+                        <a
+                          style={{
+                            color: this.state.hover8 === true ? "green" : "black",
+                          }} onMouseEnter={() => {
+
+                            this.setState({ hover8: true });
+                          }}
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          onMouseLeave={() => {
+                            this.setState({ hover8: false });
+                          }}>
+                          <img src="/rightArrowSidebar.svg" alt="" />
+                          Bags
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        onMouseEnter={() => {
-                          this.setState({ hover9: true });
-                        }}
-                        onMouseLeave={() => {
-                          this.setState({ hover9: false });
-                        }}
-                        style={{
-                          color: this.state.hover9 === true ? "green" : "black",
-                        }}
-                        href="#"
-                        className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                      >
-                        <img src="/rightArrowSidebar.svg" alt="" />
-                        Checkouts
-                      </a>
+                      <Link href="/">
+                        <a
+                          style={{
+                            color: this.state.hover9 === true ? "green" : "black",
+                          }}
+                          onMouseEnter={() => {
+                            this.setState({ hover9: true });
+                          }}
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          onMouseLeave={() => {
+                            this.setState({ hover9: false });
+                          }}>
+                          <img src="/rightArrowSidebar.svg" alt="" />
+                          Checkouts
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        onMouseEnter={() => {
-                          this.setState({ hover10: true });
-                        }}
-                        onMouseLeave={() => {
-                          this.setState({ hover10: false });
-                        }}
-                        style={{
-                          color:
-                            this.state.hover10 === true ? "green" : "black",
-                        }}
-                        href="#"
-                        className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                      >
-                        <img src="/rightArrowSidebar.svg" alt="" />
-                        Digital Wallet Transactions
-                      </a>
+                      <Link href="/">
+                        <a
+                          style={{
+                            color:
+                              this.state.hover10 === true ? "green" : "black",
+                          }}
+                          onMouseEnter={() => {
+                            this.setState({ hover10: true });
+                          }}
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          onMouseLeave={() => {
+                            this.setState({ hover10: false });
+                          }}  >
+                          <img src="/rightArrowSidebar.svg" alt="" />
+                          Digital Wallet Transactions
+                        </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

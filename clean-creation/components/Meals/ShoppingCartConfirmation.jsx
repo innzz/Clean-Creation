@@ -21,7 +21,7 @@ function ShoppingCartConfirmation() {
                 <div className={styles.innerContent1}>
                     <div className={styles.deliveryContent}>
                     <BsShop size={'20px'} style={{marginBottom: '10px'}}/>
-                    <h3>DELIVERY <Link href="/">Edit</Link></h3>
+                    <h3>DELIVERY <Link href="/"><a>Edit</a></Link></h3>
                     </div>
                     <div className={styles.dateContent}>
                         <h3><FiClock />Sunday,Jun 12,2022</h3>
@@ -90,7 +90,7 @@ function ShoppingCartConfirmation() {
                 checkout
             </div>
             <div className={styles.footer}>
-                By clicking checkout you agree to our <Link>Terms & Conditions</Link>
+                By clicking checkout you agree to our <Link href="/"><a>Terms & Conditions</a></Link>
             </div>
         </div>
       

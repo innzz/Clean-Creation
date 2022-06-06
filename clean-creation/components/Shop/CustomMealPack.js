@@ -351,19 +351,21 @@ export default class CustomMealPack extends React.Component {
           <div className="  p-5 lg:ml-6   ml-5 rounded-2xl">
             <Link
               href="#"
-              className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg "
             >
-              <img src="/add.svg" alt="" />
-              Add Extra Add-on
+              <a className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+                <img src="/add.svg" alt="" />
+                Add Extra Add-on
+              </a>
             </Link>
           </div>
           <div className="  lg:p-10 p-5 lg:ml-6  -mt-20 lg:-mt-0  ml-5 rounded-2xl">
             <Link
               href="#"
-              className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg "
             >
-              <img src="/add.svg" alt="" />
-              Add Extra Add-on
+              <a className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+                <img src="/add.svg" alt="" />
+                Add Extra Add-on
+              </a>
             </Link>
           </div>
         </div>
@@ -371,14 +373,16 @@ export default class CustomMealPack extends React.Component {
 
         <div className="container py-3  lg:ml-6  ml-5 rounded-2xl">
           <Link
-            onClick={() => {
-              this.setState({ open: true });
-            }}
             href="#"
-            className=" no-underline inline-flex items-center py-2 px-3 ml-[4.5rem] text-medium text-center text-white bg-lime-500 rounded-lg "
           >
-            <img src="/add.svg" alt="" />
-            Add Extra Add-on
+            <a
+              className=" no-underline inline-flex items-center py-2 px-3 ml-[4.5rem] text-medium text-center text-white bg-lime-500 rounded-lg "
+              onClick={() => {
+                this.setState({ open: true });
+              }}>
+              <img src="/add.svg" alt="" />
+              Add Extra Add-on
+            </a>
           </Link>
         </div>
         <Dialog
