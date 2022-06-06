@@ -1,0 +1,59 @@
+.container {
+    background-image: url('https://resources.cleancreations.com/wp-content/uploads/2022/03/CleanCreations_BR_Dec2021-024-2-1-1536x1024.jpeg');
+    text-align: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    background-color: black;
+    z-index: -1;
+}
+
+.innerContainer {
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innerContainer  > h1{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.innerContainer  > .description {
+    color: #ffffff;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.innerContainer  > .description > p {
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.innerContainer > .button {
+    color: #f9f7f3;
+    border: 2px solid red;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 15px 40px;
+    border-radius: 7px;
+    background-color: #93d502;
+    border: 1px solid #93d502;
+}
