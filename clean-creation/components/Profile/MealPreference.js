@@ -1,5 +1,6 @@
 import { Dialog, DialogContent, DialogTitle, TextField } from "@mui/material";
 import React from "react";
+import Image from "next/image";
 export default class MealPreference extends React.Component {
     constructor(props) {
         super(props);
@@ -56,9 +57,9 @@ export default class MealPreference extends React.Component {
 
                         <div className="bg-purple-500 grid place-content-center justify-items-center rounded-2xl h-60 lg:w-auto w-80 p-3">
                             <p className="text-white text-center lg:text-lg font-semibold">
-                                Don't forget to set your preferences so our system can automatically filter meals that you'd want to eat!
+                                Do not forget to set your preferences so our system can automatically filter meals that you had want to eat!
                             </p>
-                            <img className="lg:h-32 h-20" src="https://cleancreations.com/assets/images/alert_banner.svg" alt="" />
+                            <Image className="lg:h-32 h-20" src="https://cleancreations.com/assets/images/alert_banner.svg" alt="" />
                         </div>
                     </div>
 

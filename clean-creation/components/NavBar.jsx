@@ -8,6 +8,7 @@ import {
   Navbar,
   NavDropdown,
 } from "react-bootstrap";
+import Image from "next/image";
 import { IconButton, Typography } from "@mui/material";
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -72,7 +73,7 @@ export default class NavBar extends React.Component {
               </Nav>
             </Navbar.Collapse>
             <Navbar.Collapse className="justify-content-center">
-              <img
+              <Image
                 src="https://cleancreations.com/data/config/client_logo.png?md=f341c123680491a1ca69dd7a67ca190e"
                 alt=""
                 style={{ height: "50px", width: "70px", marginTop: "5px" }}
@@ -135,7 +136,7 @@ export default class NavBar extends React.Component {
                 Blog
               </Nav.Link>
               <Nav.Link>
-                <img
+                <Image
                   src="https://cleancreations.com/assets/icons/cart.svg"
                   alt=""
                   style={{ height: "20px", width: "20px" }}

@@ -4,6 +4,7 @@ import {RiDeleteBin6Line} from 'react-icons/ri';
 import {BsShop} from 'react-icons/bs';
 import { ImCross } from 'react-icons/im';
 import {FiClock} from 'react-icons/fi'
+import Link from "next/link"
 
 function ShoppingCartConfirmation() {
   return (
@@ -20,7 +21,7 @@ function ShoppingCartConfirmation() {
                 <div className={styles.innerContent1}>
                     <div className={styles.deliveryContent}>
                     <BsShop size={'20px'} style={{marginBottom: '10px'}}/>
-                    <h3>DELIVERY <a href="/">Edit</a></h3>
+                    <h3>DELIVERY <Link href="/">Edit</Link></h3>
                     </div>
                     <div className={styles.dateContent}>
                         <h3><FiClock />Sunday,Jun 12,2022</h3>
@@ -89,7 +90,7 @@ function ShoppingCartConfirmation() {
                 checkout
             </div>
             <div className={styles.footer}>
-                By clicking checkout you agree to our <a>Terms & Conditions</a>
+                By clicking checkout you agree to our <Link>Terms & Conditions</Link>
             </div>
         </div>
       

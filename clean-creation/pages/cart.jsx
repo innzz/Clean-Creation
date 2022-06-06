@@ -3,6 +3,7 @@ import styles from "../styles/component-styles/Cart-styles/CartScreen.module.css
 import { FaRegClock } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { BiRightArrowAlt } from "react-icons/bi";
+import Image from "next/image";
 
 const CartScreen = () => {
   return (
@@ -102,7 +103,7 @@ const CartScreen = () => {
             </div>
             <div className={styles.addPro}>
               <div className={styles.imgContainer}>
-                <img
+                <Image
                   className={styles.syrupImg}
                   src="./syrup.jpg"
                   alt="syrup"

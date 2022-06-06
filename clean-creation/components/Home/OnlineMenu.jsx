@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/OnlineMenu.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 function OnlineMenu() {
   return <div className={styles.container}>
@@ -11,8 +13,8 @@ function OnlineMenu() {
                 <div className={styles.cardsSection}>
                   <div className={styles.cards}>
                   <div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -24,8 +26,8 @@ function OnlineMenu() {
                         </div>
                       </div>
                     </div><div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -37,8 +39,8 @@ function OnlineMenu() {
                         </div>
                       </div>
                     </div><div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -50,8 +52,8 @@ function OnlineMenu() {
                         </div>
                       </div>
                     </div><div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -63,8 +65,8 @@ function OnlineMenu() {
                         </div>
                       </div>
                     </div><div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -77,8 +79,8 @@ function OnlineMenu() {
                       </div>
                     </div>
                     <div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -91,8 +93,8 @@ function OnlineMenu() {
                       </div>
                     </div>
                     <div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -105,8 +107,8 @@ function OnlineMenu() {
                       </div>
                     </div>
                     <div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -119,8 +121,8 @@ function OnlineMenu() {
                       </div>
                     </div>
                     <div className={styles.card}>
-                      <div className={styles.leftImg}>
-                        <img src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
+                      <div className={styles.leftImage}>
+                        <Image src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66" alt="" />
                       </div>
                       <div className={styles.rightContent}>
                         <div className={styles.cardDescription}>
@@ -134,7 +136,7 @@ function OnlineMenu() {
                     </div>
                   </div>
                   <div className={styles.buttonWrapper}>
-                    <div className={styles.button}><a href="/">VIEW ENTIRE MENU</a></div>
+                    <div className={styles.button}><Link href="/">VIEW ENTIRE MENU</Link></div>
                   </div>
                 </div>
               </div>

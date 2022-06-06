@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/AddOne.module.css";
+import Image from "next/image";
 
 const AdvertisementOne = () => {
   return (
@@ -21,7 +22,7 @@ const AdvertisementOne = () => {
         <button>LEARN MORE</button>
       </div>
       <div className={styles.image}>
-        <img src="./AddOne.jpg" alt="" />
+        <Image src="./AddOne.jpg" alt="" />
       </div>
     </div>
   );

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/AddTwo.module.css";
+import Image from "next/image";
 
 const AdvertisementTwo = () => {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.image}>
-          <img src="./one.jpg" alt="" />
+          <Image src="./one.jpg" alt="" />
         </div>
         <div className={styles.card}>
           <h2>

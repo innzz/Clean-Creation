@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/HowItWork.module.css";
+import Image from "next/image";
 
 function HowItWork() {
   return (
@@ -10,7 +11,7 @@ function HowItWork() {
       <div className={styles.cards}>
         <div className={styles.card}>
           <div className={styles.icon}>
-            <img
+            <Image
               src="https://cleancreations.com/data/config/theme_howitworks_item1_image.svg?md=a90764e4d1943d70ade260f7af365720"
               alt="menu"
             />
@@ -26,7 +27,7 @@ function HowItWork() {
         </div>
         <div className={styles.card}>
           <div className={styles.icon}>
-            <img
+            <Image
               src="https://cleancreations.com/data/config/theme_howitworks_item2_image.svg?md=479cab042576f04da7f0a2ab489f63bb"
               alt="menu"
             />
@@ -41,7 +42,7 @@ function HowItWork() {
         </div>
         <div className={styles.card}>
           <div className={styles.icon}>
-            <img
+            <Image
               src="https://cleancreations.com/data/config/theme_howitworks_item3_image.svg?md=31b0e449112fcc4e895a653e28dffb22"
               alt="menu"
             />

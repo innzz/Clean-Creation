@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../../styles/component-styles/Login-styles/loginPage.module.css';
+import Image from "next/image";
 
 function LoginPage() {
   return (
     <div className={styles.bodyContainer}>
         <div className={styles.container}>
-            <div className={styles.leftImgContainer}>
-                <img src="https://cleancreations.com/data/config/login_image.jpg?md=5aa06eb7aa5a83d1992520b885d63182" alt="" />
+            <div className={styles.leftImageContainer}>
+                <Image src="https://cleancreations.com/data/config/login_image.jpg?md=5aa06eb7aa5a83d1992520b885d63182" alt="" />
             </div>
             <div className={styles.rightContentContainer}>
                 <div className={styles.rightInnerContainer}>

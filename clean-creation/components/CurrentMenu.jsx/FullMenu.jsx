@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/component-styles/CurrentMenu-styles/Menu.module.css";
 import { BsCartFill } from "react-icons/bs";
 import Link from "next/link";
+import Image from "next/image";
 
 const FullMenu = () => {
   return (
@@ -26,7 +27,7 @@ const FullMenu = () => {
               {/* ////// */}
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -46,7 +47,7 @@ const FullMenu = () => {
 
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -66,7 +67,7 @@ const FullMenu = () => {
 
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -85,7 +86,7 @@ const FullMenu = () => {
 
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -112,7 +113,7 @@ const FullMenu = () => {
               {/* ////// */}
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -132,7 +133,7 @@ const FullMenu = () => {
 
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -152,7 +153,7 @@ const FullMenu = () => {
 
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>
@@ -171,7 +172,7 @@ const FullMenu = () => {
 
               <div className={styles.menuItem}>
                 <div className={styles.dishImage}>
-                  <img src="./dish.jpg" alt="" />
+                  <Image src="./dish.jpg" alt="" />
                 </div>
                 <div className={styles.dishDesc}>
                   <h5>Balsamic Chicken Salad(16 oz)</h5>

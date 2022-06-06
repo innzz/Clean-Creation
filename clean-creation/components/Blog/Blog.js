@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link"
+import Image from "next/image"
 export default class Blog extends React.Component {
     constructor(props) {
         super(props);
@@ -31,20 +33,20 @@ export default class Blog extends React.Component {
     render() {
         return (
             <div className="container text-center gap-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-10">
-                {this.state.blogs.map((s) => {
+                {this.state.blogs.map((s,i) => {
                     return (
-                        <div class="max-w-sm bg-white   border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="" src={s.img} alt="" />
+                        <div key={i} className="max-w-sm bg-white   border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                            <Link href="#">
+                                <Image className="" src={s.img} alt="" />
                             <button className="bg-orange-500 text-white text-center px-3 py-1 rounded-lg -mt-2">{s.date}</button>
-                            </a>
-                            <div class="p-2 text-center">
-                                <h5 style={{ fontFamily: "serif" }} class="mb-2 text-2xl font-bold  text-gray-900 dark:text-white">{s.heading}</h5>
+                            </Link>
+                            <div className="p-2 text-center">
+                                <h5 style={{ fontFamily: "serif" }} className="mb-2 text-2xl font-bold  text-gray-900 dark:text-white">{s.heading}</h5>
 
-                                <p class="mb-3 pl-5 pr-5 pt-3  text-lg font-normal text-gray-700 dark:text-gray-400">{s.body}</p>
-                                <a href="/screens/Blog/id" class="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-lime-400 mb-10 rounded-lg hover:scale-110">
+                                <p className="mb-3 pl-5 pr-5 pt-3  text-lg font-normal text-gray-700 dark:text-gray-400">{s.body}</p>
+                                <Link href="/screens/Blog/id" className="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-lime-400 mb-10 rounded-lg hover:scale-110">
                                     READ MORE
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     )

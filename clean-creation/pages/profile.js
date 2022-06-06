@@ -7,7 +7,7 @@ import Cards from "../components/Profile/Cards";
 
 const Profile = () => {
     return (
-        <div class="flex gap-4 ">
+        <div className="flex gap-4 ">
             <div className="w-60">
                 <SideBar />
             </div>
