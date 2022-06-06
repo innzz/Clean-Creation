@@ -39,17 +39,17 @@ const GiftMenu = () => {
           <div className={styles.giftDetail}>
             <div className={styles.left}>
               <div className={styles.searchInput}>
-                <h6>Recipient's Name</h6>
+                <h6>Recipients Name</h6>
                 <input type="text" placeholder="" />
               </div>
               <div className={styles.searchInput}>
-                <h6>Recipient's Email</h6>
+                <h6>Recipients Email</h6>
                 <input type="email" placeholder="" />
               </div>
             </div>
             <div className={styles.right}>
               <div className={styles.searchInput}>
-                <h6>Recipient's Phone</h6>
+                <h6>Recipients Phone</h6>
                 <input type="number" placeholder="" />
               </div>
             </div>
