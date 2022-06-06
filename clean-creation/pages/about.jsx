@@ -4,6 +4,7 @@ import AboutUs from "../components/About/AboutUs";
 const AboutScreen = () => {
   return <div>
       <AboutUs />
+      
   </div>;
 };
 

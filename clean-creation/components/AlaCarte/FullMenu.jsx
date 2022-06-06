@@ -4,6 +4,7 @@ import { BsCartFill, BsTagsFill, BsPlus } from "react-icons/bs";
 import { GrFormSubtract } from "react-icons/gr";
 import Link from "next/link";
 import { ProgressBar } from "react-bootstrap";
+import Image from "next/image";
 
 const FullMenu = () => {
   return (

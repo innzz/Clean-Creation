@@ -49,9 +49,9 @@ export default class SelectDate extends React.Component {
                     <div>
                         <p className="font-semibold text-xl text-gray-600">1. Select a Date</p>
                         <div className="grid grid-cols-4 lg:grid-cols-7 gap-2">
-                            {this.state.dates.map((s) => {
+                            {this.state.dates.map((s,i) => {
                                 return (
-                                    <div>
+                                    <div key={i}>
                                         <p className="italic font-semibold text-gray-500">{s.month}</p>
                                         <div className="border-2 group border-gray-200 hover:text-lime-500 hover:border-lime-500 cursor-pointer pt-3 px-3 rounded-lg " style={{ marginTop: s.month === "" ? "40px" : "", lineHeight: "5px" }}>
                                             <p className="font-bold text-gray-400 group-hover:text-lime-500">{s.day}</p>

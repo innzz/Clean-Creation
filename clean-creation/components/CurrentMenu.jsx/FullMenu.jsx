@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/component-styles/CurrentMenu-styles/Menu.module.css";
 import { BsCartFill } from "react-icons/bs";
 import Link from "next/link";
+import Image from "next/image";
 
 const FullMenu = () => {
   return (

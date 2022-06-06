@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/AddTwo.module.css";
+import Image from "next/image";
 
 const AdvertisementTwo = () => {
   return (

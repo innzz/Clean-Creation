@@ -8,12 +8,12 @@
 .heading>h1 {
     font-weight: bold;
     font-size: 28px;
-    margin-left: 180px;
+    margin-left: 140px;
 }
 
 .day {
     margin-top: 40px;
-    margin-left: 190px;
+    margin-left: 145px;
 }
 
 .day>h4 {
@@ -41,4 +41,14 @@
     font-weight: bolder;
     font-size: 35px;
     margin-top: -15px;
+}
+
+@media screen and (max-width: 600px) {
+    .day {
+        margin-left: 40px;
+    }
+    .heading>h1 {
+        font-size: 20px;
+        margin-left: 70px;
+    }
 }

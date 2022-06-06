@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/HowItWork.module.css";
+import Image from "next/image";
 
 function HowItWork() {
   return (

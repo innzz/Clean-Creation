@@ -8,7 +8,7 @@ import MyProfile from "../components/Profile/MyProfile";
 
 const Profile = () => {
     return (
-        <div class="flex gap-4 ">
+        <div className="flex gap-4 ">
             <div className="w-60">
                 <SideBar />
             </div>

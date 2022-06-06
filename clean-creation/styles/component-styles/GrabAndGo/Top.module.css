@@ -1,0 +1,39 @@
+.first {
+    background-color: #93d500;
+    color: white;
+    padding: 30px 30px;
+}
+
+.first>h2 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
+
+.second {
+    text-align: center;
+    background-color: #ff7e30;
+    color: white;
+    padding: 12px 12px;
+}
+
+.second>h4 {
+    font-size: 19px;
+}
+
+.second>h5 {
+    font-size: 19px;
+}
+
+@media screen and (max-width: 900px) {
+    .first>h2 {
+        font-size: 25px;
+    }
+    .second>h4 {
+        font-size: 12px;
+    }
+    .second>h5 {
+        font-size: 12px;
+    }
+}
