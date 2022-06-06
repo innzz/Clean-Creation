@@ -118,3 +118,9 @@
     background-color: #8ed444;
     border-radius: 7px;
 }
+
+@media screen and (max-width: 600px) {
+    .menuItem {
+        padding: 10px;
+    }
+}

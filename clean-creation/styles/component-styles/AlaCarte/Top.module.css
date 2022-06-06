@@ -41,3 +41,26 @@
     margin-right: 10px;
     margin-top: 1px;
 }
+
+@media screen and (max-width: 800px) {
+    .innerHeading {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .innerHeading>h1 {
+        font-size: 20px;
+        /* margin-left: 180px; */
+    }
+    .modalHeadEl {
+        font-size: 10px;
+    }
+    .modalButton {
+        padding: 15px 5px;
+        width: 200px;
+        justify-content: center;
+        padding-top: 13px;
+        border: none;
+    }
+}

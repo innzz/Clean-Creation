@@ -14,7 +14,7 @@ function PopUp() {
     <>
       <button className={styles.modalButton} onClick={handleShow}>
         <BsFillQuestionCircleFill className={styles.modalIcon} />
-        <h6>How To Order À la Carte </h6>
+        <h6 className={styles.modalHeadEl}>How To Order À la Carte </h6>
       </button>
 
       <Modal show={show} onHide={handleClose}>

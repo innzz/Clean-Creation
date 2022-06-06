@@ -25,3 +25,15 @@
 .second>h5 {
     font-size: 19px;
 }
+
+@media screen and (max-width: 900px) {
+    .first>h2 {
+        font-size: 25px;
+    }
+    .second>h4 {
+        font-size: 12px;
+    }
+    .second>h5 {
+        font-size: 12px;
+    }
+}
