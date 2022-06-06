@@ -244,3 +244,30 @@
     color: #484848;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+    .lower {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .lower {
+        flex-direction: column;
+    }
+    .upper {
+        flex-direction: column;
+    }
+    .preferencesButton {
+        flex-direction: column;
+    }
+    .innerButtonTwo {
+        margin-top: 20px;
+    }
+    .searchMeal {
+        flex-direction: column;
+    }
+    .sorting {
+        margin-top: 20px;
+    }
+}
