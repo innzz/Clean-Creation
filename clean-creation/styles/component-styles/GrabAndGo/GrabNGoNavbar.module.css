@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 50px;
+}
+
+.container > .leftSection{
+    background-image: url('https://cleancreations.com/assets/images/clean_creations_logo-1.svg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+    width: 13%;
+    height: 90px;
+}
+
+.container > .rightSection {
+    display: flex;
+    list-style: none;
+}
+
+.container > .rightSection > li{
+    border-top: 4px solid transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #262525;
+    font-weight: 300;
+}
+
+
+.container > .rightSection > li > span {
+    position: absolute;
+    top: 5px;
+    font-size: 35px;
+}
+
+.container > .rightSection > .topBorder:hover{
+    border-top: 4px solid black;
+}
+
+.container > .rightSection >.shop > .shopModal{
+    position: absolute;
+    display: none;
+    top: 60px;
+    background-color: white;
+    width: 250px;
+}
+
+.container > .rightSection >.shop > .shopModal:hover{
+    display: block;
+}
+
+.container > .rightSection >.shop > .shopModal > li {
+    padding: 20px 0;
+}
+
+.container > .rightSection >.shop:hover .shopModal{
+    display: block;
+}
+.container > .rightSection >.about > .aboutModal{
+    position: absolute;
+    display: none;
+    top: 60px;
+    background-color: white;
+    width: 300px;
+}
+
+.container > .rightSection >.about > .aboutModal:hover{
+    display: block;
+}
+
+.container > .rightSection >.about > .aboutModal > li {
+    padding: 20px 0;
+}
+
+.container > .rightSection >.about:hover .aboutModal{
+    display: block;
+}
+
+.container > .hamMenu {
+    display: none;
+    z-index: 8;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
+}
+
+.container > .subMenu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.container > .subMenu > ul {
+    padding: 20px 0;
+}
+
+.container > .subMenu > ul > li {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.container > .subMenu > ul > .shopDropdown > .shopDropdownMenu {
+    padding: 20px 0;
+}
+
+.container > .subMenu > ul > li {
+    cursor: pointer;
+}
+
+.container > .subMenu > ul > li > span {
+    font-size: 50px;
+}
+
+.container > .subMenu > ul > .shopDropdown > .shopDropdownMenu > li{
+    padding: 20px 40px;
+    background-color: rgb(228, 233, 238);
+    border-bottom: 1px solid rgb(146, 153, 160);
+}
+
+.container > .subMenu > ul > .aboutDropdown > .aboutDropdownMenu {
+    padding: 20px 0;
+}
+
+.container > .subMenu > ul > .aboutDropdown > .aboutDropdownMenu > li{
+    padding: 20px 40px;
+    background-color: rgb(228, 233, 238);
+    border-bottom: 1px solid rgb(146, 153, 160);
+}
+
+@media screen and (max-width: 1200px) {
+    .container > .rightSection {
+        display: none;
+    }
+
+    .container > .hamMenu {
+        display: block;
+    }
+}
