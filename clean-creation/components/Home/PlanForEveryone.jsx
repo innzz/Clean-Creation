@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/Plan.module.css";
+import Link from "next/link";
 
 const PlanForEveryone = () => {
   return (
@@ -18,7 +19,9 @@ const PlanForEveryone = () => {
             <h2>The Lifestyle Plan</h2>
             <h3>as low as</h3>
             <h4>$9.76 per meal</h4>
-            <button>CHOOSE</button>
+            <Link href="/subscription">
+              <button>CHOOSE</button>
+            </Link>
           </div>
         </div>
         <div className={styles.card}>

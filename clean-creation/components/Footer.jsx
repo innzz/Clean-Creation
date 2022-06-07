@@ -25,6 +25,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CloseIcon from "@mui/icons-material/Close";
+import Link from "next/link";
 export default class FooterHome extends React.Component {
   constructor(props) {
     super(props);
@@ -154,15 +155,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Current Menu</b>
-                  </Typography>
+                  <Link href="/currentmenu">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Current Menu</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -171,15 +174,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Contact Us</b>
-                  </Typography>
+                  <Link href="/contact">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Contact Us</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -205,15 +210,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>F.A.Q.</b>
-                  </Typography>
+                  <Link href="/faq">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>F.A.Q.</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -239,15 +246,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Grab & Go</b>
-                  </Typography>
+                  <Link href="/grabAndGo">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Grab & Go</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -256,15 +265,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Blog</b>
-                  </Typography>
+                  <Link href="/Blog">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Blog</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
@@ -286,15 +297,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Subscription Meal Selection</b>
-                  </Typography>
+                  <Link href="/subscription">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Subscription Meal Selection</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -303,15 +316,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>À la Carte</b>
-                  </Typography>
+                  <Link href="/alacarte">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>À la Carte</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -320,15 +335,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Proteins by the Pound</b>
-                  </Typography>
+                  <Link href="/byingredients">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Proteins by the Pound</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -337,15 +354,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Custom Meal Builder</b>
-                  </Typography>
+                  <Link href="/customMealBuilder">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Custom Meal Builder</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -354,15 +373,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Extras</b>
-                  </Typography>
+                  <Link href="/extras">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Extras</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -371,15 +392,17 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      fontFamily: "serif",
-                      lineHeight: "13px",
-                    }}
-                  >
-                    <b>Gift Card</b>
-                  </Typography>
+                  <Link href="/giftcard">
+                    <Typography
+                      style={{
+                        fontSize: "15px",
+                        fontFamily: "serif",
+                        lineHeight: "13px",
+                      }}
+                    >
+                      <b>Gift Card</b>
+                    </Typography>
+                  </Link>
                 </ListGroup.Item>
               </ListGroup>
             </Col>

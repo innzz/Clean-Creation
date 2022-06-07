@@ -79,7 +79,12 @@ export default class NavBar extends React.Component {
               <img
                 src="https://cleancreations.com/data/config/client_logo.png?md=f341c123680491a1ca69dd7a67ca190e"
                 alt=""
-                style={{ height: "50px", width: "70px", marginTop: "5px", cursor: "pointer" }}
+                style={{
+                  height: "50px",
+                  width: "70px",
+                  marginTop: "5px",
+                  cursor: "pointer",
+                }}
               />
             </Link>
           </Navbar.Collapse>
@@ -94,7 +99,7 @@ export default class NavBar extends React.Component {
 
               <Dropdown.Menu style={{ lineHeight: "35px", padding: "10px" }}>
                 <Link href="/subscription">
-                  <Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
                     Subscription Meal Selection
                   </Dropdown.Item>
                 </Link>
@@ -102,37 +107,39 @@ export default class NavBar extends React.Component {
                   <Dropdown.Item href="#/action-2">À la Carte</Dropdown.Item>
                 </Link>
                 <Link href="/byingredients">
-                  <Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
                     Proteins by the Pound
                   </Dropdown.Item>
                 </Link>
                 <Link href="/customMealBuilder">
-                  <Dropdown.Item>
+                  <Dropdown.Item href="#/action-4">
                     Custom Meal Builder
                   </Dropdown.Item>
                 </Link>
                 <Link href="/extras">
-                  <Dropdown.Item>Extras</Dropdown.Item>
+                  <Dropdown.Item href="#/action-5">Extras</Dropdown.Item>
                 </Link>
                 <Link href="/giftcard">
-                  <Dropdown.Item href="#/action-3">Gift Card</Dropdown.Item>
+                  <Dropdown.Item href="#/action-6">Gift Card</Dropdown.Item>
                 </Link>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link
-              style={{
-                color: this.state.hover3 === true ? "green" : "black",
-              }}
-              onMouseEnter={() => {
-                this.setState({ hover3: true });
-              }}
-              onMouseLeave={() => {
-                this.setState({ hover3: false });
-              }}
-              href="/meals"
-            >
-              Select Meals
-            </Nav.Link>
+            <Link href="/meals">
+              <Nav.Link
+                style={{
+                  color: this.state.hover3 === true ? "green" : "black",
+                }}
+                onMouseEnter={() => {
+                  this.setState({ hover3: true });
+                }}
+                onMouseLeave={() => {
+                  this.setState({ hover3: false });
+                }}
+                href="#/action-7"
+              >
+                Select Meals
+              </Nav.Link>
+            </Link>
             <Link href="screens/Blog">
               <Nav.Link
                 style={{
@@ -150,13 +157,15 @@ export default class NavBar extends React.Component {
                 Blog
               </Nav.Link>
             </Link>
-            <Nav.Link>
-              <img
-                src="https://cleancreations.com/assets/icons/cart.svg"
-                alt=""
-                style={{ height: "20px", width: "20px" }}
-              />
-            </Nav.Link>
+            <Link href="/cart">
+              <Nav.Link href="#/action-8">
+                <img
+                  src="https://cleancreations.com/assets/icons/cart.svg"
+                  alt=""
+                  style={{ height: "20px", width: "20px" }}
+                />
+              </Nav.Link>
+            </Link>
 
             <IconButton
               aria-label=""
