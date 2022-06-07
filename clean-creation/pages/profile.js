@@ -5,6 +5,7 @@ import ShippingAddress from "../components/Profile/ShippingAddress";
 import BillingAddress from "../components/Profile/BillingAddress";
 import Cards from "../components/Profile/Cards";
 import MyProfile from "../components/Profile/MyProfile";
+import SociaCard from "../components/Profile/socialCard";
 
 const Profile = () => {
     return (
@@ -14,6 +15,7 @@ const Profile = () => {
             </div>
             <div>
                 <MyProfile />
+                <SociaCard />
                 <MealPreference />
                 <ShippingAddress />
                 <BillingAddress />
