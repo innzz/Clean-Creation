@@ -18,10 +18,6 @@ function OnlineMenu() {
           <div className={styles.cards}>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -41,10 +37,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -64,10 +56,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -87,10 +75,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -110,10 +94,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -133,10 +113,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -156,10 +132,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -179,10 +151,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>
@@ -202,10 +170,6 @@ function OnlineMenu() {
             </div>
             <div className={styles.card}>
               <div className={styles.leftImage}>
-                <img
-                  src="https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66"
-                  alt=""
-                />
               </div>
               <div className={styles.rightContent}>
                 <div className={styles.cardDescription}>

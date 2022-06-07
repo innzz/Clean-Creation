@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
     width: 100%;
     position: relative;
     background-image: url('../../../public//onlineMenuBgImg.jpg');
@@ -18,46 +17,42 @@
 .innerContainer{
     width: 95%;
     display: flex;
+    padding: 10px 0;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    height: 110vh;
-    max-width: 180vh;
-    margin: 0 10px;
+    margin: 100px 10px;
 }
 
 .heading {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 80px 0;
+    padding-bottom: 100px;
 }
 
 .heading > h1 {
     margin-top: 20px;
-    line-height: 35px;
-    font-weight: 500;
-    font-size: 50px;
+    line-height: 100px;
+    font-weight: 400;
+    font-size: 66px;
     color: #000000;
 }
 
 .heading > h2 {
-    font-weight: 300;
-    font-size: 22px;
+    font-weight: 400;
+    color: #484848;
+    font-size: 25px;
 }
 
-.leftImg {
-    max-width: 150px;
-    min-width: 120px;
-}
-
-
-.leftImg > img {
-    object-fit: cover;
-    border-top-left-radius: 10px;
+.leftImage {
+    width: 35%;
+    background-image: url('https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66');
     border-bottom-left-radius: 10px;
-    width: 100%;
-    height: 180px;
+    border-top-left-radius: 10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .cardsSection {
@@ -77,15 +72,16 @@
 
 .cards::-webkit-scrollbar {
     width: 0.6em;
-  }
-   
-  .cards::-webkit-scrollbar-track {
+}
+
+.cards::-webkit-scrollbar-track {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.123);
-  }
-   
-  .cards::-webkit-scrollbar-thumb {
-    background-color: rgb(177, 177, 177);
-    outline: 1px solid slategrey;
+}
+
+.cards::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+    background-color: rgb(196, 195, 195);
+    /* outline: 1px solid slategrey; */
   }
 
 .card {
@@ -104,26 +100,26 @@
 }
 
 .menuTitle{
-    font-size: 0.875em;
+    font-size: 15px;
     position: relative;
     top: 10px;
-    font-weight: 600;
+    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 8px;
 }
 
 .menuDescription {
-    font-size: 0.875em;
+    font-size: 1em;
     position: relative;
-    line-height: normal;
+    line-height: 1.2;
     overflow: hidden;
-    max-height: 42px;
     padding-right: 40px;
     padding-left: 8px;
 }
 
 .rightContent {
+    width: 65%;
     position: relative;
 }
 
@@ -132,17 +128,19 @@
     line-height: normal;
     bottom: 0;
     position: absolute;
-    right: 9px;
+    right: 15px;
 }
 
 .calories >p {
     color: #484848;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
-.calories > b {
-    font-weight: 700;
+.calories > p > b {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .buttonWrapper {
