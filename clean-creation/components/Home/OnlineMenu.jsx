@@ -226,7 +226,7 @@ function OnlineMenu() {
           </div>
           <div className={styles.buttonWrapper}>
             <div className={styles.button}>
-              <Link href="/">VIEW ENTIRE MENU</Link>
+              <Link href="/currentmenu">VIEW ENTIRE MENU</Link>
             </div>
           </div>
         </div>

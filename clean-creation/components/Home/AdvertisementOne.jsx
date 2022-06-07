@@ -1,8 +1,16 @@
 import React from "react";
 import styles from "../../styles/component-styles/Home-styles/AddOne.module.css";
 import Image from "next/image";
+import { useRouter } from 'next/router'
 
 const AdvertisementOne = () => {
+  const router = useRouter()
+
+  const handleClick = e => {
+    e.preventDefault()
+    router.push('/about')
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -19,7 +27,7 @@ const AdvertisementOne = () => {
           incredible chef and culinary team. We are more passionate than ever
           that we can truly change people’s lives with clean eating!
         </p>
-        <button>LEARN MORE</button>
+        <button onClick={handleClick}>LEARN MORE</button>
       </div>
       <div className={styles.image}>
         <img src="./AddOne.jpg" alt="" />
