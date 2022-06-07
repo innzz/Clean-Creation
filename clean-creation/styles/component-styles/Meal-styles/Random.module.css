@@ -170,6 +170,117 @@
     }
 }
 
+.modalButtomRandom {
+    position: relative;
+    bottom: 5px;
+}
+
+
+/* ////MODAL//// */
+
+.modalBody {
+    padding: 15px 20px;
+}
+
+.modalHeader>h4 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 210px;
+    color: #666666;
+}
+
+.modalFirst {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalSearch {
+    display: flex;
+    /* height: 40px; */
+    width: 120px;
+}
+
+.modalSearch>input {
+    outline: 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.sorting {
+    display: flex;
+    border: 1px solid #c4c4c4;
+    justify-content: space-between;
+    padding: 2px 4px;
+    height: 30px;
+    width: 180px;
+    color: #bbbaba;
+}
+
+.iconSort {
+    margin-top: 2px;
+    height: 20px;
+    width: 20px;
+}
+
+.sorting>h4 {
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.iconSearch {
+    margin-top: 10px;
+    color: #c4c4c4;
+}
+
+.preferencesButton {
+    display: flex;
+    margin-top: 10px;
+}
+
+.plusIcon {
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.buttonSix {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.innerButtonOne {
+    display: flex;
+    margin-right: 10px;
+    padding: 0px 3px;
+    border-radius: 4px;
+    background-color: #8ed444;
+    color: white;
+}
+
+.innerButtonTwo {
+    display: flex;
+    border: 1px solid #8ed444;
+    padding: 0px 3px;
+    border-radius: 4px;
+    background-color: white;
+    color: #8ed444;
+}
+
+.modalImage {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.modalImage>img {
+    height: 250px;
+    width: 250px;
+}
+
 @media screen and (max-width: 630px) {
     .option {
         flex-direction: column;

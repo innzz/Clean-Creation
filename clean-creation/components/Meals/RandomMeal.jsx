@@ -1,12 +1,9 @@
-import React from "react";
 import styles from "../../styles/component-styles/Meal-styles/Random.module.css";
-import {
-  FaObjectGroup,
-  FaRandom,
-  FaEraser,
-  FaPlusCircle,
-} from "react-icons/fa";
+import { FaEraser, FaPlusCircle, FaRandom } from "react-icons/fa";
 import { ProgressBar } from "react-bootstrap";
+import RandomMealModal from "./RandomMealModal";
+import SelectMealModal from "./SelectMealModal";
+import ExtraMealModal from "./AddExtraModal";
 
 const RandomMeal = () => {
   return (
@@ -17,12 +14,13 @@ const RandomMeal = () => {
             <div className={styles.option}>
               <div
                 className={styles.firstButton}
-                style={{ backgroundColor: "#8ed444", color: "white" }}
+                style={{
+                  backgroundColor: "#8ed444",
+                  color: "white",
+                  cursor: "pointer",
+                }}
               >
-                <div>
-                  <FaObjectGroup className={styles.icon} style={{}} />
-                </div>
-                <h2>Manually select meals</h2>
+                <RandomMealModal />
               </div>
               <div
                 className={styles.firstButton}
@@ -40,12 +38,7 @@ const RandomMeal = () => {
               </div>
             </div>
             <div className={styles.selectMeal}>
-              <div className={styles.secondButton}>
-                <FaPlusCircle className={styles.icon} />
-                <h3>
-                  Select Everything <br /> Breakfast
-                </h3>
-              </div>
+              <SelectMealModal />
               <div className={styles.secondButton}>
                 <FaPlusCircle className={styles.icon} />
                 <h3>
@@ -62,10 +55,7 @@ const RandomMeal = () => {
               </div>
             </div>
             <div className={styles.addExtra}>
-              <div className={styles.inner}>
-                <FaPlusCircle className={styles.icon} />
-                <h3>Add Extra Meal</h3>
-              </div>
+              <ExtraMealModal />
             </div>
           </div>
           {/* ////////////////////////////////////////////////////////////////////////////////////
