@@ -32,7 +32,7 @@ export default class Extras extends React.Component {
                 <p className="font-semibold">Elderberry Syrup (16oz)</p>
               </div>
               <div
-                className="inline-flex rounded-md shadow-sm lg:ml-10 w-44 h-10 lg:mt-24"
+                className="inline-flex rounded-md shadow-sm lg:ml-10 w-40 h-10 lg:mt-24"
                 role="group"
               >
                 <button
@@ -55,7 +55,7 @@ export default class Extras extends React.Component {
                 </button>
                 <button
                   type="button"
-                  className=" py-2 px-2 text-sm font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
+                  className=" py-2 px-2.5 text-sm font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
                 >
                   Add to Cart
                 </button>
