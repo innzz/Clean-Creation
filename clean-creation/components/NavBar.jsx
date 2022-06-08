@@ -116,34 +116,34 @@ export default class NavBar extends React.Component {
               MenuListProps={{
                 'aria-labelledby': 'basic-button',
               }}
-              style={{ width: "500px" }}
+              style={{ width: "500px"}}
             >
-              <MenuItem className="hover:bg-lime-400 p-2" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem  className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/subscription"  >
                   <ListItemText> Subscription Meal Selection</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/alacarte">
                   <ListItemText>À la Carte</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/byingredients">
                   <ListItemText>Proteins by the Pound</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/customMealBuilder">
                   <ListItemText>Custom Meal Builder</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/extras">
                   <ListItemText>Extras</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/giftcard">
                   <ListItemText>Gift Card</ListItemText>
                 </Link>
@@ -210,11 +210,11 @@ export default class NavBar extends React.Component {
                 borderRadius: "50%",
                 borderColor: "white",
                 backgroundColor:
-                  this.state.isHovering === true ? "#32CD32" : "white",
-                color: this.state.isHovering === true ? "white" : "black",
+                  this.state.isHovering === true ? "#9efd38" : "white",
+                color: this.state.isHovering === true ? "white" : "#32cd32",
               }}
             >
-              <Typography>RB</Typography>
+              <Typography className="font-bold">RB</Typography>
             </IconButton>
 
 
@@ -233,21 +233,21 @@ export default class NavBar extends React.Component {
           }}
           style={{ width: "500px" }}
         >
-          <Typography style={{ fontSize: "10px", paddingLeft: "10px" }}>Rekha Baitharu</Typography>
+          <Typography style={{ fontSize: "12px", paddingLeft: "20px",marginTop:"5px" }}>Rekha Baitharu</Typography>
           <hr />
-          <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+          <MenuItem className="hover:bg-lime-400  mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <PersonIcon fontSize="small" />
             </ListItemIcon>
             <ListItemText>Profile</ListItemText>
           </MenuItem>
-          <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+          <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <SubscriptionsIcon fontSize="small" />
             </ListItemIcon>
             <ListItemText>My Subscription</ListItemText>
           </MenuItem>
-          <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+          <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <LogoutIcon fontSize="small" />
             </ListItemIcon>
