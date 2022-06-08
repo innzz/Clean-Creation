@@ -7,6 +7,7 @@ import Cards from "../components/Profile/Cards";
 import MyProfile from "../components/Profile/MyProfile";
 import SociaCard from "../components/Profile/socialCard";
 import Bags from "../components/Profile/Bags";
+import Checkout from "../components/Profile/Checkout";
 
 const Profile = () => {
   return (
@@ -22,6 +23,7 @@ const Profile = () => {
         <BillingAddress />
         <Cards />
         <Bags />
+        <Checkout />
       </div>
     </div>
   );
