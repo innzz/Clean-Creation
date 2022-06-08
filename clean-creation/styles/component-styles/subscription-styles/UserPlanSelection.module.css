@@ -50,8 +50,9 @@
 .leftSection > .cards > .card > .heading > h3 {
     color: rgb(65, 65, 65);
     text-align: left;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 0;
 }
 
 .leftSection > .cards > .card > .buttonsGroup > .button  {

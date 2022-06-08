@@ -55,10 +55,63 @@ function UserPlanSelection() {
     ];
 
     const [yourPlanBtnDesc, setyourPlanBtnDesc] = useState('');
+    const [overView, setoverView] = useState({
+        plan: '',
+        portionSize: '',
+        billingRenewal: '',
+        plan2: '',
+        daysPerWeek: '',
+        meelsPerDay: ''
+    });
 
     const handleYourPlanClick = (val)=>{
         setyourPlanBtnDesc(val.btnDesc);
+        setoverView({plan: val.btnTxt,
+            portionSize: '',
+            billingRenewal: '',
+            plan2: '',
+            daysPerWeek: '',
+            meelsPerDay: ''});
     }
+    const handlePortionSizeClick = (val)=>{
+        setoverView({...overView, portionSize: val,
+        billingRenewal: '',
+        plan2: '',
+        daysPerWeek: '',
+        meelsPerDay: ''});
+    }
+    const handleBillingRenewal = (val)=>{
+        setoverView({...overView, 
+            billingRenewal: val,
+            plan2: '',
+            daysPerWeek: '',
+            meelsPerDay: ''});
+    }
+    const handlePlan2 = (val)=>{
+        setoverView({...overView, 
+            plan2: val,
+            daysPerWeek: '',
+            meelsPerDay: ''});
+    }
+    const handleDaysPerWeek = (val)=>{
+        setoverView({...overView, 
+            daysPerWeek: val,
+            meelsPerDay: ''});
+    }
+    const handleMealsPerDay = (val)=>{
+        setoverView({...overView, meelsPerDay: val});
+    }
+    const handleStartOver = ()=>{
+        setoverView({
+            plan: '',
+            portionSize: '',
+            billingRenewal: '',
+            plan2: '',
+            daysPerWeek: '',
+            meelsPerDay: ''
+        })
+    }
+    console.log(overView);
 
   return (
     <div className={styles.outerContainer}>
@@ -96,7 +149,7 @@ function UserPlanSelection() {
               </div>
               <div className={styles.buttonsGroup}>
                 {portionSizeBtnTxt.map((val,i)=>{
-                    return(<div className={styles.button} key={i}>
+                    return(<div className={styles.button} key={i} onClick={()=>{handlePortionSizeClick(val)}}>
                     {val}
                 </div>)})}
               </div>
@@ -107,7 +160,7 @@ function UserPlanSelection() {
               </div>
               <div className={styles.buttonsGroup}>
                {billingRenewalCycle.map((val,i)=>{
-                   return( <div className={styles.button} key={i}>
+                   return( <div className={styles.button} key={i} onClick={()=>{handleBillingRenewal(val)}}>
                     {val}
                 </div>)
                })}
@@ -119,7 +172,7 @@ function UserPlanSelection() {
               </div>
               <div className={styles.buttonsGroup}>
                 {yourPlan2.map((val,i)=>{
-                    return(<div className={styles.button} key={i}>
+                    return(<div className={styles.button} key={i} onClick={()=>{handlePlan2(val)}}>
                         {val}
                     </div>)
                 })}
@@ -131,7 +184,7 @@ function UserPlanSelection() {
               </div>
               <div className={styles.buttonsGroup}>
                 {daysPerWeek.map((val,i)=>{
-                    return(<div className={styles.button} key={i}>
+                    return(<div className={styles.button} key={i} onClick={()=>{handleDaysPerWeek(val)}}>
                         {val}
                     </div>)
                 })}
@@ -143,7 +196,7 @@ function UserPlanSelection() {
               </div>
               <div className={styles.buttonsGroup}>
                 {mealsPerDay.map((val,i)=>{
-                    return(<div className={styles.button} key={i}>
+                    return(<div className={styles.button} key={i} onClick={()=>{handleMealsPerDay(val)}}>
                         {val}
                     </div>)
                 })}
@@ -157,17 +210,17 @@ function UserPlanSelection() {
               <div className={styles.overViewContent}>
                   Overview <IoIosArrowDown style={{display: 'block'}} size={'30px'}/>
               </div>
-              <div className={styles.overViewButton}>
+              <div className={styles.overViewButton} onClick={handleStartOver}>
                   Start Over 
               </div>
             </div>
             <div className={styles.overViewItem}>
-                <div><li>Plan</li><h3>The Everything Plan</h3></div>
-                <div><li>Portion Size</li><h3>Regular</h3></div>
-                <div><li>Billing Renewal Cycle</li><h3>1 Week</h3></div>
-                <div><li>Billing Plan</li><h3>1 Week Plan with Breakfast</h3></div>
-                <div><li>Days per week</li><h3>5 Days per Week</h3></div>
-                <div><li>Meals per day</li><h3>1 Meal</h3></div>
+                {overView.plan===''?(''):((<div><li>Plan</li><h3>{overView.plan}</h3></div>))}
+                {overView.portionSize===''?'':((<div><li>Portion Size</li><h3>{overView.portionSize}</h3></div>))}
+                {overView.billingRenewal===''?(''):((<div><li>Billing Renewal Cycle</li><h3>{overView.billingRenewal}</h3></div>))}
+                {overView.plan2===''?(''):((<div><li>Billing Plan</li><h3>{overView.plan2}</h3></div>))}
+                {overView.daysPerWeek===''?(''):((<div><li>Days per week</li><h3>{overView.daysPerWeek}</h3></div>))}
+                {overView.meelsPerDay===''?(''):((<div><li>Meals per day</li><h3>{overView.meelsPerDay}</h3></div>))}
                 <div><li>Price per meal</li><h3>$13.00</h3></div>
                 <div><li>Starting on</li><h3>2022-06-15</h3></div>
             </div>
