@@ -47,12 +47,30 @@
 
 .leftImage {
     width: 35%;
-    background-image: url('https://cleancreations.com/data/meals/251.jpg?md=272ee44ac6e0f0904a5a41adc74bfb66');
+    position: relative;
+    overflow: hidden;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.leftImage  > .premium {
+    position: absolute;
+    top: 30px;
+    right: -35px;
+    text-align: center;
+    background-color: #fc0d1c;
+    color: #fff;
+    padding: 4px 0;
+    width: 120px;
+    transform: rotate(90deg);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.leftImage > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .cardsSection {
@@ -65,7 +83,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 55vh;
+    height: 400px;
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
@@ -110,7 +128,7 @@
 }
 
 .menuDescription {
-    font-size: 1em;
+    font-size: 13px;
     position: relative;
     line-height: 1.2;
     overflow: hidden;
