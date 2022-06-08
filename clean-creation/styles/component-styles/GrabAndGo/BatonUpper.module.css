@@ -1,0 +1,53 @@
+.bigContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(110, 110, 110);
+}
+
+.contactNumber>h6 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.contactNumber>h6>span {
+    color: rgb(36, 36, 255);
+}
+
+.Images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.ImageOne {
+    height: 570px;
+    width: 550px;
+    margin-right: 120px;
+}
+
+.ImageOne>img {
+    object-fit: cover;
+    height: 570px;
+    width: 550px;
+}
+
+.ImageTwo {
+    height: 450px;
+    width: 750px;
+}
+
+.ImageTwo>img {
+    object-fit: cover;
+    height: 450px;
+    width: 750px;
+}

@@ -10,7 +10,7 @@ const BatonGretna = () => {
         <div className={styles.card}>
           <div className={styles.cardInfo}>
             <div className={styles.image}>
-              <Link href="#">
+              <Link href="/batonRouge">
                 <img
                   className={styles.imgSize}
                   src="/Baton.jpg"
@@ -26,7 +26,7 @@ const BatonGretna = () => {
                 18303 Old Perkins Rd E #409, <br />
                 Baton Rouge, LA 70810
               </h4>
-              <Link href="#">
+              <Link href="/batonRouge">
                 <h5
                   style={{
                     marginTop: "-4px",
@@ -47,7 +47,7 @@ const BatonGretna = () => {
         <div className={styles.card}>
           <div className={styles.cardInfo}>
             <div className={styles.image}>
-              <Link href="#">
+              <Link href="/gretna">
                 <img
                   className={styles.imgSize}
                   src="/Gretna.jpg"
@@ -63,7 +63,7 @@ const BatonGretna = () => {
                 1105 Lafayette St, <br />
                 Gretna, LA 70053
               </h4>
-              <Link href="#">
+              <Link href="/gretna">
                 <h5
                   style={{
                     marginTop: "-4px",
