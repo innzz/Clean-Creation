@@ -116,9 +116,9 @@ export default class NavBar extends React.Component {
               MenuListProps={{
                 'aria-labelledby': 'basic-button',
               }}
-              style={{ width: "500px"}}
+              style={{ width: "500px" }}
             >
-              <MenuItem  className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/subscription"  >
                   <ListItemText> Subscription Meal Selection</ListItemText>
                 </Link>
@@ -233,25 +233,29 @@ export default class NavBar extends React.Component {
           }}
           style={{ width: "500px" }}
         >
-          <Typography style={{ fontSize: "12px", paddingLeft: "20px",marginTop:"5px" }}>Rekha Baitharu</Typography>
+          <Typography style={{ fontSize: "12px", paddingLeft: "20px", marginTop: "5px" }}>Rekha Baitharu</Typography>
           <hr />
           <MenuItem className="hover:bg-lime-400  mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <PersonIcon fontSize="small" />
             </ListItemIcon>
-            <ListItemText>Profile</ListItemText>
+            <Link href="/profile"  >
+              <ListItemText>Profile</ListItemText>
+            </Link>
           </MenuItem>
           <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <SubscriptionsIcon fontSize="small" />
             </ListItemIcon>
-            <ListItemText>My Subscription</ListItemText>
+            <Link href="/subscription">
+              <ListItemText>My Subscription</ListItemText>
+            </Link>
           </MenuItem>
           <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <LogoutIcon fontSize="small" />
             </ListItemIcon>
-            <ListItemText>My Subscription</ListItemText>
+            <ListItemText>Log Off</ListItemText>
           </MenuItem>
         </Menu>
 
