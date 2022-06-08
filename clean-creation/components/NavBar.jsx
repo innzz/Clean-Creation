@@ -90,16 +90,19 @@ export default class NavBar extends React.Component {
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
             <Dropdown>
-              <Dropdown.Toggle
-                style={{ backgroundColor: "green" }}
-                id="dropdown-basic"
-              >
-                Shop
-              </Dropdown.Toggle>
+              {/* <button  style={{ backgroundColor: "#32CD32" }} > */}
+                <Dropdown.Toggle
+                className="border-success border"
+                  id="dropdown-basic"
+                  style={{ backgroundColor: "#32CD32", borderBlockColor:"#32CD32" }}
+                >
+                  Shop
+                </Dropdown.Toggle>
+              {/* </button> */}
 
               <Dropdown.Menu style={{ lineHeight: "35px", padding: "10px" }}>
-                <Link href="/subscription">
-                  <Dropdown.Item href="#/action-1">
+                <Link href="/subscription" >
+                  <Dropdown.Item href="#/action-1" className="hover:bg-green-900">
                     Subscription Meal Selection
                   </Dropdown.Item>
                 </Link>
@@ -176,7 +179,7 @@ export default class NavBar extends React.Component {
                 borderRadius: "50%",
                 borderColor: "white",
                 backgroundColor:
-                  this.state.isHovering === true ? "green" : "white",
+                  this.state.isHovering === true ? "#32CD32" : "white",
                 color: this.state.isHovering === true ? "white" : "black",
               }}
             >

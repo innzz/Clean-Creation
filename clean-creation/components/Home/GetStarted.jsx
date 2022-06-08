@@ -30,8 +30,9 @@ export default class Getstarted extends React.Component {
                                 We make eating healthy convenient and delicious so you can have more time to do the things you love.
                                 </Card.Text>
                                 <Link href={'/subscription'}>
-                                <button className="h-10 w-44 md:h-14 md:w-64 bg-green-600">
-                                    <p className="text-sm md:text-lg text-white text-center mt-2">GET STARTED</p></button>
+                                <button style={{backgroundColor:"#32CD32"}} className="h-10 w-44 md:h-14 md:w-64">
+                                    <p className="text-sm md:text-lg text-white text-center mt-2">GET STARTED</p>
+                                    </button>
                                 </Link>
                             </CardContent>
                         </Card>
