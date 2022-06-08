@@ -53,12 +53,12 @@ export default class TotalTable extends React.Component {
                             </tr>
                         </thead>
                         <tbody className="">
-                            <tr>
-                                <td>No Data</td>
-                                <td>No Data</td>
-                                <td>No Data</td>
-                                <td>No Data</td>
-                            </tr>
+                            <tr className="bg-gray-100">
+                                    <td></td>
+                                    <td></td>
+                                    <td>No Data available in table</td>
+                                    <td></td>
+                                </tr>
                         </tbody>
                     </Table>
                     <div className="flex flex-wrap justify-between">
