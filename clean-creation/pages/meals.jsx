@@ -7,7 +7,7 @@ import RandomMeal from "../components/Meals/RandomMeal";
 const Meal = () => {
   return (
     <div className="flex gap-4">
-      <div className="w-60">
+      <div className="lg:w-60">
         <SideBar />
       </div>
       <div>

@@ -1,0 +1,184 @@
+.bigContainer {
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 98%;
+}
+
+.checkoutCard {
+    box-shadow: 1px 1px 5px 5px rgb(231, 231, 231);
+    border-radius: 8px;
+    color: rgb(77, 77, 77);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 20px 20px; */
+    margin-top: 18px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+.heading>h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.iconSec {
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border: 1px solid black;
+    padding: 3px 8px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(20, 12, 53);
+    margin-top: 15px;
+}
+
+.iconHead {
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.iconSec>h3 {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.headingBorder {
+    border-bottom: 1px solid rgb(199, 199, 199);
+    margin-top: -10px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.entry {
+    display: flex;
+}
+
+.entry>p {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.entry>input {
+    height: 25px;
+    width: 30px;
+    outline: 0;
+    border-bottom: 1px solid black;
+    /* margin-left: 5px; */
+}
+
+.search {
+    display: flex;
+    margin-right: 10px;
+}
+
+.search>p {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.search>input {
+    height: 25px;
+    width: 80px;
+    outline: 0;
+    border-bottom: 1px solid black;
+}
+
+.third {
+    display: flex;
+    /* width: 500px; */
+    justify-content: center;
+    margin-top: 15px;
+    /* width: 100%; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+}
+
+.thirdDetail {
+    display: flex;
+    width: 300px;
+    /* width: 100%;  */
+    margin-right: 20px;
+    /* margin-left: 5px; */
+    /* margin-left: -80px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.thirdDetail>h5 {
+    margin-right: 230px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.sortIcon {
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+}
+
+.thirdBorder {
+    border-bottom: 3px solid rgb(187, 187, 187);
+}
+
+.dataAvailable {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dataBorder {
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.fifth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin: 10px;
+    /* margin-left: 5px; */
+}
+
+.fifthButton {
+    display: flex;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.prevBtn {
+    border: 1px solid black;
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    margin-right: 5px;
+    color: white;
+    background-color: rgb(20, 12, 53);
+}
+
+.nextBtn {
+    border: 1px solid black;
+    height: 30px;
+    width: 50px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(20, 12, 53);
+}
