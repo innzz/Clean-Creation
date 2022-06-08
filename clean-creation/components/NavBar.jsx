@@ -9,7 +9,11 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 import Image from "next/image";
-import { IconButton, Typography } from "@mui/material";
+import { IconButton, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from "@mui/material";
+import PersonIcon from '@mui/icons-material/Person';
+import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+import ContentCut from '@mui/icons-material/ContentCut';
+import LogoutIcon from '@mui/icons-material/Logout';
 export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -19,6 +23,11 @@ export default class NavBar extends React.Component {
       hover2: false,
       hover3: false,
       hover4: false,
+      anchor: null,
+      menu: false,
+      anchor2: null,
+      menu2: false,
+      open: Boolean(null)
     };
   }
   handleMouseEnter = () => {
@@ -89,44 +98,60 @@ export default class NavBar extends React.Component {
             </Link>
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
-            <Dropdown>
-              {/* <button  style={{ backgroundColor: "#32CD32" }} > */}
-                <Dropdown.Toggle
-                className="border-success border"
-                  id="dropdown-basic"
-                  style={{ backgroundColor: "#32CD32", borderBlockColor:"#32CD32" }}
-                >
-                  Shop
-                </Dropdown.Toggle>
-              {/* </button> */}
 
-              <Dropdown.Menu style={{ lineHeight: "35px", padding: "10px" }}>
-                <Link href="/subscription" >
-                  <Dropdown.Item href="#/action-1" className="hover:bg-green-900">
-                    Subscription Meal Selection
-                  </Dropdown.Item>
+            <button
+              id="basic-button"
+              aria-controls={this.state.open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={this.state.open ? 'true' : undefined}
+              onClick={(e) => this.setState({ anchor2: e.currentTarget, menu2: false })}
+              className="bg-lime-400 px-3 py-2 flex gap-2 text-white font-semibold ">Shop
+              <img src="/caretDown.svg" alt="" className="h-3 w-3 mt-2" />
+            </button>
+            <Menu
+              id="basic-menu"
+              anchorEl={this.state.anchor2}
+              open={this.state.anchor2}
+              onClose={() => { this.setState({ anchor2: null, menu2: false }) }}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+              style={{ width: "500px" }}
+            >
+              <MenuItem className="hover:bg-lime-400 p-2" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+                <Link href="/subscription"  >
+                  <ListItemText> Subscription Meal Selection</ListItemText>
                 </Link>
+              </MenuItem>
+              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/alacarte">
-                  <Dropdown.Item href="#/action-2">À la Carte</Dropdown.Item>
+                  <ListItemText>À la Carte</ListItemText>
                 </Link>
+              </MenuItem>
+              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/byingredients">
-                  <Dropdown.Item href="#/action-3">
-                    Proteins by the Pound
-                  </Dropdown.Item>
+                  <ListItemText>Proteins by the Pound</ListItemText>
                 </Link>
+              </MenuItem>
+              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/customMealBuilder">
-                  <Dropdown.Item href="#/action-4">
-                    Custom Meal Builder
-                  </Dropdown.Item>
+                  <ListItemText>Custom Meal Builder</ListItemText>
                 </Link>
+              </MenuItem>
+              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/extras">
-                  <Dropdown.Item href="#/action-5">Extras</Dropdown.Item>
+                  <ListItemText>Extras</ListItemText>
                 </Link>
+              </MenuItem>
+              <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/giftcard">
-                  <Dropdown.Item href="#/action-6">Gift Card</Dropdown.Item>
+                  <ListItemText>Gift Card</ListItemText>
                 </Link>
-              </Dropdown.Menu>
-            </Dropdown>
+              </MenuItem>
+            </Menu>
+
+
+
             <Link href="/meals">
               <Nav.Link
                 style={{
@@ -173,9 +198,15 @@ export default class NavBar extends React.Component {
             <IconButton
               aria-label=""
               size="medium"
+              id="basic-button"
+              aria-controls={this.state.open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={this.state.open ? 'true' : undefined}
+              onClick={(e) => this.setState({ anchor: e.currentTarget, menu: false })}
               onMouseEnter={this.handleMouseEnter}
               onMouseLeave={this.handleMouseLeave}
               style={{
+                position: "absolute",
                 borderRadius: "50%",
                 borderColor: "white",
                 backgroundColor:
@@ -185,9 +216,46 @@ export default class NavBar extends React.Component {
             >
               <Typography>RB</Typography>
             </IconButton>
+
+
+
+
           </Navbar.Collapse>
           {/* </Container> */}
         </Navbar>
+        <Menu
+          id="basic-menu"
+          anchorEl={this.state.anchor}
+          open={this.state.anchor}
+          onClose={() => { this.setState({ anchor: null, menu: false }) }}
+          MenuListProps={{
+            'aria-labelledby': 'basic-button',
+          }}
+          style={{ width: "500px" }}
+        >
+          <Typography style={{ fontSize: "10px", paddingLeft: "10px" }}>Rekha Baitharu</Typography>
+          <hr />
+          <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+            <ListItemIcon>
+              <PersonIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText>Profile</ListItemText>
+          </MenuItem>
+          <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+            <ListItemIcon>
+              <SubscriptionsIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText>My Subscription</ListItemText>
+          </MenuItem>
+          <MenuItem className="hover:bg-lime-400" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+            <ListItemIcon>
+              <LogoutIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText>My Subscription</ListItemText>
+          </MenuItem>
+        </Menu>
+
+
       </div>
     );
   }
