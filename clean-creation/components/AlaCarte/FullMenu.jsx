@@ -1,12 +1,41 @@
-import React from "react";
 import styles from "../../styles/component-styles/AlaCarte/Full.module.css";
+import { useState } from "react";
 import { BsCartFill, BsTagsFill, BsPlus } from "react-icons/bs";
 import { GrFormSubtract } from "react-icons/gr";
-import Link from "next/link";
 import { ProgressBar } from "react-bootstrap";
+import Link from "next/link";
 import Image from "next/image";
 
 const FullMenu = () => {
+  let [num, setNum] = useState(0);
+  const [quantity, setQuantity] = useState([]);
+  const [inc, setInc] = useState({});
+
+  console.log(inc);
+
+  let increment = () => {
+    if (num < 10) {
+      setNum(Number(num) + 1);
+    }
+  };
+
+  let decrement = () => {
+    if (num > 0) {
+      setNum(num - 1);
+    }
+  };
+
+  let handleChange = (e) => {
+    setNum(e.target.value);
+  };
+
+  const quantityHandler = (val) => {
+    // console.log(val);
+    setQuantity([...quantity, val]);
+    setInc({ beslamic: quantity });
+  };
+  // console.log(quantity);
+
   const menuDetailOne = [
     {
       image: "./dish.jpg",
@@ -101,9 +130,19 @@ const FullMenu = () => {
                     </div>
                     <div className={styles.quantity}>
                       <div className={styles.innerQuantity}>
-                        <BsPlus className={styles.plus} />
-                        <p className={styles.num}>{val.qty}</p>
-                        <GrFormSubtract className={styles.subs} />
+                        <GrFormSubtract
+                          onClick={decrement}
+                          className={styles.plus}
+                        />
+                        <p
+                          // key={i}
+                          onChange={handleChange}
+                          className={styles.num}
+                        >
+                          {num}
+                          {/* {inc.beslamic.length} */}
+                        </p>
+                        <BsPlus onClick={increment} className={styles.subs} />
                       </div>
                       <div className={styles.btnAdd}>Add to cart</div>
                     </div>
