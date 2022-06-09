@@ -1,5 +1,4 @@
-
-.greenBg{
+.greenBg {
     background-color: #8ed444;
 }
 
@@ -27,18 +26,17 @@
     margin-bottom: 30px;
 }
 
-
-.leftSection > .cards > .card {
+.leftSection>.cards>.card {
     margin: 70px 0;
 }
 
-.leftSection > .cards > .card > .heading{
+.leftSection>.cards>.card>.heading {
     position: relative;
     z-index: -1;
     margin-bottom: 30px;
 }
 
-.leftSection > .cards > .card > .heading::after{
+.leftSection>.cards>.card>.heading::after {
     position: absolute;
     content: "";
     height: 4px;
@@ -47,7 +45,7 @@
     z-index: 10;
 }
 
-.leftSection > .cards > .card > .heading > h3 {
+.leftSection>.cards>.card>.heading>h3 {
     color: rgb(65, 65, 65);
     text-align: left;
     font-size: 22px;
@@ -55,30 +53,30 @@
     padding: 10px 0;
 }
 
-.leftSection > .cards > .card > .monthWrapper{
+.leftSection>.cards>.card>.monthWrapper {
     display: flex;
     width: 80%;
     flex-direction: column;
 }
 
-.leftSection > .cards > .card > .monthWrapper > .buttonMonth {
+.leftSection>.cards>.card>.monthWrapper>.buttonMonth {
     padding-left: 5px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.leftSection > .cards > .card > .monthWrapper > .buttonMonth > h5{
+.leftSection>.cards>.card>.monthWrapper>.buttonMonth>h5 {
     font-size: 18px;
     padding-left: 10px;
     border-left: 1px solid gray;
 }
 
-.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2{
+.leftSection>.cards>.card>.monthWrapper>.buttonsGroup2 {
     display: flex;
 }
 
-.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2 {
+.leftSection>.cards>.card>.monthWrapper>.buttonsGroup2>.button2 {
     cursor: pointer;
     text-align: center;
     width: 25%;
@@ -90,25 +88,25 @@
     margin: 0 5px;
 }
 
-.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2:hover{
+.leftSection>.cards>.card>.monthWrapper>.buttonsGroup2>.button2:hover {
     border: 2px solid #8ed444;
     color: #8ed444;
-} 
+}
 
-.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2 > h4{
+.leftSection>.cards>.card>.monthWrapper>.buttonsGroup2>.button2>h4 {
     margin-bottom: 0;
     font-size: 19px;
     font-weight: 400;
 }
 
-.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2 > h2{
+.leftSection>.cards>.card>.monthWrapper>.buttonsGroup2>.button2>h2 {
     margin-top: -8px;
     margin-bottom: 0;
     font-size: 39px;
     font-weight: 900;
 }
 
-.leftSection > .cards > .card > .buttonsGroup > .button  {
+.leftSection>.cards>.card>.buttonsGroup>.button {
     color: gray;
     display: inline-block;
     padding: 15px 25px;
@@ -124,19 +122,19 @@
     transition: 0.2s ease-in;
 }
 
-.leftSection > .cards > .card > .buttonsGroup > .button:hover{
+.leftSection>.cards>.card>.buttonsGroup>.button:hover {
     color: #8ed444;
     border: 1px solid #8ed444;
     transform: translateY(-10px);
     box-shadow: 1px 3px 4px grey;
 }
 
-.leftSection > .cards > .card > .buttonsGroup {
+.leftSection>.cards>.card>.buttonsGroup {
     display: flex;
     flex-wrap: wrap;
 }
 
-.leftSection > .cards > .card > .desc {
+.leftSection>.cards>.card>.desc {
     font-size: 18px;
     font-weight: 300;
     line-height: 2;
@@ -148,13 +146,13 @@
     margin: 20px 0;
 }
 
-.midContainer > .buttonWrapper > .leftButtonGroup{
+.midContainer>.buttonWrapper>.leftButtonGroup {
     width: 85%;
     display: flex;
     align-items: center;
 }
 
-.midContainer  > .buttonWrapper > .leftButtonGroup > .button {
+.midContainer>.buttonWrapper>.leftButtonGroup>.button {
     color: #fff;
     display: flex;
     align-items: center;
@@ -170,12 +168,12 @@
     background-color: #8ed444;
 }
 
-.rightSection{
+.rightSection {
     width: 48%;
     margin-left: 30px;
 }
 
-.rightSection > .rightInnerContainer {
+.rightSection>.rightInnerContainer {
     border-radius: 15px;
     padding-top: 50px;
     top: 0;
@@ -183,18 +181,18 @@
     box-shadow: 0px 2px 10px 1px rgb(223, 223, 223);
 }
 
-.rightSection > .rightInnerContainer > .overView {
+.rightSection>.rightInnerContainer>.overView {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 33px;
 }
 
-.rightSection > .rightInnerContainer > .overViewItem {
+.rightSection>.rightInnerContainer>.overViewItem {
     padding: 10px 30px;
 }
 
-.rightSection > .rightInnerContainer > .overViewItem > div {
+.rightSection>.rightInnerContainer>.overViewItem>div {
     list-style: none;
     justify-content: space-between;
     display: flex;
@@ -203,11 +201,12 @@
     border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
 }
 
-.rightSection > .rightInnerContainer > .overViewItem > div > li {
+.rightSection>.rightInnerContainer>.overViewItem>div>li {
     font-size: 15px;
     font-weight: 300;
 }
-.rightSection > .rightInnerContainer > .overViewItem > div > h3 {
+
+.rightSection>.rightInnerContainer>.overViewItem>div>h3 {
     max-width: 200px;
     text-align: end;
     line-height: 2;
@@ -215,7 +214,7 @@
     font-size: 17px;
 }
 
-.rightSection > .rightInnerContainer > .overView > .overViewContent {
+.rightSection>.rightInnerContainer>.overView>.overViewContent {
     display: flex;
     position: relative;
     padding: 10px 15px;
@@ -229,7 +228,7 @@
     z-index: -1;
 }
 
-.rightSection > .rightInnerContainer > .overView > .overViewContent::after {
+.rightSection>.rightInnerContainer>.overView>.overViewContent::after {
     position: absolute;
     content: "";
     height: 4px;
@@ -238,7 +237,8 @@
     background-color: #8ed444;
     z-index: 10;
 }
-.rightSection > .rightInnerContainer >.overView > .overViewButton {
+
+.rightSection>.rightInnerContainer>.overView>.overViewButton {
     color: #fff;
     display: inline-block;
     padding: 10px 30px;
@@ -253,7 +253,7 @@
     white-space: nowrap;
 }
 
-.rightSection > .rightInnerContainer > .bottom {
+.rightSection>.rightInnerContainer>.bottom {
     background-color: #8ed444;
     color: #fff;
     padding: 15px 20px;
@@ -265,12 +265,10 @@
     border-bottom-right-radius: 15px;
 }
 
-.rightSection > .rightInnerContainer > .bottom > h4 {
+.rightSection>.rightInnerContainer>.bottom>h4 {
     font-size: 18px;
     font-weight: 900;
 }
-
-
 
 .inputContainer {
     height: 80px;
@@ -303,25 +301,23 @@
     bottom: 0;
     /* right: 0; */
     width: 60px;
-
 }
 
 @media screen and (max-width: 1080px) {
-    .insideContainer{
+    .insideContainer {
         flex-direction: column;
     }
-
-    .rightSection{
+    .rightSection {
         margin-left: 0;
         width: 100%;
     }
-    .midContainer > .buttonWrapper > .leftButtonGroup{
+    .midContainer>.buttonWrapper>.leftButtonGroup {
         flex-direction: column;
     }
-    .midContainer  > .buttonWrapper > .leftButtonGroup > .button {
+    .midContainer>.buttonWrapper>.leftButtonGroup>.button {
         width: 100%;
     }
-    .leftSection > .cards > .card > .monthWrapper{
+    .leftSection>.cards>.card>.monthWrapper {
         min-width: 30%;
         overflow-x: scroll;
     }
