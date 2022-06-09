@@ -219,7 +219,7 @@ function UserPlanSelection() {
               <div className={styles.heading}>
                   <h3>4. Choose your plan</h3>
               </div>
-              <div className={styles.buttonsGroup} style={overView.billingRenewal !== ''?{}:{opacity: '0.2'}}>
+              <div className={styles.buttonsGroup} style={overView.billingRenewal && overView.portionSize !== ''?{}:{opacity: '0.2'}}>
                 {yourPlan2.map((val,i)=>{
                     return(<div className={styles.button} key={i} onClick={()=>{handlePlan2(val)}}>
                         {val}
@@ -231,7 +231,7 @@ function UserPlanSelection() {
               <div className={styles.heading} >
                   <h3>5. How many days per week do you want food?</h3>
               </div>
-              <div className={styles.buttonsGroup} style={overView.plan2 && overView.billingRenewal !== ''?{}:{opacity: '0.2'}}>
+              <div className={styles.buttonsGroup} style={overView.plan2 && overView.portionSize && overView.billingRenewal !== ''?{}:{opacity: '0.2'}}>
                 {daysPerWeek.map((val,i)=>{
                     return(<div className={styles.button} key={i} onClick={()=>{handleDaysPerWeek(val)}}>
                         {val}
@@ -243,7 +243,7 @@ function UserPlanSelection() {
               <div className={styles.heading}>
                   <h3>6. How many meals per day?</h3>
               </div>
-              <div className={styles.buttonsGroup} style={overView.plan2 && overView.billingRenewal &&overView.portionSize !== ''?{}:{opacity: '0.2'}}>
+              <div className={styles.buttonsGroup} style={overView.plan2 && overView.billingRenewal &&overView.portionSize && overView.daysPerWeek !== ''?{}:{opacity: '0.2'}}>
                 {mealsPerDay.map((val,i)=>{
                     return(<div className={styles.button} key={i} onClick={()=>{handleMealsPerDay(val)}}>
                         {val}
