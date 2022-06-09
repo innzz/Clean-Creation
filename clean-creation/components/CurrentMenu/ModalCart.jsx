@@ -17,21 +17,23 @@ const Cart = (props) => {
         {/* <button onClick={props.onHide}>Close</button> */}
         <div className={styles.modalInnerContainer}>
           <div className={styles.modalImage}>
-            <img src="./dish.jpg" alt="" />
+            <img src={props.val === undefined ? "" : props.val.image} alt="" />
           </div>
           <div className={styles.modalData}>
             <div className={styles.modalFirst}>
-              <h3>Balsamic Chicken Salad (16 oz)</h3>
-              <p>gluten free, dairy free, nut free</p>
+              <h3>{props.val === undefined ? "" : props.val.heading}</h3>
+              <p>{props.val === undefined ? "" : props.val.desc}</p>
               <span>E</span>
               <div className={styles.belowBottom}></div>
             </div>
             <div className={styles.modalSecond}>
               <h4>Available Portions</h4>
-              <div className={styles.regular}>Regular | $10.95</div>
+              <div className={styles.regular}>
+                {props.val === undefined ? "" : props.val.regularPrice}
+              </div>
               <div className={styles.modalQty}>
                 <GrFormSubtract className={styles.sub} />
-                <p>0</p>
+                <p>{props.val === undefined ? "" : props.val.qty}</p>
                 <BsPlus className={styles.plus} />
               </div>
               <div className={styles.modalOrder}>Order for June 12, 2022</div>
@@ -41,41 +43,64 @@ const Cart = (props) => {
                 <h6>TOTAL CALORIES</h6>
                 <div className={styles.fireCalories}>
                   <FaFire className={styles.fireIcon} />
-                  <span>960</span>
+                  <span>
+                    {props.val === undefined ? "" : props.val.calories}
+                  </span>
                   <p>Calories</p>
                 </div>
               </div>
               <div className={styles.modalCal}>
                 <div className={styles.modalCalDesc}>
-                  <h5>88.00 gr</h5>
-                  <p>Protein</p>
+                  <h5>{props.val === undefined ? "" : props.val.protein}</h5>
+                  <p>PROTEIN</p>
                 </div>
                 <div className={styles.modalCalDesc}>
-                  <h5>88.00 gr</h5>
-                  <p>Protein</p>
+                  <h5>{props.val === undefined ? "" : props.val.carb}</h5>
+                  <p>TOTAL CARBOHYDRATES</p>
                 </div>
                 <div className={styles.modalCalDesc}>
-                  <h5>88.00 gr</h5>
-                  <p>Protein</p>
+                  <h5>{props.val === undefined ? "" : props.val.fat}</h5>
+                  <p>TOTAL FAT</p>
                 </div>
                 <div className={styles.modalCalDesc}>
-                  <h5>88.00 gr</h5>
-                  <p>Protein</p>
+                  <h5>{props.val === undefined ? "" : props.val.fiber}</h5>
+                  <p>DIETERY FIBER</p>
+                </div>
+                <div className={styles.modalCalDesc}>
+                  <h5>
+                    {props.val === undefined ? "" : props.val.saturatedFat}
+                  </h5>
+                  <p>SATURATED FAT</p>
+                </div>
+                <div className={styles.modalCalDesc}>
+                  <h5>
+                    {props.val === undefined ? "" : props.val.cholesterol}
+                  </h5>
+                  <p>CHOLESTEROL</p>
+                </div>
+                <div className={styles.modalCalDesc}>
+                  <h5>{props.val === undefined ? "" : props.val.sodium}</h5>
+                  <p>SODIUM</p>
+                </div>
+                <div className={styles.modalCalDesc}>
+                  <h5>{props.val === undefined ? "" : props.val.totalSugar}</h5>
+                  <p>TOTAL SUGARS</p>
+                </div>
+                <div className={styles.modalCalDesc}>
+                  <h5>
+                    {props.val === undefined ? "" : props.val.includedSugar}
+                  </h5>
+                  <p>INCLUDED SUGARS</p>
                 </div>
               </div>
             </div>
             <div className={styles.modalFourth}>
               <h2>Ingredients: </h2>
-              <p>
-                Balsamic Chicken Salad (Shaved red onion (red onion), Dried
-                Cranberry, Bias Cut Celery, Balsamic Chicken Dressing (balsamic,
-                basil, Minced Garlic, Dijon Mustard, Black Pepper, Honey, Olive
-                Oil Blend), Balsamic Chicken for Chicken Salad (Chicken (raw),
-                Black Pepper, salt, italian seasoning, Paprika))
-              </p>
+              <p>{props.val === undefined ? "" : props.val.ingredients}</p>
               <h2>Allergens: </h2>
-              <p>Fruit/Berries</p>
+              <p>{props.val === undefined ? "" : props.val.allergens}</p>
               <h2>Heating Instructions</h2>
+              <p>{props.val === undefined ? "" : props.val.heating}</p>
             </div>
           </div>
         </div>
@@ -84,7 +109,7 @@ const Cart = (props) => {
   );
 };
 
-const CartModal = () => {
+const CartModal = ({ val }) => {
   const [modalShow, setModalShow] = useState(false);
 
   return (
@@ -98,7 +123,7 @@ const CartModal = () => {
         <BsCartFill className={styles.icon} />
       </button>
 
-      <Cart show={modalShow} onHide={() => setModalShow(false)} />
+      <Cart val={val} show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 };
