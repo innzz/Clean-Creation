@@ -5,6 +5,7 @@ import {
   DialogContent,
   DialogTitle,
   IconButton,
+  MenuItem,
   TextField,
   Typography,
 } from "@mui/material";
@@ -17,6 +18,10 @@ export default class CartConfirmation extends React.Component {
     this.state = {
       delivery: false,
       pickup: false,
+      state: 'Odisha',
+      hiddenpickup: "hidden",
+      hiddenpickup2: "hidden",
+      hiddendelivery: "hidden",
       states: [
         {
           value: "Select",
@@ -50,7 +55,7 @@ export default class CartConfirmation extends React.Component {
                 }}
                 id="default-radio-1"
                 type="radio"
-                value=""
+                value="delivery"
                 name="default-radio"
                 className="w-4 h-4 -mt-10 lg:-mt-0 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
@@ -66,10 +71,10 @@ export default class CartConfirmation extends React.Component {
                 onClick={() => {
                   this.setState({ pickup: true });
                 }}
-                checked
+
                 id="default-radio-2"
                 type="radio"
-                value=""
+                value="pickup"
                 name="default-radio"
                 className="w-4 h-4 -mt-10 lg:-mt-0 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
@@ -81,13 +86,42 @@ export default class CartConfirmation extends React.Component {
               </label>
             </div>
           </div>
-          <div className="mb-10 p-3 bg-gray-200 border-l-[7px] border-red-600 lg:leading-3">
-            <p className="font-bold">An error occured!</p>
-            <p>Please select a valid State to continue checkout process</p>
-            <Link href="/" >
-              <a className="text-gray-500">Edit</a>
-            </Link>
-          </div>
+          {this.state.hiddenpickup === "hidden" & this.state.hiddenpickup2 === "hidden" ?
+            <div className="mb-10 p-3 bg-gray-200 border-l-[7px] border-red-600 lg:leading-3">
+              <p className="font-bold">An error occured!</p>
+              <p>Please select a valid State to continue checkout process</p>
+              <Link href="/" >
+                <a className="text-gray-500">Edit</a>
+              </Link>
+            </div>
+            :
+            <div>
+              {this.state.hiddenpickup2 === null ?
+                <div>
+                  <div className="flex gap-3">
+                    <img src="/google-location.svg" alt="" className="h-5 w-5" />
+                    <p>Highland Park Market Place - 18303 Perkins Rd E Ste 409, 70810 Baton Rouge
+                      <span className="underline ml-5 text-gray-400 cursor-pointer"  onClick={()=>{this.setState({pickup:true})}}>Edit</span></p>
+
+                  </div>
+                  <div className="flex gap-3">
+                    <img src="/about.svg" alt="" className="h-3 w-3" />
+                    <p> * orders will be available for pickup after 12:00 PM on Sunday and Wednesday each week *</p>
+                  </div>
+                </div>
+                :
+                <div>
+                  <div className="flex gap-3">
+                    <img src="/google-location.svg" alt="" className="h-5 w-5" />
+                    <p> Gretna - 1105 Lafayette St, 70053 Gretna 
+                      <span className="underline ml-5 text-gray-400 cursor-pointer" onClick={()=>{this.setState({pickup:true})}}>Edit</span></p>
+
+                  </div>
+                </div>
+              }
+            </div>
+
+          }
           <p className="text-2xl text-gray-800 font-bold pt-5">
             Payment Method
           </p>
@@ -130,6 +164,7 @@ export default class CartConfirmation extends React.Component {
           </div>
         </div>
 
+        {/* Dialog Box for Pickup Delivery */}
         <Dialog
           fullWidth
           open={this.state.pickup}
@@ -159,7 +194,7 @@ export default class CartConfirmation extends React.Component {
           </DialogTitle>
           <DialogContent>
             <div className="border-1 rounded-lg border-black p-2 ">
-              <div className="">
+              <div onClick={() => { this.setState({ pickup: false, hiddenpickup: null, hiddenpickup2: "hidden" }) }} className="">
                 <p className="font-semibold lg:text-lg text-sm">Gretna</p>
                 <p className=" grid place-content-end text-sm -mt-10">
                   Click to Select
@@ -170,7 +205,7 @@ export default class CartConfirmation extends React.Component {
               </div>
             </div>
             <div className="border-1 rounded-lg border-black p-2 mt-4 ">
-              <div className="">
+              <div onClick={() => { this.setState({ pickup: false, hiddenpickup2: null, hiddenpickup: "hidden" }) }} className="">
                 <p className="font-semibold lg:text-lg text-sm">
                   Highland Park Market Place
                 </p>
@@ -189,7 +224,7 @@ export default class CartConfirmation extends React.Component {
           </DialogContent>
           <hr />
           <DialogContent className="hover:bg-gray-500 -mt-4 ">
-            <div className="grid hover:text-white text-gray-400 place-content-center">
+            <div onClick={() => { this.setState({ pickup: false }) }} className="grid hover:text-white text-gray-400 place-content-center">
               <button className="">Cancel</button>
             </div>
           </DialogContent>
@@ -254,19 +289,21 @@ export default class CartConfirmation extends React.Component {
                       id="standard-select-currency-native"
                       select
                       label=""
-                      value={this.state.states}
+                      value={this.state.state}
                       onChange={(event) => {
-                        this.setState({ states: event.target.value });
+                        this.setState({ state: event.target.value });
                       }}
                       SelectProps={{
                         native: true,
                       }}
+
+                      helperText="Please select your state"
                       variant="standard"
                     >
                       {this.state.states.map((s) => (
                         <option key={s.value} value={s.value}>
                           {s.label}
-                        </option>
+                        </option >
                       ))}
                     </TextField>
                   </div>
@@ -334,10 +371,10 @@ export default class CartConfirmation extends React.Component {
           <hr />
           <DialogContent className=" -mt-4 ">
             <div className="grid grid-cols-2 divide-x">
-              <div className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -ml-6 grid hover:text-white text-gray-400 place-content-center">
+              <div onClick={() => { this.setState({ delivery: false }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -ml-6 grid hover:text-white text-gray-400 place-content-center">
                 <button className="">Cancel</button>
               </div>
-              <div className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -mr-6 grid hover:text-white text-gray-400 place-content-center">
+              <div onClick={() => { this.setState({ delivery: false }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -mr-6 grid hover:text-white text-gray-400 place-content-center">
                 <button className="">Save</button>
               </div>
             </div>
