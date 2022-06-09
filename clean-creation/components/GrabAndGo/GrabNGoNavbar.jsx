@@ -47,7 +47,7 @@ function GrabNGoNavbar() {
           <li className={styles.topBorder}>Contact Us</li>
       </div>
       <div className={styles.hamMenu} onClick={handleClick1}>
-          {showMenu?(<ImCross size={'30px'}/>):(<GiHamburgerMenu size={'30px'}/>)}
+          {showMenu?(<GiHamburgerMenu size={'30px'}/>):(<ImCross size={'30px'}/>)}
           
       </div>
       {showMenu ?'': (<div className={styles.subMenu}>

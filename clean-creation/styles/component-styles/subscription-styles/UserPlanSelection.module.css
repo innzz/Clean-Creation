@@ -55,6 +55,59 @@
     padding: 10px 0;
 }
 
+.leftSection > .cards > .card > .monthWrapper{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.leftSection > .cards > .card > .monthWrapper > .buttonMonth {
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftSection > .cards > .card > .monthWrapper > .buttonMonth > h5{
+    font-size: 18px;
+    padding-left: 10px;
+    border-left: 1px solid gray;
+}
+
+.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2{
+    display: flex;
+}
+
+.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2 {
+    cursor: pointer;
+    text-align: center;
+    width: 25%;
+    padding: 15px 17px;
+    padding-top: 5px;
+    border: 2px solid #e2e4e0;
+    color: #cecbcb;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2:hover{
+    border: 2px solid #8ed444;
+    color: #8ed444;
+} 
+
+.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2 > h4{
+    margin-bottom: 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.leftSection > .cards > .card > .monthWrapper > .buttonsGroup2 > .button2 > h2{
+    margin-top: -8px;
+    margin-bottom: 0;
+    font-size: 39px;
+    font-weight: 900;
+}
+
 .leftSection > .cards > .card > .buttonsGroup > .button  {
     color: gray;
     display: inline-block;
@@ -259,6 +312,7 @@
     }
 
     .rightSection{
+        margin-left: 0;
         width: 100%;
     }
     .midContainer > .buttonWrapper > .leftButtonGroup{
@@ -266,5 +320,9 @@
     }
     .midContainer  > .buttonWrapper > .leftButtonGroup > .button {
         width: 100%;
+    }
+    .leftSection > .cards > .card > .monthWrapper{
+        min-width: 30%;
+        overflow-x: scroll;
     }
 }
