@@ -258,8 +258,6 @@ export default class NavBar extends React.Component {
             <ListItemText>Log Off</ListItemText>
           </MenuItem>
         </Menu>
-
-
       </div>
     );
   }
