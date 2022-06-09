@@ -16,6 +16,8 @@ export default class CustomMealPack extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      count: 0,
+      hidden: "hidden",
       menu: [
         {
           value: "Select",
@@ -27,6 +29,18 @@ export default class CustomMealPack extends React.Component {
         },
       ],
     };
+  }
+  minus = () => {
+    if (this.state.count >= 1) {
+      this.setState({
+        count: this.state.count - 1
+      })
+    }
+  }
+  plus = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
   }
   render() {
     return (
@@ -352,19 +366,19 @@ export default class CustomMealPack extends React.Component {
             <Link
               href="#"
             >
-              <a className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+              <a className=" no-underline inline-flex gap-2 items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
                 <img src="/add.svg" alt="" />
-                Add Extra Add-on
+                Add Another Pack
               </a>
             </Link>
           </div>
           <div className="  lg:p-10 p-5 lg:ml-6  -mt-20 lg:-mt-0  ml-5 rounded-2xl">
             <Link
-              href="#"
+              href="/cart"
             >
-              <a className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
-                <img src="/add.svg" alt="" />
-                Add Extra Add-on
+              <a className=" no-underline inline-flex gap-2 items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+                <img src="/basket-fill-white.svg" alt="" />
+                Continue to Cart
               </a>
             </Link>
           </div>
@@ -376,7 +390,7 @@ export default class CustomMealPack extends React.Component {
             href="#"
           >
             <a
-              className=" no-underline inline-flex items-center py-2 px-3 ml-[4.5rem] text-medium text-center text-white bg-lime-500 rounded-lg "
+              className=" no-underline inline-flex gap-2 items-center py-2 px-3 ml-[4.5rem] text-medium text-center text-white bg-lime-500 rounded-lg "
               onClick={() => {
                 this.setState({ open: true });
               }}>
@@ -384,7 +398,61 @@ export default class CustomMealPack extends React.Component {
               Add Extra Add-on
             </a>
           </Link>
+          <div className="lg:mx-20">
+            <div className={this.state.hidden}>
+              <div className="flex gap-3 mt-3  shadow-lg rounded-lg mb-0 lg:w-[25rem] p-2">
+                <div>
+                  <img
+                    src="https://cleancreations.com/data/extras/33.jpg?md=942dd43d411df162d707d76d17e5cefc"
+                    className="h-40 w-32 rounded-lg"
+                    alt=""
+                  />
+                </div>
+
+                <div className="  ">
+                  <div>
+                    <div className="flex gap-2">
+                      <img src="/tags-fill.svg" className="h-5 w-5" alt="" />+ $25.00
+                    </div>
+                    <p className="font-semibold">Elderberry Syrup (16oz)</p>
+                  </div>
+                  <div
+                    className="inline-flex rounded-md shadow-sm lg:ml-20 w-40 h-10 mt-5"
+                    role="group"
+                  >
+                    <button
+                      onClick={this.minus}
+                      type="button"
+                      className="py-2 px-1.5 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                    >
+                      -
+                    </button>
+                    <button
+                      type="button"
+                      className="py-2 px-1.5 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                    >
+                      {this.state.count}
+                    </button>
+                    <button
+                      onClick={this.plus}
+                      type="button"
+                      className="py-2 px-1.5 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+                    >
+                      +
+                    </button>
+                    <button
+                      type="button"
+                      className=" py-2 px-2.5 text-sm font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <Dialog
           fullWidth
           open={this.state.open}
@@ -410,7 +478,8 @@ export default class CustomMealPack extends React.Component {
             </IconButton>
           </DialogTitle>
           <DialogContent>
-            <div className="flex gap-3 mt-3 shadow-lg lg:w-[25rem] p-2">
+
+            <div onClick={() => { this.setState({ hidden: null, open: false }) }} className="flex gap-3 mt-3 shadow-lg lg:w-[25rem] p-2 ">
               <div>
                 <img
                   src="https://cleancreations.com/data/extras/33.jpg?md=942dd43d411df162d707d76d17e5cefc"
