@@ -4,9 +4,17 @@ import { FaRegClock } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
+import Link from "next/link"
 
 const CartScreen = () => {
   return (
+    <div>
+    <Link href="/">
+      <div className="flex gap-2 mx-3 cursor-pointer">
+        <img className="h-6 w-5" src="/arrow-left.svg" alt="" />
+        <p className="underline">Back to Homepage</p>
+      </div>
+    </Link>
     <div className={styles.bigContainer}>
       <div className={styles.container}>
         <div className={styles.cartConfirm}>
@@ -93,7 +101,9 @@ const CartScreen = () => {
             {/* ///////////////////// */}
 
             <div className={styles.proceedTo}>
+              <Link href="/cart_confirm">
               <button className={styles.cartButton}>Proceed to Checkout</button>
+              </Link>
             </div>
           </div>
           {/* /////////////////////// */}
@@ -114,6 +124,7 @@ const CartScreen = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,11 +1,29 @@
-import { Modal } from "react-bootstrap";
-import { useState } from "react";
 import styles from "../../styles/component-styles/CurrentMenu-styles/Menu.module.css";
-import { BsCartFill, BsPlus } from "react-icons/bs";
-import { GrFormSubtract } from "react-icons/gr";
+import { Modal, InputGroup, FormControl, Button } from "react-bootstrap";
+import { useState } from "react";
+import { BsCartFill } from "react-icons/bs";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { FaFire } from "react-icons/fa";
 
 const Cart = (props) => {
+  let [num, setNum] = useState(0);
+
+  let increment = () => {
+    if (num < 10) {
+      setNum(Number(num) + 1);
+    }
+  };
+
+  let decrement = () => {
+    if (num > 0) {
+      setNum(num - 1);
+    }
+  };
+
+  let handleChange = (e) => {
+    setNum(e.target.value);
+  };
+
   return (
     <Modal
       {...props}
@@ -31,10 +49,22 @@ const Cart = (props) => {
               <div className={styles.regular}>
                 {props.val === undefined ? "" : props.val.regularPrice}
               </div>
-              <div className={styles.modalQty}>
-                <GrFormSubtract className={styles.sub} />
-                <p>{props.val === undefined ? "" : props.val.qty}</p>
-                <BsPlus className={styles.plus} />
+              <div className={styles.inputGroup}>
+                <InputGroup>
+                  <button className={styles.numBtn} onClick={decrement}>
+                    -
+                  </button>
+                  <input
+                    onChange={handleChange}
+                    className={styles.formControl}
+                    type=""
+                    value={num}
+                  />
+
+                  <button className={styles.numBtn} onClick={increment}>
+                    +
+                  </button>
+                </InputGroup>
               </div>
               <div className={styles.modalOrder}>Order for June 12, 2022</div>
             </div>

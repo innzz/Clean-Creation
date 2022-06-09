@@ -2,6 +2,24 @@ import React from "react";
 import SelectDate from "./SelectDate";
 import Image from "next/image";
 export default class Extras extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    }
+  }
+  minus = () => {
+    if (this.state.count >= 1) {
+      this.setState({
+        count: this.state.count - 1
+      })
+    }
+  }
+  plus = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
   render() {
     return (
       <div>
@@ -36,6 +54,7 @@ export default class Extras extends React.Component {
                 role="group"
               >
                 <button
+                  onClick={this.minus}
                   type="button"
                   className="py-2 px-1.5 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
                 >
@@ -45,9 +64,10 @@ export default class Extras extends React.Component {
                   type="button"
                   className="py-2 px-1.5 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
                 >
-                  0
+                  {this.state.count}
                 </button>
                 <button
+                onClick={this.plus}
                   type="button"
                   className="py-2 px-1.5 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
                 >
@@ -55,7 +75,7 @@ export default class Extras extends React.Component {
                 </button>
                 <button
                   type="button"
-                  className=" py-2 px-2.5 text-sm font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
+                  className=" py-2 px-2.5 text-xs font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
                 >
                   Add to Cart
                 </button>

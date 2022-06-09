@@ -37,7 +37,6 @@ export default class FooterHome extends React.Component {
   }
 
   render() {
-    console.log(this.state.footerMenu);
     return (
       <div style={{ backgroundColor: "black", color: "white" }}>
         <Container style={{ padding: "20px" }}>
@@ -408,6 +407,9 @@ export default class FooterHome extends React.Component {
             </Col>
           </Row>
         </Container>
+
+
+        {/* Dialogue box for signup for our menu */}
         <Dialog
           open={this.state.open}
           onClose={() => {
@@ -424,10 +426,11 @@ export default class FooterHome extends React.Component {
                 onClick={() => {
                   this.setState({ open: false });
                 }}
+                style={{backgroundColor:"black", color:"white"}}
                 sx={{
                   position: "absolute",
-                  right: -10,
-                  top: -10,
+                  right: 2,
+                  top: 2,
                   color: (theme) => theme.palette.grey[500],
                   backgroundColor: "black",
                 }}

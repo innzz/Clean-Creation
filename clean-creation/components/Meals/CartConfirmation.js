@@ -22,6 +22,7 @@ export default class CartConfirmation extends React.Component {
       hiddenpickup: "hidden",
       hiddenpickup2: "hidden",
       hiddendelivery: "hidden",
+      addNewCard: false,
       states: [
         {
           value: "Select",
@@ -90,9 +91,7 @@ export default class CartConfirmation extends React.Component {
             <div className="mb-10 p-3 bg-gray-200 border-l-[7px] border-red-600 lg:leading-3">
               <p className="font-bold">An error occured!</p>
               <p>Please select a valid State to continue checkout process</p>
-              <Link href="/" >
-                <a className="text-gray-500">Edit</a>
-              </Link>
+                <p onClick={()=>{this.setState({delivery:open})}} className="text-gray-500 underline cursor-pointer">Edit</p>
             </div>
             :
             <div>
@@ -101,7 +100,7 @@ export default class CartConfirmation extends React.Component {
                   <div className="flex gap-3">
                     <img src="/google-location.svg" alt="" className="h-5 w-5" />
                     <p>Highland Park Market Place - 18303 Perkins Rd E Ste 409, 70810 Baton Rouge
-                      <span className="underline ml-5 text-gray-400 cursor-pointer"  onClick={()=>{this.setState({pickup:true})}}>Edit</span></p>
+                      <span className="underline ml-5 text-gray-400 cursor-pointer" onClick={() => { this.setState({ pickup: true }) }}>Edit</span></p>
 
                   </div>
                   <div className="flex gap-3">
@@ -113,8 +112,8 @@ export default class CartConfirmation extends React.Component {
                 <div>
                   <div className="flex gap-3">
                     <img src="/google-location.svg" alt="" className="h-5 w-5" />
-                    <p> Gretna - 1105 Lafayette St, 70053 Gretna 
-                      <span className="underline ml-5 text-gray-400 cursor-pointer" onClick={()=>{this.setState({pickup:true})}}>Edit</span></p>
+                    <p> Gretna - 1105 Lafayette St, 70053 Gretna
+                      <span className="underline ml-5 text-gray-400 cursor-pointer" onClick={() => { this.setState({ pickup: true }) }}>Edit</span></p>
 
                   </div>
                 </div>
@@ -142,6 +141,7 @@ export default class CartConfirmation extends React.Component {
             </label>
           </div>
           <button
+            onClick={() => { this.setState({ addNewCard: true }) }}
             type="button"
             className="mt-2 text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-lg px-4 py-1 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2"
           >
@@ -158,7 +158,7 @@ export default class CartConfirmation extends React.Component {
               variant="standard"
               fullWidth
             />
-            <button className="px-2 py-3.5 w-32  rounded-xl bg-gray-200 hover:bg-lime-500 hover:text-white">
+            <button className="lg:px-2 lg:py-3.5 lg:w-32 w-full  rounded-xl bg-gray-200 hover:bg-lime-500 hover:text-white">
               Apply Code
             </button>
           </div>
@@ -371,10 +371,63 @@ export default class CartConfirmation extends React.Component {
           <hr />
           <DialogContent className=" -mt-4 ">
             <div className="grid grid-cols-2 divide-x">
-              <div onClick={() => { this.setState({ delivery: false }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -ml-6 grid hover:text-white text-gray-400 place-content-center">
+              <div onClick={() => { this.setState({ delivery: false, hiddenpickup: "hidden", hiddenpickup2: "hidden" }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -ml-6 grid hover:text-white text-gray-400 place-content-center">
                 <button className="">Cancel</button>
               </div>
-              <div onClick={() => { this.setState({ delivery: false }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -mr-6 grid hover:text-white text-gray-400 place-content-center">
+              <div onClick={() => { this.setState({ delivery: false, hiddenpickup: "hidden", hiddenpickup2: "hidden" }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -mr-6 grid hover:text-white text-gray-400 place-content-center">
+                <button className="">Save</button>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+        {/* Dialog Box after clicking on add mew card */}
+        <Dialog
+          fullWidth
+          open={this.state.addNewCard}
+          onClose={() => {
+            this.setState({ addNewCard: false });
+          }}
+        >
+          <DialogTitle>
+            <p className="text-2xl text-gray-500 text-serif">
+              Add New Card
+            </p>
+            <IconButton
+              aria-label="close"
+              onClick={() => {
+                this.setState({ addNewCard: false });
+              }}
+              sx={{
+                position: "absolute",
+                right: 10,
+                top: 10,
+                color: (theme) => theme.palette.grey[500],
+                backgroundColor: "gray",
+              }}
+            >
+              <CloseIcon />
+            </IconButton>
+          </DialogTitle>
+          <DialogContent>
+
+            <div className="grid lg:grid-cols-8 grid-cols-4">
+              <div className="flex gap-2 col-span-2">
+                <img src="/credit-card.svg" className="h-5 w-5" alt="" />
+                <p className="text-gray-400 font-semibold">Card number</p>
+              </div>
+              <div className="lg:col-end-9 col-span-2">
+                <p className="font-bold text-gray-400">MM / YY / CVC</p>
+              </div>
+            </div>
+
+          </DialogContent>
+          <hr />
+          <DialogContent className=" -mt-4 ">
+            <div className="grid grid-cols-2 divide-x">
+              <div onClick={() => { this.setState({ addNewCard: false }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -ml-6 grid hover:text-white text-gray-400 place-content-center">
+                <button className="">Cancel</button>
+              </div>
+              <div onClick={() => { this.setState({ addNewCard: false }) }} className="hover:bg-gray-500 p-3 -mt-5 -mb-5 -mr-6 grid hover:text-white text-gray-400 place-content-center">
                 <button className="">Save</button>
               </div>
             </div>

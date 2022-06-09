@@ -38,7 +38,7 @@ export default class LeftPopUp extends React.Component {
                     <DialogContent>
                         <div className="grid grid-cols-2 ">
                             <div className="-ml-3 pr-1">
-                                <p className="text-3xl text-center mt-10  font-bold">UNLOCK <span>$20 OFF</span> YOUR FIRST ORDER</p>
+                                <p className="text-3xl text-center mt-10  font-bold">UNLOCK <span className="text-lime-400">$20 OFF</span> YOUR FIRST ORDER</p>
                             <p className="text-gray-700 text-center ">Get an automatic $20 in your digital wallet when you sign up for email and SMS</p>
                             <input placeholder="First Name" className="border border-2 border-black rounded-lg w-full px-2 py-2" type="text" id="fname" name="fname" />
                             <input placeholder="Email" className="border border-2 mt-2 border-black rounded-lg w-full px-2 py-2" type="text" id="fname" name="fname" />

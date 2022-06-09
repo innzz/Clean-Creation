@@ -227,22 +227,22 @@
     margin-top: 3px;
 }
 
-.modalQty>p {
-    border-right: 1px solid #8ed444;
-    ;
-    height: 28px;
-    width: 35px;
+.inputGroup {
+    margin-top: 5px;
 }
 
-.sub {
-    height: 28px;
-    width: 32px;
-    border-right: 1px solid #8ed444;
+.formControl {
+    width: 30px;
+    text-align: center;
+    outline: none;
+    /* border-color: #8ed444; */
+    border: 1px solid #8ed444;
 }
 
-.plus {
-    height: 28px;
-    width: 32px;
+.numBtn {
+    border: 1px solid #8ed444;
+    width: 25px;
+    border-radius: 5px;
 }
 
 .modalOrder {

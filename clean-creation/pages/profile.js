@@ -22,8 +22,8 @@ const Profile = () => {
         <ShippingAddress />
         <BillingAddress />
         <Cards />
-        <Bags />
-        <Checkout />
+        {/* <Bags />
+        <Checkout /> */}
       </div>
     </div>
   );
