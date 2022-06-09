@@ -424,10 +424,11 @@ export default class FooterHome extends React.Component {
                 onClick={() => {
                   this.setState({ open: false });
                 }}
+                style={{backgroundColor:"black", color:"white"}}
                 sx={{
                   position: "absolute",
-                  right: -10,
-                  top: -10,
+                  right: 2,
+                  top: 2,
                   color: (theme) => theme.palette.grey[500],
                   backgroundColor: "black",
                 }}
