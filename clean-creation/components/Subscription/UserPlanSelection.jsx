@@ -368,57 +368,6 @@ function UserPlanSelection() {
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <div className={styles.card}>
-              <div className={styles.heading}>
-                  <h3>3. Choose your Billing Renewal Cycle</h3>
-              </div>
-              <div className={styles.buttonsGroup} style={overView.portionSize !== ''?{}:{opacity: '0.2'}}>
-               {billingRenewalCycle.map((val,i)=>{
-                   return( <div className={styles.button}  key={i} onClick={()=>{handleBillingRenewal(val)}}>
-                    {val}
-                </div>)
-               })}
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.heading}>
-                  <h3>4. Choose your plan</h3>
-              </div>
-              <div className={styles.buttonsGroup} style={overView.billingRenewal && overView.portionSize !== ''?{}:{opacity: '0.2'}}>
-                {yourPlan2.map((val,i)=>{
-                    return(<div className={styles.button} key={i} onClick={()=>{handlePlan2(val)}}>
-                        {val}
-                    </div>)
-                })}
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.heading} >
-                  <h3>5. How many days per week do you want food?</h3>
-              </div>
-              <div className={styles.buttonsGroup} style={overView.plan2 && overView.portionSize && overView.billingRenewal !== ''?{}:{opacity: '0.2'}}>
-                {daysPerWeek.map((val,i)=>{
-                    return(<div className={styles.button} key={i} onClick={()=>{handleDaysPerWeek(val)}}>
-                        {val}
-                    </div>)
-                })}
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.heading}>
-                  <h3>6. How many meals per day?</h3>
-              </div>
-              <div className={styles.buttonsGroup} style={overView.plan2 && overView.billingRenewal &&overView.portionSize && overView.daysPerWeek !== ''?{}:{opacity: '0.2'}}>
-                {mealsPerDay.map((val,i)=>{
-                    return(<div className={styles.button} key={i} onClick={()=>{handleMealsPerDay(val)}}>
-                        {val}
-                    </div>)
-                })}
-=======
-=======
->>>>>>> 8dbb13a (User Plan Selection Error Solved.)
             <div className={styles.rightSection}>
               <div className={styles.rightInnerContainer}>
                 <div className={styles.overView}>
