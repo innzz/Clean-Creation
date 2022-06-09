@@ -5,7 +5,7 @@ export default class BlogPage extends React.Component {
     return (
       <div>
         <Blog />
-      </div>
+    </div>
     );
   }
 }

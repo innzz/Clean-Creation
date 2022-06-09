@@ -37,7 +37,6 @@ export default class FooterHome extends React.Component {
   }
 
   render() {
-    console.log(this.state.footerMenu);
     return (
       <div style={{ backgroundColor: "black", color: "white" }}>
         <Container style={{ padding: "20px" }}>
@@ -408,6 +407,9 @@ export default class FooterHome extends React.Component {
             </Col>
           </Row>
         </Container>
+
+
+        {/* Dialogue box for signup for our menu */}
         <Dialog
           open={this.state.open}
           onClose={() => {

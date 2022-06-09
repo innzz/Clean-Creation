@@ -168,7 +168,7 @@ export default class NavBar extends React.Component {
                 Select Meals
               </Nav.Link>
             </Link>
-            <Link href="screens/Blog">
+            <Link href="/Blog">
               <Nav.Link
                 style={{
                   color: this.state.hover4 === true ? "green" : "black",
