@@ -12,7 +12,7 @@ export default class Getstarted extends React.Component {
     render() {
         return (
             <div>
-                <Card className="bg-dark mb-20">
+                <Card className=" mb-20">
                     <Card.Img className="md:h-[47rem] h-[20rem]" src="https://cleancreations.com/data/modulesfiles/c05468f3dc8c502a29f7220836926013_item1_image.jpg?md=37ac9e542695bf8315609f74a842f117" alt="Card image" />
                     <Card.ImgOverlay className="md:p-[20rem] p-[0rem]" >
                         <div className="md:p-40 xs:p-0">
@@ -30,7 +30,7 @@ export default class Getstarted extends React.Component {
                                 We make eating healthy convenient and delicious so you can have more time to do the things you love.
                                 </Card.Text>
                                 <Link href={'/subscription'}>
-                                <button style={{backgroundColor:"#32CD32"}} className="h-10 w-44 md:h-14 md:w-64">
+                                <button style={{backgroundColor:"#9efd38"}} className="h-10 w-44 md:h-14 md:w-64">
                                     <p className="text-sm md:text-lg text-white text-center mt-2">GET STARTED</p>
                                     </button>
                                 </Link>
