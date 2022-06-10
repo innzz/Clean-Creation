@@ -23,7 +23,7 @@ export default class Cards extends React.Component {
                 <div className="shadow grid lg:grid-cols-8 p-4 rounded-xl mt-5">
                     <div className="flex col-span-7">
                         <p className="text-xl text-gray-700 font-semibold">My Cards</p>
-                        <button className="bg-lime-500 text-xs font-semibold text-white px-1 h-4 rounded-lg mt-2 ml-1">Gretna / Baton Rouge</button>
+                        <button className="bg-teal-500 text-xs font-semibold text-white px-1 h-4 rounded-lg mt-2 ml-1">Gretna / Baton Rouge</button>
                     </div>
                     <div>
                         <button onClick={() => { this.setState({ addCard: true }) }} className="px-4 py-3 rounded-lg bg-gray-800 text-white">Add new Card</button>
