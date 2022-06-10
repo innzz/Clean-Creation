@@ -43,7 +43,7 @@ export default class FooterHome extends React.Component {
           <Row>
             <Col>
               <Typography style={{ fontSize: "40px" }}>
-                Clean Creations
+                BookOnePos
               </Typography>
               <h6
                 onMouseEnter={() => {
@@ -53,7 +53,7 @@ export default class FooterHome extends React.Component {
                   this.setState({ hover1: false });
                 }}
                 style={{
-                  color: this.state.hover1 === true ? "green" : "white",
+                  color: this.state.hover1 === true ? "#43b3ae" : "white",
                 }}
               >
                 504-309-5427
@@ -66,7 +66,7 @@ export default class FooterHome extends React.Component {
                   this.setState({ hover2: false });
                 }}
                 style={{
-                  color: this.state.hover2 === true ? "green" : "white",
+                  color: this.state.hover2 === true ? "#43b3ae" : "white",
                 }}
               >
                 customerservice@cleancreations.net
@@ -133,7 +133,7 @@ export default class FooterHome extends React.Component {
               </ButtonGroup>
               <br />
               <Typography style={{ fontSize: "12px", marginTop: "60px" }}>
-                © 2022 Clean Creations. All Rights Reserved.
+                © 2022 BookOnePos. All Rights Reserved.
               </Typography>
             </Col>
             <Col className="justify-content-end">
@@ -145,7 +145,7 @@ export default class FooterHome extends React.Component {
                     lineHeight: "25px",
                   }}
                 >
-                  <h5>Clean Creations</h5>
+                  <h5>BookOnePos</h5>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -418,7 +418,7 @@ export default class FooterHome extends React.Component {
         >
           <Card style={{ width: "450px" }}>
             <DialogTitle>
-              <Typography style={{ color: "green", fontSize: "35px" }}>
+              <Typography style={{ color: "#43b3ae", fontSize: "35px" }}>
                 Newsletter
               </Typography>
               <IconButton
@@ -451,7 +451,7 @@ export default class FooterHome extends React.Component {
               <Button
                 variant="contained"
                 style={{
-                  backgroundColor: "green",
+                  backgroundColor: "#43b3ae",
                   color: "white",
                   width: "100%",
                   marginTop: "10px",

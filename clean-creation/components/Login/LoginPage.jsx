@@ -16,7 +16,7 @@ function LoginPage() {
       </div>
       <div className="">
         <div className="lg:ml-40 lg:mr-20  ml-5 mr-5 mt-32">
-          <p className="text-xl text-gray-700 font-semibold">Login to Clean Creations</p>
+          <p className="text-xl text-gray-700 font-semibold">Login to BookOnePos</p>
           <p className="text-gray-400">To access your account please login with your email address and password.</p>
           <div className="border rounded-t-lg p-3 lg:mr-20">
             <label className="text-xs">Your Email</label>

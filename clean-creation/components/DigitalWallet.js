@@ -6,7 +6,7 @@ export default class DigitalWallet extends React.Component {
         return (
             <div className="">
                 <div className="mx-3 mb-10 ">
-                    <div className="w-full lg:w-[80rem]  border p-3 shadow rounded-xl mt-5 ">
+                    <div className="w-full lg:w-[78rem]  border p-3 shadow rounded-xl mt-5 ">
                         <div className="flex  justify-between">
                             <div>
                                 <p className="text-md lg:text-lg font-semibold text-gray-600">Digital Wallet Transactions</p>

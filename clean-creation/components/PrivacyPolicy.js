@@ -4,10 +4,10 @@ export default class PrivacyPolicy extends React.Component {
         return (
             <div>
                 <p className="text-3xl text-gray-600 font-semibold">PRIVACY POLICY</p>
-                <p className="text-xl text-gray-600 font-semibold">Clean Creations  PRIVACY POLICY</p>
+                <p className="text-xl text-gray-600 font-semibold">BookOnePos  PRIVACY POLICY</p>
                 <p className="text-gray-600">Last Updated on March 5, 2021. This privacy policy is effective immediately.</p>
                 <p className="text-xl text-gray-600 font-semibold">Introduction</p>
-                <p className="text-gray-600">At Clean Creations , we respect your privacy and are committed to protecting it through our compliance with this policy.</p>
+                <p className="text-gray-600">At BookOnePos , we respect your privacy and are committed to protecting it through our compliance with this policy.</p>
                 <p className="text-gray-600">This policy describes the types of information we may collect from you or that you may provide when you visit this website (our “Website”) and our practices for collecting, using, maintaining, protecting and disclosing that information.</p>
                 <p className="text-gray-600">This policy applies to information we collect:</p>
                 <div className="ml-10">

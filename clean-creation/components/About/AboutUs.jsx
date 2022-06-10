@@ -16,7 +16,7 @@ function AboutUs() {
                 <div className={styles.passageContainer}>
                 <div className={styles.leftPassage}>
                     <h3>Catering</h3>
-                    <p>Clean Creations caters! We prepare fresh, healthy gourmet meals for private parties, corporate events, office lunches, and more. We can also create custom menus for particular dietary restrictions, including gluten-free, paleo, vegetarian, or vegan.</p>
+                    <p>BookOnePos caters! We prepare fresh, healthy gourmet meals for private parties, corporate events, office lunches, and more. We can also create custom menus for particular dietary restrictions, including gluten-free, paleo, vegetarian, or vegan.</p>
                     <p>For more information about catering and menus, send an e-mail to:
                     events@cleancreations.net</p>
                 </div>

@@ -66,7 +66,7 @@ function GrabNGoNavbar() {
                 <li>Grab And Go</li>
                 <li onClick={handleClick3} className={styles.aboutDropdown}>About <span>&#8964;</span>
                 {showAboutDropDown?'':((<ul className={styles.aboutDropdownMenu}>
-                <li className={styles.aboutDropdownMenu}>Clean Creations Baton Rouge</li>
+                <li className={styles.aboutDropdownMenu}>BookOnePos Baton Rouge</li>
                 </ul>))} 
                 </li>
                 <li>F.A.Q.</li>
