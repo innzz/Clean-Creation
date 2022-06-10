@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
                 <p style={{ lineHeight: "1px" }} className="text-sm">1105 Lafayette St, Gretna, Louisiana 70053</p>
                 <p className="font-semibold text-lg mt-20 text-gray-700">Get in touch</p>
                 <a className="text-black no-underline">504-309-5427</a>
-                <p className="text-sm">customerservice@cleancreations.net</p>
+                <p className="text-sm">customerservice@bookonepos.net</p>
 
                 <div>
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-2 px-2 py-4">
@@ -49,7 +49,7 @@ export default class Contact extends React.Component {
                             rows={4} label="" variant="standard" fullWidth />
                     </div>
                 </div>
-                <button className="bg-lime-500 px-4 py-2 rounded-3xl text-white font-semibold mb-10">Submit</button>
+                <button className="bg-teal-500 px-4 py-2 rounded-3xl text-white font-semibold mb-10">Submit</button>
             </div>
         )
     }

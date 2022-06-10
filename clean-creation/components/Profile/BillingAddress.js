@@ -19,7 +19,7 @@ export default class BillingAddress extends React.Component {
         return (
             <div className="container">
                 <div className="shadow p-4 rounded-xl mt-5">
-                    <p className="text-xl text-gray-700 font-semibold">My Shipping Address</p>
+                    <p className="text-xl text-gray-700 font-semibold">My Billing Address</p>
                     <hr />
                     <div className="grid gap-4 lg:grid-cols-3">
                         <div className="py-3">
@@ -40,7 +40,7 @@ export default class BillingAddress extends React.Component {
                         </div>
                     </div>
                     <div className="absolute lg:right-10 right-3 -mt-12">
-                        <button className="bg-lime-500 p-3 text-white rounded-xl">Save Shipping</button>
+                        <button className="bg-teal-500 p-3 text-white rounded-xl">Save Shipping</button>
                     </div>
 
                 </div>

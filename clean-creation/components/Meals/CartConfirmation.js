@@ -158,7 +158,7 @@ export default class CartConfirmation extends React.Component {
               variant="standard"
               fullWidth
             />
-            <button className="lg:px-2 lg:py-3.5 lg:w-32 w-full  rounded-xl bg-gray-200 hover:bg-lime-500 hover:text-white">
+            <button className="lg:px-2 lg:py-3.5 lg:w-32 w-full  rounded-xl bg-gray-200 hover:bg-teal-500 hover:text-white">
               Apply Code
             </button>
           </div>
@@ -194,7 +194,7 @@ export default class CartConfirmation extends React.Component {
           </DialogTitle>
           <DialogContent>
             <div className="border-1 rounded-lg border-black p-2 ">
-              <div onClick={() => { this.setState({ pickup: false, hiddenpickup: null, hiddenpickup2: "hidden" }) }} className="">
+              <div onClick={() => { this.setState({ pickup: false, hiddenpickup: null, hiddenpickup2: "hidden" }) }} className="cursor-pointer">
                 <p className="font-semibold lg:text-lg text-sm">Gretna</p>
                 <p className=" grid place-content-end text-sm -mt-10">
                   Click to Select
@@ -205,7 +205,7 @@ export default class CartConfirmation extends React.Component {
               </div>
             </div>
             <div className="border-1 rounded-lg border-black p-2 mt-4 ">
-              <div onClick={() => { this.setState({ pickup: false, hiddenpickup2: null, hiddenpickup: "hidden" }) }} className="">
+              <div onClick={() => { this.setState({ pickup: false, hiddenpickup2: null, hiddenpickup: "hidden" }) }} className="cursor-pointer">
                 <p className="font-semibold lg:text-lg text-sm">
                   Highland Park Market Place
                 </p>

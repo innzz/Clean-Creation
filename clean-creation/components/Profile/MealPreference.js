@@ -41,7 +41,7 @@ export default class MealPreference extends React.Component {
                     onClick={() => {
                       this.setState({ one: true });
                     }}
-                    className="bg-lime-400 text-white lg:px-24 px-32 py-2 rounded-lg"
+                    className="bg-teal-500 text-white lg:px-24 px-32 py-2 rounded-lg"
                   >
                     Edit
                   </button>
@@ -58,7 +58,7 @@ export default class MealPreference extends React.Component {
                     onClick={() => {
                       this.setState({ two: true });
                     }}
-                    className="bg-lime-400 text-white lg:px-24 px-32 py-2 rounded-lg"
+                    className="bg-teal-500 text-white lg:px-24 px-32 py-2 rounded-lg"
                   >
                     Edit
                   </button>
@@ -76,7 +76,7 @@ export default class MealPreference extends React.Component {
                     onClick={() => {
                       this.setState({ three: true });
                     }}
-                    className="bg-lime-400 text-white lg:px-24 px-32 py-2 rounded-lg"
+                    className="bg-teal-500 text-white lg:px-24 px-32 py-2 rounded-lg"
                   >
                     Edit
                   </button>

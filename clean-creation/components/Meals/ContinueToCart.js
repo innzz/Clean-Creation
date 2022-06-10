@@ -39,7 +39,7 @@ export default class ContinueToCart extends React.Component {
               this.setState({ open: true });
             }}
             href="/"
-          ><a className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+          ><a className=" no-underline inline-flex items-center py-2 px-3 text-medium text-center text-white bg-teal-500 rounded-lg ">
               <svg
                 style={{ color: "white" }}
                 xmlns="http://www.w3.org/2000/svg"
