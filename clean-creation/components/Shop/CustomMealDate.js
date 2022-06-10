@@ -15,7 +15,7 @@ export default class CustomMealDate extends React.Component {
     render() {
         return (
             <div>
-                <div className="bg-lime-500">
+                <div className="bg-teal-500">
                     <div className="container pt-2 pb-8 grid lg:grid-cols-2  ">
                         <p className="text-3xl font-semibold text-white">Custom Meal Builder</p>
                         <Link href="#">

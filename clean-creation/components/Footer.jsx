@@ -69,7 +69,7 @@ export default class FooterHome extends React.Component {
                   color: this.state.hover2 === true ? "#43b3ae" : "white",
                 }}
               >
-                customerservice@cleancreations.net
+                customerservice@bookonepos.net
               </h6>
 
               <div className="flex" style={{ marginTop: "50px" }}>

@@ -23,7 +23,7 @@ export default class Extras extends React.Component {
   render() {
     return (
       <div>
-        <div className="bg-lime-500">
+        <div className="bg-teal-500">
           <div className="container p-2">
             <p className="text-3xl font-semibold text-white">Extras</p>
           </div>
@@ -75,7 +75,7 @@ export default class Extras extends React.Component {
                 </button>
                 <button
                   type="button"
-                  className=" py-2 px-2.5 text-xs font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
+                  className=" py-2 px-2.5 text-xs font-medium text-white bg-teal-500 rounded-r-md border border-gray-200 "
                 >
                   Add to Cart
                 </button>

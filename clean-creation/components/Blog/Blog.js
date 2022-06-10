@@ -66,7 +66,7 @@ export default class Blog extends React.Component {
                 </p>
                 <Link href="/Blog/id">
                   <button
-                    className="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-lime-400 mb-10 rounded-lg hover:scale-110"
+                    className="mt-4 no-underline inline-flex items-center py-2 px-10 text-xl font-bold text-center text-white bg-teal-500 mb-10 rounded-lg hover:scale-110"
                   >
                     READ MORE
                   </button>

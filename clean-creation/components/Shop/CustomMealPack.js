@@ -46,7 +46,7 @@ export default class CustomMealPack extends React.Component {
     return (
       <div className="p-3 lg:p-0">
         <div className="container rounded-xl mb-10 border">
-          <div className="bg-lime-500 rounded-tl-xl rounded-tr-xl py-2 -ml-3 -mr-3.5 grid grid-cols-2  ">
+          <div className="bg-teal-500 rounded-tl-xl rounded-tr-xl py-2 -ml-3 -mr-3.5 grid grid-cols-2  ">
             <div className="grid lg:grid-cols-2">
               <div>
                 <p className="text-3xl font-semibold text-white ml-2">
@@ -108,8 +108,8 @@ export default class CustomMealPack extends React.Component {
             <div className="grid lg:grid-cols-2 gap-0 place-content-center ">
               <div className="lg:w-96 w-72 lg:-mt-44">
                 <div className="flex">
-                  <div className="border-2 border-lime-500 h-14 w-14 mt-3 flex place-content-center rounded-full">
-                    <p className="text-xl font-bold text-lime-500 mt-2">1</p>
+                  <div className="border-2 border-teal-500 h-14 w-14 mt-3 flex place-content-center rounded-full">
+                    <p className="text-xl font-bold text-teal-500 mt-2">1</p>
                   </div>
                   <div className="mt-3 ml-4">
                     <p className="text-xl font-semibold text-gray-700">
@@ -174,8 +174,8 @@ export default class CustomMealPack extends React.Component {
               {/* Second one */}
               <div className="lg:w-96 w-72 lg:-mt-44 lg:ml-20">
                 <div className="flex">
-                  <div className="border-2 border-lime-500 h-14 w-14 mt-3 flex place-content-center rounded-full">
-                    <p className="text-xl font-bold text-lime-500 mt-2">1</p>
+                  <div className="border-2 border-teal-500 h-14 w-14 mt-3 flex place-content-center rounded-full">
+                    <p className="text-xl font-bold text-teal-500 mt-2">1</p>
                   </div>
                   <div className="mt-3 ml-4">
                     <p className="text-xl font-semibold text-gray-700">
@@ -366,7 +366,7 @@ export default class CustomMealPack extends React.Component {
             <Link
               href="#"
             >
-              <a className=" no-underline inline-flex gap-2 items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+              <a className=" no-underline inline-flex gap-2 items-center py-2 px-3 text-medium text-center text-white bg-teal-500 rounded-lg ">
                 <img src="/add.svg" alt="" />
                 Add Another Pack
               </a>
@@ -376,7 +376,7 @@ export default class CustomMealPack extends React.Component {
             <Link
               href="/cart"
             >
-              <a className=" no-underline inline-flex gap-2 items-center py-2 px-3 text-medium text-center text-white bg-lime-500 rounded-lg ">
+              <a className=" no-underline inline-flex gap-2 items-center py-2 px-3 text-medium text-center text-white bg-teal-500 rounded-lg ">
                 <img src="/basket-fill-white.svg" alt="" />
                 Continue to Cart
               </a>
@@ -390,7 +390,7 @@ export default class CustomMealPack extends React.Component {
             href="#"
           >
             <a
-              className=" no-underline inline-flex gap-2 items-center py-2 px-3 ml-[4.5rem] text-medium text-center text-white bg-lime-500 rounded-lg "
+              className=" no-underline inline-flex gap-2 items-center py-2 px-3 ml-[4.5rem] text-medium text-center text-white bg-teal-500 rounded-lg "
               onClick={() => {
                 this.setState({ open: true });
               }}>
@@ -442,7 +442,7 @@ export default class CustomMealPack extends React.Component {
                     </button>
                     <button
                       type="button"
-                      className=" py-2 px-2.5 text-sm font-medium text-white bg-lime-500 rounded-r-md border border-gray-200 "
+                      className=" py-2 px-2.5 text-sm font-medium text-white bg-teal-500 rounded-r-md border border-gray-200 "
                     >
                       Add to Cart
                     </button>

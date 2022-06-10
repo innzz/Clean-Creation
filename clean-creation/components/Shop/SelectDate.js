@@ -53,9 +53,9 @@ export default class SelectDate extends React.Component {
                                 return (
                                     <div key={i}>
                                         <p className="italic font-semibold text-gray-500">{s.month}</p>
-                                        <div className="border-2 group border-gray-200 hover:text-lime-500 hover:border-lime-500 cursor-pointer pt-3 px-3 rounded-lg " style={{ marginTop: s.month === "" ? "40px" : "", lineHeight: "5px" }}>
-                                            <p className="font-bold text-gray-400 group-hover:text-lime-500">{s.day}</p>
-                                            <p className="text-3xl font-bold text-gray-400 group-hover:text-lime-500">{s.number}</p>
+                                        <div className="border-2 group border-gray-200 hover:text-lime-500 hover:border-teal-500 cursor-pointer pt-3 px-3 rounded-lg " style={{ marginTop: s.month === "" ? "40px" : "", lineHeight: "5px" }}>
+                                            <p className="font-bold text-gray-400 group-hover:text-teal-500">{s.day}</p>
+                                            <p className="text-3xl font-bold text-gray-400 group-hover:text-teal-500">{s.number}</p>
                                         </div>
                                     </div>
                                 )
