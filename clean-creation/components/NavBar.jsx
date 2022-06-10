@@ -236,7 +236,7 @@ export default class NavBar extends React.Component {
         >
           <Typography style={{ fontSize: "12px", paddingLeft: "20px", marginTop: "5px" }}>Rekha Baitharu</Typography>
           <hr />
-          <MenuItem className="hover:bg-lime-400  mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+          <MenuItem className="hover:bg-teal-500  mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <PersonIcon fontSize="small" />
             </ListItemIcon>
@@ -244,7 +244,7 @@ export default class NavBar extends React.Component {
               <ListItemText>Profile</ListItemText>
             </Link>
           </MenuItem>
-          <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+          <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <SubscriptionsIcon fontSize="small" />
             </ListItemIcon>
@@ -252,7 +252,7 @@ export default class NavBar extends React.Component {
               <ListItemText>My Subscription</ListItemText>
             </Link>
           </MenuItem>
-          <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
+          <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor: null, menu: false }) }}>
             <ListItemIcon>
               <LogoutIcon fontSize="small" />
             </ListItemIcon>

@@ -37,40 +37,40 @@ export default class SideBar extends React.Component {
               onMouseLeave={() => {
                 this.setState({ hover: false });
               }}
-              style={{ color: this.state.hover === true ? "green" : "black" }}
+              style={{ color: this.state.hover === true ? "#43b3ae" : "black" }}
             >
               Credencesoft
             </p>
             <div className="-ml-5">
               <ul className="space-y-2 mt-10">
                 <li className="mb-3">
-                  <Link href="/"  >
-                    <a
+                  <Link href="/"  passHref>
+                    <div
                       style={{
-                        color: this.state.hover1 === true ? "green" : "black",
+                        color: this.state.hover1 === true ? "#43b3ae" : "black",
                       }}
                       onMouseEnter={() => {
                         this.setState({ hover1: true });
                       }}
-                      className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                      className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white group"
                       onMouseLeave={() => {
                         this.setState({ hover1: false });
                       }}>
-                      <img src="/logoff.svg" className="h-5 w-5" alt="" />
-                      <span className="ml-3">Log off</span>
-                    </a>
+                      <img src="/logoff.svg" className="h-5 w-5 group-hover:text-teal-500" alt="" />
+                      <span className="ml-3 group-hover:text-teal-500">Log off</span>
+                    </div>
                   </Link>
                 </li>
                 <hr />
                 <li>
-                  <Link href="/">
+                  <Link href="/profile">
                     <a
+                      className="flex no-underline bg-teal-500 text-white items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
                       style={{
-                        color: this.state.hover2 === true ? "green" : "black",
+                        color: this.state.hover2 === true ? "#43b3ae" : "black",
                       }} onMouseEnter={() => {
                         this.setState({ hover2: true });
                       }}
-                      className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                       onMouseLeave={() => {
                         this.setState({ hover2: false });
                       }}>
@@ -83,7 +83,7 @@ export default class SideBar extends React.Component {
                 <li>
                   <button
                     type="button"
-                    className="flex bg-lime-500 text-white items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
+                      className="no-underline flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:text-teal-500"
                     aria-controls="dropdown-example"
                     data-collapse-toggle="dropdown-example"
                   >
@@ -96,33 +96,33 @@ export default class SideBar extends React.Component {
                   </button>
                   <ul id="dropdown-example" className=" py-2 space-y-2">
                     <li>
-                      <Link href="/">
+                      <Link href="/subscription">
                         <a
                           style={{
-                            color: this.state.hover4 === true ? "green" : "black",
+                            color: this.state.hover4 === true ? "#43b3ae" : "black",
                           }}
                           onMouseEnter={() => {
                             this.setState({ hover4: true });
                           }}
-                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="no-underline flex items-center p-2 pl-11 w-full group-hover:text-teal-500 text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
                           onMouseLeave={() => {
                             this.setState({ hover4: false });
                           }}>
-                          <img src="/rightArrowSidebar.svg" alt="" />
+                          <img src="/rightArrowSidebar.svg" className="group-hover:text-teal-500" alt="" />
                           Subscription
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/subscription">
                         <a
                           style={{
-                            color: this.state.hover5 === true ? "green" : "black",
+                            color: this.state.hover5 === true ? "#43b3ae" : "black",
                           }}
                           onMouseEnter={() => {
                             this.setState({ hover5: true });
                           }}
-                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
                           onMouseLeave={() => {
                             this.setState({ hover5: false });
                           }}>
@@ -132,15 +132,15 @@ export default class SideBar extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/macroTracking">
                         <a
                           style={{
-                            color: this.state.hover6 === true ? "green" : "black",
+                            color: this.state.hover6 === true ? "#43b3ae" : "black",
                           }}
                           onMouseEnter={() => {
                             this.setState({ hover6: true });
                           }}
-                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group"
                           onMouseLeave={() => {
                             this.setState({ hover6: false });
                           }}>
@@ -155,10 +155,10 @@ export default class SideBar extends React.Component {
                 <li>
                   <button
                     style={{
-                      color: this.state.hover7 === true ? "green" : "black",
+                      color: this.state.hover7 === true ? "#43b3ae" : "black",
                     }}
                     type="button"
-                    className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group"
                     aria-controls="dropdown-example"
                     data-collapse-toggle="dropdown-example"
                   >
@@ -180,12 +180,12 @@ export default class SideBar extends React.Component {
                       <Link href="/">
                         <a
                           style={{
-                            color: this.state.hover8 === true ? "green" : "black",
+                            color: this.state.hover8 === true ? "#43b3ae" : "black",
                           }} onMouseEnter={() => {
 
                             this.setState({ hover8: true });
                           }}
-                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
                           onMouseLeave={() => {
                             this.setState({ hover8: false });
                           }}>
@@ -198,12 +198,12 @@ export default class SideBar extends React.Component {
                       <Link href="/">
                         <a
                           style={{
-                            color: this.state.hover9 === true ? "green" : "black",
+                            color: this.state.hover9 === true ? "#43b3ae" : "black",
                           }}
                           onMouseEnter={() => {
                             this.setState({ hover9: true });
                           }}
-                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
                           onMouseLeave={() => {
                             this.setState({ hover9: false });
                           }}>
@@ -213,16 +213,16 @@ export default class SideBar extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/">
+                      <Link href="/digitalWallet">
                         <a
                           style={{
                             color:
-                              this.state.hover10 === true ? "green" : "black",
+                              this.state.hover10 === true ? "#43b3ae" : "black",
                           }}
                           onMouseEnter={() => {
                             this.setState({ hover10: true });
                           }}
-                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="no-underline flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group "
                           onMouseLeave={() => {
                             this.setState({ hover10: false });
                           }}  >
