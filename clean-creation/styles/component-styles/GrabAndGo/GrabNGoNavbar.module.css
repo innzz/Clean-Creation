@@ -7,7 +7,7 @@
 }
 
 .container > .leftSection{
-    background-image: url('https://cleancreations.com/assets/images/clean_creations_logo-1.svg');
+    background-image: url('/bookOne.png');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain; /* Resize the background image to cover the entire container */

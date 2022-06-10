@@ -100,7 +100,7 @@ export default class NavBar extends React.Component {
           <Navbar.Collapse className="justify-content-end">
 
             <button
-            style={{backgroundColor:"#43b3ae"}}
+              style={{ backgroundColor: "#43b3ae" }}
               id="basic-button"
               aria-controls={this.state.open ? 'basic-menu' : undefined}
               aria-haspopup="true"
@@ -188,11 +188,7 @@ export default class NavBar extends React.Component {
             </Link>
             <Link href="/cart">
               <Nav.Link href="#/action-8">
-                <img
-                  src="https://cleancreations.com/assets/icons/cart.svg"
-                  alt=""
-                  style={{ height: "20px", width: "20px" }}
-                />
+                <img src="/basket-fill.svg" className="h-5 w-5 mr-10" alt="" />
               </Nav.Link>
             </Link>
 
