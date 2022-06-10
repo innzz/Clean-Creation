@@ -18,7 +18,7 @@ export default class Demo extends React.Component {
                                 We make eating healthy convenient and delicious so you can have more time to do the things you love.
                             </Card.Text>
                             <Link href={'/subscription'}>
-                                <button style={{ backgroundColor: "#9efd38" }} className="h-10 w-44 lg:h-14 lg:w-64">
+                                <button style={{ backgroundColor: "#43b3ae" }} className="h-10 w-44 lg:h-14 lg:w-64">
                                     <p className="text-sm lg:text-lg text-white text-center mt-2">GET STARTED</p>
                                 </button>
                             </Link>
