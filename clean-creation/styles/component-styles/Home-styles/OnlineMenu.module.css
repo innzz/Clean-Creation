@@ -99,7 +99,6 @@
 .cards::-webkit-scrollbar-thumb {
       border-radius: 15px;
     background-color: rgb(196, 195, 195);
-    /* outline: 1px solid slategrey; */
   }
 
 .card {
@@ -175,7 +174,7 @@
     justify-content: center;
     align-items: center;
     width: 350px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .button > a {

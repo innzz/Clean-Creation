@@ -127,7 +127,7 @@
 
 .innerQuantity {
     display: flex;
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     align-items: center;
     width: 70px;
     height: 29px;
@@ -138,11 +138,11 @@
 }
 
 .btnAdd {
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     display: flex;
     text-align: center;
     border-radius: 4px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     color: white;
     padding: 2px;
 }

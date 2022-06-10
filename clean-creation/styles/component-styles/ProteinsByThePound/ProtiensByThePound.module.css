@@ -66,9 +66,9 @@
 }
 
 .outerDateContainer > .dateContainer > .dateCardsSection > .dateCards > .dateCard:hover{
-    color: #00d95b;
+    color: #43b3ae;
     cursor: pointer;
-    border: 1px solid #00d95b;
+    border: 1px solid #43b3ae;
 }
 
 
@@ -78,10 +78,8 @@
 }
 
 .outerDateContainer > .dateContainer > .dateCardsSection > .dateCards > .dateCard > h2{
-    /* text-shadow: 0px 1px, 1px 0px, 1px 1px; */
     font-size: 40px;
     font-weight: 900;
-    /* color: #CCCCCC; */
     margin: 0;
 }
 
@@ -93,7 +91,7 @@
 
 .packsContainer .pack{
     margin-bottom: 60px;
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     border-radius: 25px;
 }
 
@@ -103,7 +101,7 @@
     border-top-right-radius: 20px;
     padding: 5px 20px;
     display: flex;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     color: #fff;
     justify-content: space-between;
     align-items: center;
@@ -204,8 +202,8 @@
 }
 
 .packsContainer > .packs > .pack > .innerPackContainer > .leftSection > .cards > .card:hover{
-    color: #8ed444;
-    border: 1px solid #8ed444;
+    color: #43b3ae;
+    border: 1px solid #43b3ae;
     transform: translateY(-8px);
     box-shadow: 0px 4px 8px 1px rgb(124, 124, 124);
 }
@@ -271,14 +269,14 @@
     color: #fff;
     padding: 20px 30px;
     display: flex;
-    border-bottom: 2px solid #8ed444;
+    border-bottom: 2px solid #43b3ae;
 }
 
 .packsContainer > .buttons > .upperButtons > .leftButton{
     padding: 15px 30px;
     display: flex;
     border-radius: 10px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .packsContainer > .buttons > .upperButtons > .leftButton > h5{
@@ -291,7 +289,7 @@
     padding: 15px 30px;
     display: flex;
     border-radius: 10px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .packsContainer > .buttons > .upperButtons > .rightButton > h5{
@@ -306,7 +304,7 @@
     display: flex;
     width: 20%;
     border-radius: 10px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .packsContainer > .buttons > .lowerButton > .leftButton > h5{

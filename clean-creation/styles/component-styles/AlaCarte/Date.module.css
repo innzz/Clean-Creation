@@ -43,11 +43,11 @@
 }
 
 .dateOne {
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     width: 65px;
     height: 70px;
     text-align: center;
-    color: #8ed444;
+    color: #43b3ae;
     border-radius: 8px;
     /* margin-left: 10px; */
 }
@@ -118,7 +118,7 @@
     padding: 5px 6px;
     margin-right: 10px;
     color: white;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     border-radius: 5px;
 }
 
@@ -129,7 +129,7 @@
 
 .innerButtonTwo {
     display: flex;
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     width: 160px;
     height: 28px;
     /* padding: 10px; */
@@ -138,7 +138,7 @@
     padding: 5px 6px;
     margin-right: 10px;
     background-color: white;
-    color: #8ed444;
+    color: #43b3ae;
     border-radius: 5px;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .sorting {
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     display: flex;
     width: 250px;
     justify-content: space-between;
@@ -188,14 +188,14 @@
     font-size: 14px;
     font-weight: bold;
     /* margin-top: 5px; */
-    color: #8ed444;
+    color: #43b3ae;
     /* text-align: center; */
 }
 
 .iconSort {
     height: 20px;
     width: 22px;
-    color: #8ed444;
+    color: #43b3ae;
 }
 
 .canvasBody {
@@ -211,7 +211,7 @@
 }
 
 .canvasLower>button {
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     width: 100%;
     margin-top: 400px;
 }
@@ -219,12 +219,12 @@
 .applyBtn {
     padding: 10px 10px;
     color: white;
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .applyClr {
     padding: 10px 10px;
-    color: #8ed444;
+    color: #43b3ae;
 }
 
 .canvaTitle {

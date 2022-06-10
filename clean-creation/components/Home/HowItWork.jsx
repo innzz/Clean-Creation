@@ -14,6 +14,7 @@ function HowItWork() {
             <img
               src="https://cleancreations.com/data/config/theme_howitworks_item1_image.svg?md=a90764e4d1943d70ade260f7af365720"
               alt="menu"
+              style={{color: '#43b3ae'}}
             />
           </div>
           <div className={styles.description}>

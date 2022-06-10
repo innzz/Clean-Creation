@@ -1,5 +1,5 @@
 .greenBg {
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .midContainer {
@@ -41,7 +41,7 @@
     content: "";
     height: 4px;
     width: 13%;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     z-index: 10;
 }
 
@@ -89,8 +89,8 @@
 }
 
 .leftSection>.cards>.card>.monthWrapper>.buttonsGroup2>.button2:hover {
-    border: 2px solid #8ed444;
-    color: #8ed444;
+    border: 2px solid #43b3ae;
+    color: #43b3ae;
 }
 
 .leftSection>.cards>.card>.monthWrapper>.buttonsGroup2>.button2>h4 {
@@ -123,8 +123,8 @@
 }
 
 .leftSection>.cards>.card>.buttonsGroup>.button:hover {
-    color: #8ed444;
-    border: 1px solid #8ed444;
+    color: #43b3ae;
+    border: 1px solid #43b3ae;
     transform: translateY(-10px);
     box-shadow: 1px 3px 4px grey;
 }
@@ -165,7 +165,7 @@
     font-weight: 500;
     border-radius: 7px;
     white-space: nowrap;
-    background-color: #8ed444;
+    background-color: #43b3ae;
 }
 
 .rightSection {
@@ -234,7 +234,7 @@
     height: 4px;
     width: 80%;
     bottom: 0;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     z-index: 10;
 }
 
@@ -249,12 +249,12 @@
     font-family: 'avenirRegular', sans-serif;
     font-weight: 600;
     border-radius: 7px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     white-space: nowrap;
 }
 
 .rightSection>.rightInnerContainer>.bottom {
-    background-color: #8ed444;
+    background-color: #43b3ae;
     color: #fff;
     padding: 15px 20px;
     font-size: 18px;
