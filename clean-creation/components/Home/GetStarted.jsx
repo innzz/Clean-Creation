@@ -1,45 +1,37 @@
-import { Button, CardContent, Grid, Typography } from "@mui/material";
-import Link from 'next/link'
-import React from "react";
+import React from 'react';
+import { CardContent, Grid } from "@mui/material"
 import { Card } from "react-bootstrap";
-export default class Getstarted extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    }
+import Link from "next/link"
+import styles from "../../styles/component-styles/Home-styles/GetStarted.module.css";
+// import "./demo.css";
+export default class Demo extends React.Component {
     render() {
         return (
-            <div>
-                <Card className=" mb-20">
-                    <Card.Img className="lg:h-[47rem] h-[20rem]" src="https://cleancreations.com/data/modulesfiles/c05468f3dc8c502a29f7220836926013_item1_image.jpg?md=37ac9e542695bf8315609f74a842f117" alt="Card image" />
-                    <Card.ImgOverlay className="lg:p-[20rem] p-[0rem]" >
-                        <div className="lg:p-40 xs:p-0">
-                        <Card className="lg:p-[0rem] p-[0rem] " style={{
-                            margin: "0px",
-                            backgroundColor: "#ffffff",
-                            opacity: 0.6,
-                        }}>
-                            <CardContent className="lg:p-14" style={{
-                                fontWeight: "semibold",
-                                color: "#000000"
-                            }}>
-                                <Card.Text  className="lg:text-7xl text-4xl" >Get Started<br /> With a Healthier You</Card.Text>
-                                <Card.Text className="lg:text-xl font-normal lg:font-bold lg:mt-0 -mt-4" >
+            <>
+                <div className='h-[40rem]  lg:-mb-72'>
+                    <div className={styles.bgimage}></div>
+                </div>
+
+
+                {/* <div className={styles.bgtext} > */}
+                <div className="lg:p-40 xs:p-0">
+                    <Card className={styles.bgtext} >
+                        <CardContent className="lg:p-14" >
+                            <Card.Text className="lg:text-7xl text-4xl font-semibold text-black" >Get Started<br /> With a Healthier You</Card.Text>
+                            <Card.Text className="lg:text-[1.3rem] mt-5 text-black font-normal  lg:mt-0 -mt-4" >
                                 We make eating healthy convenient and delicious so you can have more time to do the things you love.
-                                </Card.Text>
-                                <Link href={'/subscription'}>
-                                <button style={{backgroundColor:"#9efd38"}} className="h-10 w-44 lg:h-14 lg:w-64">
+                            </Card.Text>
+                            <Link href={'/subscription'}>
+                                <button style={{ backgroundColor: "#9efd38" }} className="h-10 w-44 lg:h-14 lg:w-64">
                                     <p className="text-sm lg:text-lg text-white text-center mt-2">GET STARTED</p>
-                                    </button>
-                                </Link>
-                            </CardContent>
-                        </Card>
-                        </div>
-                    </Card.ImgOverlay>
-                </Card>
-            </div>
+                                </button>
+                            </Link>
+                        </CardContent>
+                    </Card>
+                    {/* </div> */}
+                </div>
+
+            </>
         )
     }
 }
