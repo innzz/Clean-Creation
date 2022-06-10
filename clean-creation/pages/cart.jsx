@@ -31,7 +31,7 @@ const CartScreen = () => {
                   <h5>Weekly Subscription</h5>
                 </div>
                 <div className={styles.edit}>
-                  <a href="#">Edit</a>
+                  <Link href="/subscription">Edit</Link>
                 </div>
               </div>
 

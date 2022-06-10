@@ -114,7 +114,7 @@ export default class SideBar extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/subscription">
+                      <Link href="/meals">
                         <a
                           style={{
                             color: this.state.hover5 === true ? "#43b3ae" : "black",

@@ -5,8 +5,8 @@ export default class ReadMore extends React.Component {
     render() {
         return (
             <div>
-                <div className="bg-blend-darken bg-[url('https://resources.cleancreations.com/wp-content/uploads/2022/04/undefined-Imgur-41.jpg')] -mt-52 h-[50rem] object-none md:object-bottom object-right-bottom bg-cover " >
-                    <p className="pt-96 text-center text-5xl md:pl-24 md:pr-24 font-bold text-white">IS YOUR CHILD ADDICTED TO SUGAR? HERE IS WHAT YOU CAN DO</p>
+                <div className="bg-blend-darken bg-[url('https://resources.cleancreations.com/wp-content/uploads/2022/04/undefined-Imgur-41.jpg')]  h-[30rem] w-full object-bottom  bg-cover " >
+                    <p className="pt-40 text-center text-5xl md:pl-24 md:pr-24 font-bold text-white">IS YOUR CHILD ADDICTED TO SUGAR? HERE IS WHAT YOU CAN DO</p>
                     <p className="text-white font-normal text-md text-center">APRIL 22, 2022</p>
 
                 </div>

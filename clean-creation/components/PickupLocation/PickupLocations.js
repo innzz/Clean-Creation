@@ -11,7 +11,7 @@ export default class PickupLocations extends React.Component {
                         <p className="text-gray-600">Baton Rouge, LA 70810</p>
                     </div>
                     <div>
-                        <button className="bg-lime-500 rounded-full h-10 w-10 grid place-content-center lg:mt-20 mt-28 lg:ml-60 ml-28 ">
+                        <button className="bg-teal-500 rounded-full h-10 w-10 grid place-content-center lg:mt-20 mt-28 lg:ml-60 ml-28 ">
                             <img src="/search.svg" alt="" />
                         </button>
                     </div>
@@ -24,7 +24,7 @@ export default class PickupLocations extends React.Component {
                         <p className="text-gray-600">Baton Rouge, LA 70810</p>
                     </div>
                     <div>
-                        <button className="bg-lime-500 rounded-full h-10 w-10 grid place-content-center lg:mt-20 mt-28 lg:ml-60 ml-28 ">
+                        <button className="bg-teal-500 rounded-full h-10 w-10 grid place-content-center lg:mt-20 mt-28 lg:ml-60 ml-28 ">
                             <img src="/search.svg" alt="" />
                         </button>
                     </div>
@@ -37,7 +37,7 @@ export default class PickupLocations extends React.Component {
                         <p className="text-gray-600">Baton Rouge, LA 70810</p>
                     </div>
                     <div>
-                        <button className="bg-lime-500 rounded-full h-10 w-10 grid place-content-center lg:mt-20 mt-28 lg:ml-60 ml-28 ">
+                        <button className="bg-teal-500 rounded-full h-10 w-10 grid place-content-center lg:mt-20 mt-28 lg:ml-60 ml-28 ">
                             <img src="/search.svg" alt="" />
                         </button>
                     </div>
