@@ -48,7 +48,7 @@ export default class MyProfile extends React.Component {
                             </tbody>
                         </Table>
                         <div className=" grid place-content-center">
-                            <button className="bg-teal-500 p-2 font-semibold  rounded-xl">Set Recommended Daily Value</button>
+                            <button className="bg-teal-500 p-2 text-white font-semibold  rounded-xl">Set Recommended Daily Value</button>
                         </div>
                     </div>
                 </div>

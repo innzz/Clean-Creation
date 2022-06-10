@@ -236,7 +236,7 @@ export default class NavBar extends React.Component {
             <ListItemIcon>
               <PersonIcon fontSize="small" />
             </ListItemIcon>
-            <Link href="/profile"  >
+            <Link href="/profile">
               <ListItemText>Profile</ListItemText>
             </Link>
           </MenuItem>

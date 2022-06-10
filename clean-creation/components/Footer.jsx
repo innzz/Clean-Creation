@@ -192,6 +192,7 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
+                    <Link href="/privacyPolicy">
                   <Typography
                     style={{
                       fontSize: "15px",
@@ -201,6 +202,7 @@ export default class FooterHome extends React.Component {
                   >
                     <b>Privacy Policy</b>
                   </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
@@ -228,6 +230,7 @@ export default class FooterHome extends React.Component {
                     cursor: "pointer",
                   }}
                 >
+                   <Link href="/pickup">
                   <Typography
                     style={{
                       fontSize: "15px",
@@ -237,6 +240,7 @@ export default class FooterHome extends React.Component {
                   >
                     <b>Pickup Locations</b>
                   </Typography>
+                  </Link>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{
