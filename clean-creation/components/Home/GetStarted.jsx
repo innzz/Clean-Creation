@@ -3,7 +3,6 @@ import { CardContent, Grid } from "@mui/material"
 import { Card } from "react-bootstrap";
 import Link from "next/link"
 import styles from "../../styles/component-styles/Home-styles/GetStarted.module.css";
-// import "./demo.css";
 export default class Demo extends React.Component {
     render() {
         return (
@@ -11,9 +10,6 @@ export default class Demo extends React.Component {
                 <div className='h-[40rem]  lg:-mb-72'>
                     <div className={styles.bgimage}></div>
                 </div>
-
-
-                {/* <div className={styles.bgtext} > */}
                 <div className="lg:p-40 xs:p-0">
                     <Card className={styles.bgtext} >
                         <CardContent className="lg:p-14" >
@@ -28,9 +24,7 @@ export default class Demo extends React.Component {
                             </Link>
                         </CardContent>
                     </Card>
-                    {/* </div> */}
                 </div>
-
             </>
         )
     }

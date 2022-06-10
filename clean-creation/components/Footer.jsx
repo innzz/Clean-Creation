@@ -43,7 +43,7 @@ export default class FooterHome extends React.Component {
           <Row>
             <Col>
               <Typography style={{ fontSize: "40px" }}>
-                Clean Creations
+                BookOnePos
               </Typography>
               <h6
                 onMouseEnter={() => {
@@ -133,7 +133,7 @@ export default class FooterHome extends React.Component {
               </ButtonGroup>
               <br />
               <Typography style={{ fontSize: "12px", marginTop: "60px" }}>
-                © 2022 Clean Creations. All Rights Reserved.
+                © 2022 BookOnePos. All Rights Reserved.
               </Typography>
             </Col>
             <Col className="justify-content-end">
@@ -145,7 +145,7 @@ export default class FooterHome extends React.Component {
                     lineHeight: "25px",
                   }}
                 >
-                  <h5>Clean Creations</h5>
+                  <h5>BookOnePos</h5>
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{

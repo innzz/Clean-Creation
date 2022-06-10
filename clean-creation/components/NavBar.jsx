@@ -57,7 +57,7 @@ export default class NavBar extends React.Component {
                     this.setState({ hover1: false });
                   }}
                   style={{
-                    color: this.state.hover1 === true ? "green" : "black",
+                    color: this.state.hover1 === true ? "#43b3ae" : "black",
                   }}
                   href="#title"
                 >
@@ -73,7 +73,7 @@ export default class NavBar extends React.Component {
                     this.setState({ hover2: false });
                   }}
                   style={{
-                    color: this.state.hover2 === true ? "green" : "black",
+                    color: this.state.hover2 === true ? "#43b3ae" : "black",
                   }}
                   eventKey={2}
                   href="#title"
@@ -86,11 +86,11 @@ export default class NavBar extends React.Component {
           <Navbar.Collapse className="justify-content-center">
             <Link href="/">
               <img
-                src="https://cleancreations.com/data/config/client_logo.png?md=f341c123680491a1ca69dd7a67ca190e"
+                src="/bookOne.png"
                 alt=""
                 style={{
-                  height: "50px",
-                  width: "70px",
+                  height: "30px",
+                  width: "150px",
                   marginTop: "5px",
                   cursor: "pointer",
                 }}
@@ -100,12 +100,13 @@ export default class NavBar extends React.Component {
           <Navbar.Collapse className="justify-content-end">
 
             <button
+            style={{backgroundColor:"#43b3ae"}}
               id="basic-button"
               aria-controls={this.state.open ? 'basic-menu' : undefined}
               aria-haspopup="true"
               aria-expanded={this.state.open ? 'true' : undefined}
               onClick={(e) => this.setState({ anchor2: e.currentTarget, menu2: false })}
-              className="bg-lime-400 px-3 py-2 flex gap-2 text-white font-semibold ">Shop
+              className=" px-3 py-2 flex gap-2 text-white font-semibold ">Shop
               <img src="/caretDown.svg" alt="" className="h-3 w-3 mt-2" />
             </button>
             <Menu
@@ -118,32 +119,32 @@ export default class NavBar extends React.Component {
               }}
               style={{ width: "500px" }}
             >
-              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/subscription"  >
                   <ListItemText> Subscription Meal Selection</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/alacarte">
                   <ListItemText>À la Carte</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/byingredients">
                   <ListItemText>Proteins by the Pound</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/customMealBuilder">
                   <ListItemText>Custom Meal Builder</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/extras">
                   <ListItemText>Extras</ListItemText>
                 </Link>
               </MenuItem>
-              <MenuItem className="hover:bg-lime-400 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
+              <MenuItem className="hover:bg-teal-500 mx-2 rounded-lg hover:drop-shadow-2xl" onClick={() => { this.setState({ anchor2: null, menu2: false }) }}>
                 <Link href="/giftcard">
                   <ListItemText>Gift Card</ListItemText>
                 </Link>
@@ -155,7 +156,7 @@ export default class NavBar extends React.Component {
             <Link href="/meals">
               <Nav.Link
                 style={{
-                  color: this.state.hover3 === true ? "green" : "black",
+                  color: this.state.hover3 === true ? "#43b3ae" : "black",
                 }}
                 onMouseEnter={() => {
                   this.setState({ hover3: true });
@@ -171,7 +172,7 @@ export default class NavBar extends React.Component {
             <Link href="/Blog">
               <Nav.Link
                 style={{
-                  color: this.state.hover4 === true ? "green" : "black",
+                  color: this.state.hover4 === true ? "#43b3ae" : "black",
                 }}
                 onMouseEnter={() => {
                   this.setState({ hover4: true });
@@ -210,8 +211,8 @@ export default class NavBar extends React.Component {
                 borderRadius: "50%",
                 borderColor: "white",
                 backgroundColor:
-                  this.state.isHovering === true ? "#9efd38" : "white",
-                color: this.state.isHovering === true ? "white" : "#32cd32",
+                  this.state.isHovering === true ? "#43b3ae" : "white",
+                color: this.state.isHovering === true ? "white" : "#43b3ae",
               }}
             >
               <Typography className="font-bold">RB</Typography>
