@@ -7,7 +7,7 @@ function GrabAndGoFooter() {
     <div className={styles.container}>
         <div className={styles.innerContainer}>
         <div className={styles.leftSection}>
-            <img src="https://cleancreations.com/assets/images/clean_creations_logo-1.svg" alt="" />
+            <img src="/bookOne.png" alt="" />
         </div>
         <div className={styles.rightSection}>
             <div className={styles.linksWrapper}>

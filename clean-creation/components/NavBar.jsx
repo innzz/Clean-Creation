@@ -42,8 +42,8 @@ export default class NavBar extends React.Component {
   };
   render() {
     return (
-      <div>
-        <Navbar className="bg-white mx-5" collapseOnSelect expand="lg">
+      <div className="bg-gray-100">
+        <Navbar className=" mx-5" collapseOnSelect expand="lg">
           {/* <Container> */}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -211,7 +211,7 @@ export default class NavBar extends React.Component {
                 borderRadius: "50%",
                 borderColor: "white",
                 backgroundColor:
-                  this.state.isHovering === true ? "#43b3ae" : "white",
+                  this.state.isHovering === true ? "#43b3ae" : "#f5f5f5",
                 color: this.state.isHovering === true ? "white" : "#43b3ae",
               }}
             >
