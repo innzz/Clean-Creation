@@ -7,7 +7,7 @@ import { IoIosWarning } from "react-icons/io";
 import { IoIosArrowDown } from 'react-icons/io';
 import { GiMeal } from 'react-icons/gi';
 import { FaShoppingCart } from 'react-icons/fa';
-import Link from "next/link";
+import Link from 'next/link';
 
 function UserPlanSelection() {
     const yourPlan = [
@@ -335,7 +335,7 @@ function UserPlanSelection() {
                 </div>
             </div>
         </div>
-    )
+  )
 }
 
 export default UserPlanSelection

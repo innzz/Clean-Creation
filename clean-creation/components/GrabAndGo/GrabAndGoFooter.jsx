@@ -32,7 +32,7 @@ function GrabAndGoFooter() {
                 <h1>Contact Us</h1>
                 <ul>
                     <li>112336454563</li>
-                    <li>inzamam@gmail.com</li>
+                    <li>credencesoft@gmail.com</li>
                 </ul>
             </div>
             </div>

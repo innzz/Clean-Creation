@@ -6,26 +6,27 @@
 }
 
 .innerContainer {
-    width: 90%;
+    width: 75%;
 }
 
 .outerDateContainer {
     display: flex;
-    width: 80%;
+    width: 100%;
     padding-bottom: 30px;
 }
 
-.outerDateContainer > .rightSectionText > h3{
-    font-size: 45px;
-    font-weight: 300;
+
+.outerDateContainer > .rightSectionText > h2{
+    font-size: 2rem;
 }
 
 .outerDateContainer > .rightSectionText > h3{
-    font-size: 35px;
+    font-weight: 300;
+    font-size: 2rem;
 }
 
 .outerDateContainer > .dateContainer {
-    margin-right: 100px;
+    margin-right: 70px;
     width: 60%;
 }
 
@@ -87,6 +88,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 60%;
 }
 
 .packsContainer .pack{
@@ -273,9 +275,10 @@
 }
 
 .packsContainer > .buttons > .upperButtons > .leftButton{
-    padding: 15px 30px;
+    padding: 15px 15px;
     display: flex;
     border-radius: 10px;
+    cursor: pointer;
     background-color: #43b3ae;
 }
 
@@ -286,10 +289,11 @@
 }
 
 .packsContainer > .buttons > .upperButtons > .rightButton{
-    padding: 15px 30px;
+    padding: 15px 15px;
     display: flex;
     border-radius: 10px;
     background-color: #43b3ae;
+    cursor: pointer;
 }
 
 .packsContainer > .buttons > .upperButtons > .rightButton > h5{
@@ -300,11 +304,12 @@
 
 .packsContainer > .buttons > .lowerButton > .leftButton{
     color: #fff;
-    padding: 15px 30px;
+    padding: 15px 15px;
     display: flex;
     width: 20%;
     border-radius: 10px;
     background-color: #43b3ae;
+    cursor: pointer;
 }
 
 .packsContainer > .buttons > .lowerButton > .leftButton > h5{
@@ -326,6 +331,11 @@
 @media screen and (max-width: 800px){
     .outerDateContainer{
         flex-direction: column;
+        width: 100%;
+    }
+
+    .outerDateContainer > .dateContainer{
+        margin-right: 0;
         width: 100%;
     }
 
