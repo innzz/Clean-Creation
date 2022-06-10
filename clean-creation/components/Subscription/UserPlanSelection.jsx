@@ -7,6 +7,7 @@ import { IoIosWarning } from "react-icons/io";
 import { IoIosArrowDown } from 'react-icons/io';
 import { GiMeal } from 'react-icons/gi';
 import { FaShoppingCart } from 'react-icons/fa';
+import Link from 'next/link';
 
 function UserPlanSelection() {
     const yourPlan = [
@@ -303,12 +304,14 @@ function UserPlanSelection() {
       </div>
       <div className={styles.buttonWrapper}>
       <div className={styles.leftButtonGroup}>
-                <div className={styles.button}>
+                <Link href={'/subscription'}><div className={styles.button}>
                     <GiMeal size={'25px'} style={{marginRight: '8px'}}/>Select Your Meals
-                </div>
+                </div></Link>
+                <Link href={'/cart'}>
                 <div className={styles.button}>
                     <FaShoppingCart size={'25px'} style={{marginRight: '8px'}}/>Go to Cart
                 </div>
+                </Link>
       </div>
       </div>
     </div>

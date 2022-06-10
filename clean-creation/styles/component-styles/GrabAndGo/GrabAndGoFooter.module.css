@@ -39,15 +39,16 @@
 }
 
 .container > .innerContainer > .rightSection > .linksWrapper > .cleanCreations > h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'IBM Plex Sans';
     font-weight: 400;
     color: #43b3ae;
 }
 
 .container > .innerContainer > .rightSection > .linksWrapper > .cleanCreations > a {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
     color: black;
 }
 
@@ -58,15 +59,16 @@
 }
 
 .container > .innerContainer > .rightSection > .linksWrapper > .orderMeals > h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'IBM Plex Sans';
     font-weight: 400;
     color: #43b3ae;
 }
 
 .container > .innerContainer > .rightSection > .linksWrapper > .orderMeals > a {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
     color: black;
 }
 
@@ -82,15 +84,16 @@
 }
 
 .container > .innerContainer > .rightSection > .linksWrapper > .contactUs > h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'IBM Plex Sans';
     font-weight: 400;
     color: #43b3ae;
 }
 
 .container > .innerContainer > .rightSection > .linksWrapper > .contactUs > ul > li{
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
     color: #0074db;
 }
 

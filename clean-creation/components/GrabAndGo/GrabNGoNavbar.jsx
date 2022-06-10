@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { useState } from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
@@ -23,28 +24,31 @@ function GrabNGoNavbar() {
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
-
+        <Link href={'/'}>
+          <img src="/bookOne.png" alt="" />
+        </Link>
       </div>
       <div className={styles.rightSection}>
-          <li className={styles.topBorder}>Blogs Home</li>
+          <Link href={'/Blog'}><li className={styles.topBorder}>Blogs Home</li></Link>
           <li className={styles.shop}>Shop <span>&#8964;</span>          
           <ul className={styles.shopModal}>
-              <li>Bulk Meals</li>
-              <li>Meal Plans</li>
-              <li>A La Carte</li>
-              <li>Custom Meal Builder</li>
-              <li>Gift Card</li>
-              <li>Extras</li>
+              <Link href={'/byingrdients'}><li>Bulk Meals</li></Link>
+              <Link href={'/meals'}><li>Meal Plan</li></Link>
+              <Link href={'/alacarte'}><li>A La Carte</li></Link>
+              <Link href={'/customMealBuilder'}><li>Custom Meal Builder</li></Link>
+              <Link href={'/giftcard'}><li>Gift Card</li></Link>
+              <Link href={'/extras'}><li>Extras</li></Link>
           </ul>
           </li>
-          <li className={styles.topBorder}>Grab And Go</li>
-          <li className={styles.about}>About <span>&#8964;</span>
+          <Link href={'/grabAndGo'}><li className={styles.topBorder}>Grab And Go</li></Link>
+          <Link href={'/about'}><li className={styles.about}>About <span>&#8964;</span>
           <ul className={styles.aboutModal}>
-              <li>Clean Creation Baton Rouge</li>
+              <Link href={'/clean_creations_baton_rouge'}><li>Clean Creation Baton Rouge</li></Link>
           </ul>
           </li>
-          <li className={styles.topBorder}>F.A.Q.</li>
-          <li className={styles.topBorder}>Contact Us</li>
+          </Link>
+          <Link href={'/faq'}><li className={styles.topBorder}>F.A.Q.</li></Link>
+          <Link href={'/contact'}><li className={styles.topBorder}>Contact Us</li></Link>
       </div>
       <div className={styles.hamMenu} onClick={handleClick1}>
           {showMenu?(<GiHamburgerMenu size={'30px'}/>):(<ImCross size={'30px'}/>)}

@@ -5,6 +5,7 @@ import {IoMdAddCircle} from 'react-icons/io';
 import {MdShoppingBasket} from 'react-icons/md';
 import {ProgressBar} from 'react-bootstrap'
 import styles from '../../styles/component-styles/ProteinsByThePound/ProtiensByThePound.module.css';
+import Link from 'next/link';
 
 function ProteinsByThePound() {
     const [caloriesData, setCaloriesData] = useState({
@@ -803,10 +804,12 @@ function ProteinsByThePound() {
                     <IoMdAddCircle size={'25px'} />
                     <h5>Add another Pack</h5>
                 </div>
+                <Link href={'/cart'}>
                 <div className={styles.rightButton}>
                     <MdShoppingBasket size={'25px'} />
                     <h5>Continue to Cart</h5>
                 </div>
+                </Link>
                 </div>
                 <div className={styles.lowerButton}>
                 <div className={styles.leftButton}>
