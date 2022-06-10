@@ -1,6 +1,6 @@
 .heading {
     width: 100%;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     color: white;
     padding: 8px;
 }
@@ -24,11 +24,11 @@
 }
 
 .date {
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     width: 70px;
     height: 65px;
     text-align: center;
-    color: #8ed444;
+    color: #43b3ae;
     border-radius: 8px;
 }
 

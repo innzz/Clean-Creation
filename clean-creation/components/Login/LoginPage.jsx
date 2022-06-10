@@ -33,7 +33,7 @@ function LoginPage() {
             <a className="text-gray-400 hover:text-gray-400 text-xs lg:text-base lg:ml-40 ml-32">Forgot password?</a>
           </Link><br />
           <div className="grid place-content-center mb-5 lg:mr-20">
-            <button className="bg-lime-500 mt-5  rounded-2xl">
+            <button className="bg-lime-500 mt-5  rounded-2xl" style={{backgroundColor: '#43b3ae' }}>
               <p className=" text-white lg:mx-44 mx-40 my-3">Login</p>
             </button>
           </div>

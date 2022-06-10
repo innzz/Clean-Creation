@@ -30,7 +30,7 @@
     border-radius: 6px;
     color: black;
     margin-right: 20px;
-    /* background-color: #8ed444; */
+    /* background-color: #43b3ae; */
     box-shadow: 1px 1px 3px 3px rgb(236, 236, 236);
     /* transition: 0.5ms; */
 }
@@ -48,8 +48,8 @@
 
 .priceDetail:hover {
     background-color: white;
-    color: #8ed444;
-    border: 1px solid #8ed444;
+    color: #43b3ae;
+    border: 1px solid #43b3ae;
     transform: translate(0, -10px)
     /* transition: 0.2s; */
 }
@@ -97,7 +97,7 @@
     height: 47px;
     width: 150px;
     border-radius: 5px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     color: white;
     margin-right: 22px;
 }

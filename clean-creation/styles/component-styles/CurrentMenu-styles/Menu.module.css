@@ -126,7 +126,7 @@
 
 .iconBox {
     padding: 9px 18px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     border-radius: 7px;
 }
 
@@ -221,7 +221,7 @@
 .modalQty {
     display: flex;
     text-align: center;
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     height: 29px;
     border-radius: 3px;
     margin-top: 3px;
@@ -235,12 +235,12 @@
     width: 30px;
     text-align: center;
     outline: none;
-    /* border-color: #8ed444; */
-    border: 1px solid #8ed444;
+    /* border-color: #43b3ae; */
+    border: 1px solid #43b3ae;
 }
 
 .numBtn {
-    border: 1px solid #8ed444;
+    border: 1px solid #43b3ae;
     width: 25px;
     border-radius: 5px;
 }
@@ -250,7 +250,7 @@
     font-size: 13px;
     font-weight: bold;
     padding: 5px 15px;
-    background-color: #8ed444;
+    background-color: #43b3ae;
     color: white;
     border-radius: 5px;
 }

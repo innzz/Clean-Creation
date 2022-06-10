@@ -15,7 +15,7 @@ const RandomMeal = () => {
               <div
                 className={styles.firstButton}
                 style={{
-                  backgroundColor: "#8ed444",
+                  backgroundColor: "#43b3ae",
                   color: "white",
                   cursor: "pointer",
                 }}
