@@ -176,7 +176,7 @@
 .rightSection>.rightInnerContainer {
     border-radius: 15px;
     padding-top: 50px;
-    top: 0;
+    top: 85px;
     position: sticky;
     box-shadow: 0px 2px 10px 1px rgb(223, 223, 223);
 }

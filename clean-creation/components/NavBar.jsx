@@ -5,11 +5,15 @@ import {BsBasket3} from 'react-icons/bs';
 import {useState} from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {ImCross} from 'react-icons/im';
+import {CgProfile} from 'react-icons/cg';
+import {MdOutlineRiceBowl} from 'react-icons/md';
+import {FiLogOut} from 'react-icons/fi';
 
 function NavBar2() {
     const [shopModal1, setshopModal1] = useState(false);
     const [shopModal2, setshopModal2] = useState(false);
     const [menuModal, setmenuModal] = useState(false);
+    const [profileModal, setprofileModal] = useState(false);
 
     const handleShopModal1 = ()=>{
         setshopModal1(!shopModal1);
@@ -20,8 +24,12 @@ function NavBar2() {
     const handleMenuModal = ()=>{
         setmenuModal(!menuModal);
     }
+    const handleProfileModal = ()=>{
+        setprofileModal(!profileModal);
+    }
   return (
-    <div className={styles.container}>
+   <>
+         <div className={styles.container}>
         <div className={styles.innerContainer}>
             <div className={styles.leftLinks}>
                 <Link href={'/'}>Current Menu</Link>
@@ -48,7 +56,12 @@ function NavBar2() {
                 </div>
                 <div className={styles.icons}>
                 <BsBasket3  size={'23px'} style={{cursor: 'pointer', margin:'0 19px'}}/>
-                <div className={styles.profileIcon}>I</div>
+                <div className={styles.profileIcon} onClick={handleProfileModal}>I
+                <div className={styles.profileModal} style={profileModal?{display: 'block'}:{display: 'none'}}>
+                        <li><CgProfile size={'23px'} /> Profile</li>
+                        <li><MdOutlineRiceBowl size={'23px'}/> Subscription</li>
+                        <li><FiLogOut  size={'23px'} /> Log Off</li>
+                    </div></div>
             </div>
             <div className={styles.hamIcon} onClick={handleMenuModal}>
                 {menuModal?(<ImCross size={'23px'} style={{cursor: 'pointer', margin:'0 19px'}} />):(<GiHamburgerMenu size={'23px'} style={{cursor: 'pointer', margin:'0 19px'}}  />)}   
@@ -73,6 +86,10 @@ function NavBar2() {
             <li>Blog</li>
         </div>
     </div>
+    <div className={styles.container2}>
+        
+    </div>
+   </>
   )
 }
 
