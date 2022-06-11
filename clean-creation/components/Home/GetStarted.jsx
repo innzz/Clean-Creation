@@ -6,11 +6,11 @@ import styles from "../../styles/component-styles/Home-styles/GetStarted.module.
 export default class Demo extends React.Component {
     render() {
         return (
-            <>
-                <div className='h-[40rem]  lg:-mb-72'>
+            <div className=''>
+                <div className='h-[40rem]  lg:-mb-[45rem] -mb-96'>
                     <div className={styles.bgimage}></div>
                 </div>
-                <div className="lg:p-40 xs:p-0">
+                <div className="lg:p-40 xs:p-0 mt-96">
                     <Card className={styles.bgtext} >
                         <CardContent className="lg:p-14" >
                             <Card.Text className="lg:text-7xl text-4xl font-semibold text-black" >Get Started<br /> With a Healthier You</Card.Text>
@@ -25,7 +25,7 @@ export default class Demo extends React.Component {
                         </CardContent>
                     </Card>
                 </div>
-            </>
+            </div>
         )
     }
 }
