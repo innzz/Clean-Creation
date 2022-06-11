@@ -1,0 +1,182 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed;
+    background-color: #fff; */
+}
+
+.container  a {
+    text-decoration: none;
+    color: black;
+}
+
+.innerContainer {
+    display: flex;
+    padding: 20px 0;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.leftLinks {
+    display: flex;
+    align-items: center;
+}
+
+.leftLinks > a:hover {
+    color: #8ed444;
+}
+
+.leftLinks > a {
+    padding: 10px 8px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightMenuContainer{
+    display: flex;
+    align-items: center;
+}
+
+.rightMenu {
+    display: flex;
+    align-items: center;
+}
+
+.rightMenu > .shopBtn {
+    position: relative;
+    background-color: #8ed444;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.rightMenu > .shopBtn > .shopModal {
+    display: block;
+    position: absolute;
+    top: 50px;
+    padding: 10px 0;
+    left: 0;
+    background-color: #fff;
+    color: black;
+    list-style: none;
+    width: 240px;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.rightMenu > .shopBtn > .shopModal > li {
+    padding: 8px 8px;
+    margin: 3px 6px;
+    border-radius: 6px;
+}
+
+.rightMenu > .shopBtn > .shopModal > li:hover{
+    background-color: #8ed444;
+    color: #fff;
+    box-shadow: 0 6px 8px 0 rgb(209, 207, 207);
+}
+
+.rightMenu > a{
+    padding: 10px 10px;
+}
+
+.rightMenu > a:hover{
+    color: #8ed444;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons > .profileIcon {
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 7px 16px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #8ed444;
+} 
+
+.icons > .profileIcon:hover {
+    background-color: #8ed444;
+    color: #fff;
+}
+
+.innerContainer > .rightMenuContainer > .hamIcon {
+    display: none ;
+}
+
+.menuModal {
+    width: 95%;
+    display: none;
+    list-style: none;
+    text-align: center;
+    max-height: 300px;
+    overflow: scroll;
+    padding: 0 50px;
+}
+
+.menuModal > li {
+    font-weight: 400;
+}
+
+.menuModal > li:hover {
+    color: #8ed444;
+}
+
+.menuModal > .shopBtn2 {
+    background-color: #8ed444;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menuModal > .shopBtn2 > .shopBtnModal2{
+    background-color: #fff;
+    display: none;
+    margin-top: 20px ;
+    color: black;
+}
+
+.menuModal > .shopBtn2 > .shopBtnModal2 > li{
+    width: 100%;
+    padding: 20px 0px 20px 0px !important;
+    text-align: center;
+    font-size: 20px;
+}
+
+.menuModal > .shopBtn2 > .shopBtnModal2 > li:hover {
+    background-color: #8ed444;
+    color: #fff;
+    box-shadow: 0 6px 8px 0 rgb(209, 207, 207);
+}
+
+.menuModal > li {
+    width: 100%;
+    padding: 20px 0px 20px 0px !important;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1160px) {
+    .innerContainer > .rightMenuContainer > .hamIcon {
+        display: block ;
+    }
+    .leftLinks > a{
+        display: none;
+    }
+
+    .rightMenu {
+        display: none;
+    }
+}
