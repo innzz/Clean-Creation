@@ -24,7 +24,7 @@ function NavBar() {
         <div className={styles.container}>
             <div className={styles.innerContainer}>
                 <div className={styles.leftLinks}>
-                    <Link href={'/currentmenu'}>Current Menu</Link>
+                    <Link href={'/'}>Current Menu</Link>
                     <Link href={'/grabAndGo'}>Grab & Go</Link>
                 </div>
                 <div className={styles.logo}>
