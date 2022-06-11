@@ -32,8 +32,8 @@ export default class ContinueToCart extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="lg:p-10 p-3 lg:ml-6 shadow lg:w-[69rem] w-[23rem] ml-5 rounded-2xl">
+      <div className="mx-4">
+        <div className="lg:p-10 p-3  shadow w-full  rounded-2xl">
           <button
             onClick={() => {
               this.setState({ open: true });
@@ -113,7 +113,7 @@ export default class ContinueToCart extends React.Component {
           </div>
         </div>
         <br />
-        <div className="lg:p-10 p-5 shadow lg:ml-6 lg:w-[69rem] w-[23rem] ml-5 mb-5 rounded-2xl flex flex-wrap lg:flex-nowrap place-content-center gap-5">
+        <div className="lg:p-10 p-5 shadow w-full  mb-5 rounded-2xl flex flex-wrap lg:flex-nowrap place-content-center gap-5">
           <button >
             <a href="/cart" className=" no-underline lg:w-[30rem] sm:w-[20rem] bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center lg:px-4 px-14 py-3 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
               <img src="/cart.svg" alt="" />
