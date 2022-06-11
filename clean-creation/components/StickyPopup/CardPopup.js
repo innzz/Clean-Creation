@@ -14,9 +14,9 @@ export default class CardPopup extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div >
                 <div className={this.state.hidden} >
-                    <div className="border shadow fixed rounded-3xl bg-white px-3 py-3 bottom-5 right-10">
+                    <div className="border shadow fixed rounded-3xl bg-white px-3 py-3 bottom-5 right-10" style={{zIndex:'20'}}>
                         <div className="flex gap-3">
                             <div>
                                 <img src="/basket-fill.svg" className="h-10 w-10" alt="" />
