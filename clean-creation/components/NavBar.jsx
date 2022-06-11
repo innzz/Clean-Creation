@@ -83,7 +83,7 @@ export default class NavBar extends React.Component {
               </Link>
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Collapse className="justify-content-center">
+          <Navbar.Collapse className="justify-content-center  lg:h-auto h-[3rem]">
             <Link href="/">
               <img
                 src="/bookOne.png"
@@ -97,7 +97,7 @@ export default class NavBar extends React.Component {
               />
             </Link>
           </Navbar.Collapse>
-          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Collapse className="justify-content-end lg:h-auto h-[13rem]">
 
             <button
               style={{ backgroundColor: "#43b3ae" }}
@@ -188,7 +188,7 @@ export default class NavBar extends React.Component {
             </Link>
             <Link href="/cart">
               <Nav.Link href="#/action-8">
-                <img src="/basket-fill.svg" className="h-5 w-5 mr-10" alt="" />
+                <img src="/basket-fill.svg" className="h-5 w-5 lg:mr-10" alt="" />
               </Nav.Link>
             </Link>
 
