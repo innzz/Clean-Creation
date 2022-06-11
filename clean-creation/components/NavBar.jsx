@@ -10,13 +10,16 @@ import {MdOutlineRiceBowl} from 'react-icons/md';
 import {FiLogOut} from 'react-icons/fi';
 
 function NavBar2() {
-    const [shopModal1, setshopModal1] = useState(false);
+    const [shopModal, setshopModal] = useState(false);
     const [shopModal2, setshopModal2] = useState(false);
     const [menuModal, setmenuModal] = useState(false);
     const [profileModal, setprofileModal] = useState(false);
 
+
+
     const handleShopModal1 = ()=>{
-        setshopModal1(!shopModal1);
+        setprofileModal(false);
+        setshopModal(!shopModal)
     }
     const handleShopModal2 = ()=>{
         setshopModal2(!shopModal2);
@@ -25,6 +28,7 @@ function NavBar2() {
         setmenuModal(!menuModal);
     }
     const handleProfileModal = ()=>{
+        setshopModal(false)
         setprofileModal(!profileModal);
     }
   return (
@@ -42,7 +46,7 @@ function NavBar2() {
             <div className={styles.rightMenu}>
                 <div className={styles.shopBtn} onClick={handleShopModal1}>
                     Shop 
-                    <div className={styles.shopModal} style={shopModal1?{display: 'block'}:{display: 'none'}}>
+                    <div className={styles.shopModal} style={shopModal?{display: 'block'}:{display: 'none'}}>
                         <li>Subscription Meal Selection</li>
                         <li>A la Carte</li>
                         <li>Proteins By The Pound</li>
@@ -87,7 +91,7 @@ function NavBar2() {
         </div>
     </div>
     <div className={styles.container2}>
-        
+
     </div>
    </>
   )
