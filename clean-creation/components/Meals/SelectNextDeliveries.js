@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 export default class SelectNextDeliveries extends React.Component {
     constructor(props) {
         super(props);
@@ -101,9 +102,11 @@ export default class SelectNextDeliveries extends React.Component {
                             </table>
                         </div>
                         <div className="grid place-content-center">
-                            <button className="text-white text-center bg-blue-500 lg:px-40 px-20 py-1 rounded-lg font-semibold">
-                                Change Plan
-                            </button>
+                            <Link href="/subscription">
+                                <button className="text-white text-center bg-blue-500 lg:px-40 px-20 py-1 rounded-lg font-semibold">
+                                    Change Plan
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="p-2 shadow rounded-xl lg:-ml-40 lg:h-32">
@@ -114,7 +117,7 @@ export default class SelectNextDeliveries extends React.Component {
                                 Selecting Random will choose the meals for you, for that day, based on your preferences The selections are added to cart and you have to checkout, you will only be charged if you selected any extra or premium meals. Meals that were checked out/processed cannot be changed.
                             </p>
                             <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
-                               The day when all meals are going to be delivered/pickup. This day can have meals for several week days if the kitchen only delivers for example 2 days a week
+                                The day when all meals are going to be delivered/pickup. This day can have meals for several week days if the kitchen only delivers for example 2 days a week
                                 <div class="tooltip-arrow" data-popper-arrow></div>
                             </div>
                         </div>

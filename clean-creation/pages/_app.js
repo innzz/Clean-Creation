@@ -11,11 +11,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <SSRProvider>
-        <Navbar />
+        {/* <Navbar /> */}
         <LeftPopUp />
         <Component {...pageProps} />
         <CardPopup />
-        <Footer />
+        {/* <Footer /> */}
       </SSRProvider>
     </>
   );

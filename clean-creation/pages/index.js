@@ -6,11 +6,14 @@ import PeopleSaying from "../components/Home/PeopleSaying";
 import AdvertisementOne from "../components/Home/AdvertisementOne";
 import AdvertisementTwo from "../components/Home/AdvertisementTwo";
 import Getstarted from "../components/Home/GetStarted";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const HomeScreen = () => {
   return (
     <>
       <div>
+        <NavBar />
         <Getstarted />
         <HowItWork />
         <OnlineMenu />
@@ -18,6 +21,7 @@ const HomeScreen = () => {
         <PeopleSaying />
         <AdvertisementOne />
         <AdvertisementTwo />
+        <Footer />
       </div>
     </>
   );
