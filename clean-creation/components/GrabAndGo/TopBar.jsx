@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/component-styles/GrabAndGo/Top.module.css";
+import Head from 'next/head';
 
 const TopBar = () => {
   return (

@@ -7,15 +7,8 @@
 }
 
 .container > .leftSection{
-<<<<<<< HEAD
     display: flex;
     align-items: center;
-=======
-    background-image: url('/bookOne.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain; /* Resize the background image to cover the entire container */
->>>>>>> 2ea73dfcb5e0ea97bbc52b3c12d90bded2018380
     width: 13%;
     height: 90px;
 }
