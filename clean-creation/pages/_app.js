@@ -12,11 +12,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <SSRProvider>
-        <NavBar />
         <LeftPopUp />
         <Component {...pageProps} />
         <CardPopup />
-        {/* <Footer /> */}
       </SSRProvider>
     </>
   );

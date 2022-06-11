@@ -1,12 +1,14 @@
 import React from "react";
 import GiftMenu from "../components/GiftCard/GiftMenu";
-import Navbar from "../components/GiftCard/Navbar";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Giftcard = () => {
   return (
     <div>
-      <Navbar />
+      <NavBar />
       <GiftMenu />
+      <Footer />
     </div>
   );
 };
