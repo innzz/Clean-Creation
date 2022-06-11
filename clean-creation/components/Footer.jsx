@@ -26,7 +26,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
-export default class FooterHome extends React.Component {
+export default class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <LeftPopUp />
         <Component {...pageProps} />
         <CardPopup />
-        <Footer />
+        {/* <Footer /> */}
       </SSRProvider>
     </>
   );
