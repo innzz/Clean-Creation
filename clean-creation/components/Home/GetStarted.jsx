@@ -6,7 +6,7 @@ import styles from "../../styles/component-styles/Home-styles/GetStarted.module.
 export default class Demo extends React.Component {
     render() {
         return (
-            <div className=''>
+            <div style={{position: 'relative'}}>
                 <div className='h-[40rem]  lg:-mb-[45rem] -mb-96'>
                     <div className={styles.bgimage}></div>
                 </div>

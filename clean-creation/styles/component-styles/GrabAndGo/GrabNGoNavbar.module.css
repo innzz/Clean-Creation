@@ -9,10 +9,6 @@
 .container > .leftSection{
     display: flex;
     align-items: center;
-    background-image: url('/bookOne.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain; /* Resize the background image to cover the entire container */
     width: 13%;
     height: 90px;
 }
