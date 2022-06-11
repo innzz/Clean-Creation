@@ -34,7 +34,7 @@ function NavBar() {
         <div className={styles.container}>
             <div className={styles.innerContainer}>
                 <div className={styles.leftLinks}>
-                    <Link href={'/'}>Current Menu</Link>
+                    <Link href={'/currentmenu'}>Current Menu</Link>
                     <Link href={'/grabAndGo'}>Grab & Go</Link>
                 </div>
                 <div className={styles.logo}>
@@ -57,12 +57,12 @@ function NavBar() {
                         <Link href={'/Blog'}>Blog</Link>
                     </div>
                     <div className={styles.icons}>
-                        <BsBasket3 size={'23px'} style={{ cursor: 'pointer', margin: '0 19px' }} />
+                        <Link href={"/cart"}><BsBasket3 size={'23px'} style={{ cursor: 'pointer', margin: '0 19px' }} /></Link>
                         <div className={styles.profileIcon} onClick={handleProfileModal}>I
                 <div className={styles.profileModal} style={profileModal?{display: 'block'}:{display: 'none'}}>
-                        <li><CgProfile size={'23px'} /> Profile</li>
-                        <li><MdOutlineRiceBowl size={'23px'}/> Subscription</li>
-                        <li><FiLogOut  size={'23px'} /> Log Off</li>
+                        <Link href={"/profile"}><li><CgProfile size={'23px'} /> Profile</li></Link>
+                        <Link href={"/subscription"}><li><MdOutlineRiceBowl size={'23px'}/> Subscription</li></Link>
+                        <Link href={"/"}><li><FiLogOut  size={'23px'} /> Log Off</li></Link>
                     </div></div>
                     </div>
                     <div className={styles.hamIcon} onClick={handleMenuModal}>
