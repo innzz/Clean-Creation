@@ -7,7 +7,7 @@ export default class Privacy extends React.Component {
         return (
             <div>
                 <NavBar />
-                <div className="container">
+                <div className="container mt-3">
                     <PrivacyPolicy />
                 </div>
                 <Footer />
