@@ -6,9 +6,9 @@ export default class AvailableDates extends React.Component {
         return (
             <div className="lg:mx-5 mx-2">
                 <div className="border p-4 rounded-xl h-full shadow w-80 lg:w-96 gap-3">
-                    <div class="grid grid-cols-3 gap-0">
-                        <div class="col-start-1 col-span-2"><p className="text-lg font-semibold text-gray-700">Available dates</p></div>
-                        <div class="col-end-4 col-span-1">
+                    <div className="grid grid-cols-3 gap-0">
+                        <div className="col-start-1 col-span-2"><p className="text-lg font-semibold text-gray-700">Available dates</p></div>
+                        <div className="col-end-4 col-span-1">
                             <select name="time" id="time" className="border p-1 -ml-8 lg:-ml-3">
                                 <option value="last delivery">Last Delivery</option>
                                 <option value="last 30 days">Last 30 Days</option>

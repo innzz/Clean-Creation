@@ -6,7 +6,7 @@ const GretnaLower = () => {
     <div className={styles.bigContainer}>
       <div className={styles.container}>
         <div className={styles.mainHead}>
-          <h2>What's in our coolers</h2>
+          <h2>Whats in our coolers</h2>
         </div>
         <div className={styles.secondaryHead}>
           <h3>Lifestyle Breakfast</h3>
