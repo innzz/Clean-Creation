@@ -54,47 +54,47 @@ export default class SelectNextDeliveries extends React.Component {
                 {/* Change Plan */}
                 <div className="grid lg:grid-cols-2 mt-4 gap-4">
                     <div className="p-2 shadow rounded-xl lg:w-[27rem] w-full">
-                        <div class="relative overflow-x-auto  ">
-                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <div className="relative overflow-x-auto  ">
+                            <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                                 <tbody>
-                                    <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-                                        <th scope="row" class="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+                                        <th scope="row" className="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
 
                                             Plan
                                         </th>
-                                        <td class="px-6 py-2">
+                                        <td className="px-6 py-2">
                                             The Everything Plan
                                         </td>
                                     </tr>
-                                    <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-                                        <th scope="row" class="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+                                        <th scope="row" className="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                             Billing Plan
                                         </th>
-                                        <td class="px-6 py-2">
+                                        <td className="px-6 py-2">
                                             1 Week Plan with Breakfast
                                         </td>
                                     </tr>
-                                    <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-                                        <th scope="row" class="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    <tr className="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+                                        <th scope="row" className="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                             Billing Renewal Cycle
                                         </th>
-                                        <td class="px-6 py-2">
+                                        <td className="px-6 py-2">
                                             1
                                         </td>
                                     </tr>
-                                    <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-                                        <th scope="row" class="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    <tr className="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+                                        <th scope="row" className="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                             Days per week
                                         </th>
-                                        <td class="px-6 py-2">
+                                        <td className="px-6 py-2">
                                             5
                                         </td>
                                     </tr>
-                                    <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-                                        <th scope="row" class="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    <tr className="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+                                        <th scope="row" className="px-6 py-2 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                             Meals per day
                                         </th>
-                                        <td class="px-6 py-2">
+                                        <td className="px-6 py-2">
                                             1
                                         </td>
                                     </tr>
@@ -116,9 +116,9 @@ export default class SelectNextDeliveries extends React.Component {
                                 Make sure you are on the <span className="text-amber-700 " data-tooltip-target="tooltip-default">main delivery/pickup day!</span>
                                 Selecting Random will choose the meals for you, for that day, based on your preferences The selections are added to cart and you have to checkout, you will only be charged if you selected any extra or premium meals. Meals that were checked out/processed cannot be changed.
                             </p>
-                            <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                            <div id="tooltip-default" role="tooltip" className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
                                 The day when all meals are going to be delivered/pickup. This day can have meals for several week days if the kitchen only delivers for example 2 days a week
-                                <div class="tooltip-arrow" data-popper-arrow></div>
+                                <div className="tooltip-arrow" data-popper-arrow></div>
                             </div>
                         </div>
                     </div>
