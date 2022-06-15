@@ -9,7 +9,6 @@ import { useState,useEffect } from "react";
 
 
  const FullMenu = ({response}) => {
-  console.log(response)
   const foodDetailOne = response;
   const foodDetailTwo = response;
  
