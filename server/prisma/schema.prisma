@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// model User {
+//   id Int @id @default(autoincrement())
+//   username String @unique
+//   email String @unique
+//   fullname String
+//   password String
+// }
+
+model Product {
+  id Int @id @default(autoincrement())
+  image String 
+  heading String
+  description String
+  calories Int
+  quantity Int
+  regularPrice String
+  protein Int
+  carb Int
+  fat Int
+  fibre Int
+  saturatedFat Int
+  cholesterol Int
+  sodium Int
+  totalSugar Int
+  includedSugar Int
+  ingredients String
+  allergens String
+  heating String 
+}
+
+
