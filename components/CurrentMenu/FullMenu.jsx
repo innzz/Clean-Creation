@@ -4,15 +4,13 @@ import { BsCartFill } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import CartModal from "./ModalCart";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
-
-
- const FullMenu = ({response}) => {
-  console.log(response)
+const FullMenu = ({ response }) => {
+  console.log(response);
   const foodDetailOne = response;
   const foodDetailTwo = response;
- 
+
   // const foodDetailOne = [
   //   {
   //     image:
@@ -114,7 +112,7 @@ import { useState,useEffect } from "react";
   //     heading: "Breakfast Burrito (Vegan)",
   //     desc: "JUST EGG, Chorizo spiced tofu, Onion, Jalapeno Topped with Green Onion and Fresh Tomato in a Wheat Tortilla With Salsa Escabeche.",
   //     calCount: "360",
-  //     qty: "0", 
+  //     qty: "0",
   //     regularPrice: "Regular | $11.00",
   //     calories: "360",
   //     protein: "20.00gr",
@@ -291,7 +289,5 @@ import { useState,useEffect } from "react";
     </div>
   );
 };
-
-
 
 export default FullMenu;
